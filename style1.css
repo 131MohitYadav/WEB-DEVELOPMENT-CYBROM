@@ -1,0 +1,38 @@
+#head1{
+text-align: center;
+font-size: 40px;
+text-decoration: underline;
+color:red;
+text-decoration-color: yellow;
+text-decoration-style: wavy;
+font-style: italic;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.para{
+    font-weight: bold;
+}
+
+#head2{
+    text-shadow: 3px 4px 2px red;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+/* jab div ke under apan ko tag ki style change krna ho to we called parent and child tag */
+
+.container{
+    background-color: aquamarine;
+}
+
+.container h1{
+    background-color: bisque;
+}
+.container p{
+    font-style: italic;
+}
+.container button{
+    color: white;
+    background-color: blue;
+}

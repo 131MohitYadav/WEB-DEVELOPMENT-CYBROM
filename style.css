@@ -1,0 +1,23 @@
+body{
+    background-color: brown;
+}
+
+.std{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 80px;
+}
+
+#std2{
+    color: white;
+    text-align: center;
+    text-decoration: overline;
+    text-decoration-style: wavy;
+
+}
+
+.par{
+    text-decoration: line-through;
+    color: white;
+}

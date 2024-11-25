@@ -1,0 +1,168 @@
+// FRONT-END DEVELOPMENT CLASS NOTES
+
+#Date - 8 / 11 / 2024
+
+ 1 .website - > collection of webpages.
+
+ 2.webpage -> collection of data,information etc.
+
+ 3.software -> collection of programmes is called software
+
+
+// TYPES OF SOFTWARE 
+
+ Application software - like Instagram,whatsapp
+
+System software - like window , android
+
+
+ //Markup language - browser understand  , no error while running the files
+
+// Hypertext - link the pages
+
+// HTML - > are used for design the structuring  or layout of website
+
+// Tags -> There are two types of tag 
+ 
+1 . container tag - jiske under content likte hai
+2. Non-container tag - opposite 
+
+##################################################################
+# Date 11 / 11 / 2024
+
+ list - > there are two types 
+
+ ordered list 
+ unordered list
+
+Attribute -> It change the behavior of tag or property of tag
+
+bgcolor -> it is a Attribute that used in body tag only
+
+##################################################################
+# Date 12 / 11 / 2024
+ u tag -> for underline
+ i tag -> for italic font
+ b tag -> for bold
+ mark -> for highlighting tag
+height and width -> also Attribute of ministate tag
+alt -> alternate tag
+
+There are two type of tag
+1. inline tag = According to element lete hai  width and height
+2. block tag = width 100% rehti hai
+
+##################################################################
+# Date -> 13 / 11 / 2024
+Audio and video tag Attribute -> controls , autoplay , loop , muted
+Audio and video are inline tags
+hr tag -> used for lining
+
+##################################################################
+# Date -> 14 / 11 / 2024
+table tag -> To make the data
+th -> table  heading tag
+td -> table data tag
+tr -> table row tag
+colspan -> it is a Attribute which is used for column collpased
+
+#######################################################################
+# Date ->  15 / 11 / 2024
+rowspan tag -> row collpased
+In table tag -> we can change height or width but
+in th tag we onlychanged height or width
+
+form tag -> used for the making form 
+inside the form tag -> we used some more tag like 
+
+label tag -> give the label like Enter Name
+input tag -> used for input the data or type = text and number like 
+Mohit yadav , 87945682 
+
+################################################################3
+Date -> 16 / 11 / 24
+
+placeholder -> it used in inside the input tag it gives the direction or instruct what to write inside the input text field
+1. When we used radio Attribute in the form firstly if select all radio button but when we passed name Attribute inside the input field it select one similarly to checkbox
+2.select tag -> are used for choosing
+3.required Attribute used for -> it does not save or submit the empty form 
+
+#####################################################################
+Date -> 17 / 11 / 24
+
+legend tag -> ye fieldset tag m used hota hai 
+
+textarea tag -> ye box create kr deta for feedback
+
+Action Attribute -> it used for rendering the page like when we sign up then we open the login page hmm ye cheez action duara kr sakte hai
+
+<a> anger tag -> are used for link the multiple pages 
+anger tag are used any inside the tags
+
+########################################################
+Date -> 19 / 11 / 24
+
+CSS -> cascading style sheet
+css are used three types 
+1.inline-> it used with in a tag
+2.internal -> it used with in a page
+3.external -> used with in all web page
+
+Selector -> it used in css 
+1. id selector -> #idname
+2.class selector -> .classname
+3.tag selector -> tagname
+4.universal selector -> *
+5.grouping selector -> mixed of class  and id selector 
+
+hmm css mai tag ko element bolte hai
+
+#################################################################
+Date -> 20 / 11 / 24
+
+In css we passed property and value
+like -> property: value; // color: red;
+PROPERTY 
+1.text-align -> it used for the alignment of the text like center , right , left
+2.font-size -> it used for the increase the size of the font like 10px , 20px
+3.text-decoration -> it used for the underline , overline , line-through and or ye by default solid aata hai
+4.text-decoration-style -> dashed , dotted , double , wavy.
+
+#########################################################################3
+
+Date -> 22 / 11 / 24
+git  and github 
+
+how to create account in github and add files 
+how to download gitbash
+
+#####################################################################################
+Date -> 23 / 11 / 24
+
+git bash command
+# ye command github pe bar bar files save krne ke leye use hogi
+
+1.git add . -> it used for add all files in the repository
+2.git add filename -> it used for add specific file in the repository
+3.git commit -m "message" -> it used for commit the file in the repository
+4.git push -u origin master -> it used for push the file in the repository
+
+
+############################################################################3
+Date -> 25 / 11 / 24
+
+text-shadow-> it used for the shadow inside the tag 
+for example -> text-shadow : 3px 4px 2px color red ; // 
+
+3px -> used for horizontal
+4p -> used for vertical
+2px -> used for blur
+red -> used for color
+
+text-transform -> inside the text transform we passed value like 
+capitalize -> ye fist letter ko capitalize kr dega
+uppercase -> ye pure text ko capital kr dega 
+lowercase -> ye pure text ko small kr dega
+
+div tag or section tag -> it used for the divide the structure of webpage
+
