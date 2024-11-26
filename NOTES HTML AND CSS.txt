@@ -170,5 +170,15 @@ it takes width 100% ye ek block tag hai
 ##################################################################
 
 Date 26 / 11 / 2024
+# TEXT-FORMATTIN PROPERTIES
+Google Fonts -> use kese krte hai 
+first download the font
+second add the font in the html file like <link>
+third use the font in the css file like font-family : 'font name' , sans-serif ;
 
+# BOX-MODEL
+padding -> esko inside the container use krte hai 
+Agar hmai charo direction mai same padding chaheye to sirf padding use krenge
 
+padding: 12px 120px; // 12px chalegi top to bottom and 120px left to right
+ 

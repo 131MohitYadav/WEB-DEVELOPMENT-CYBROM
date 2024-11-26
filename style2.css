@@ -1,0 +1,38 @@
+.head1{
+    font-family: "Protest Revolution", sans-serif;
+    text-align: center;
+    
+}
+
+.head2{
+
+    font-family: "Jaro", sans-serif;
+    text-align: center;
+    text-shadow: 3px 4px 2px red;
+}
+
+.head3{
+    font-family: "Noto Serif Ahom", serif;
+    text-align: center;
+
+}
+.head4{
+    font-size: 40px;
+    text-align: center;
+    text-decoration-style: wavy;
+    
+}
+
+.wrapper{
+    background-color: pink;
+    /* padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px; */
+    padding: 20px;
+    
+}
+.wrapper button{
+    padding: 12px 20px;
+    /* 12px -> top to bottom 
+    120px -> left to right */
+}
