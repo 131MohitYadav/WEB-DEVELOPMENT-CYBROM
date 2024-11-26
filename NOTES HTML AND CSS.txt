@@ -151,7 +151,7 @@ git bash command
 ############################################################################3
 Date -> 25 / 11 / 24
 
-text-shadow-> it used for the shadow inside the tag 
+1.text-shadow-> it used for the shadow inside the tag 
 for example -> text-shadow : 3px 4px 2px color red ; // 
 
 3px -> used for horizontal
@@ -159,10 +159,16 @@ for example -> text-shadow : 3px 4px 2px color red ; //
 2px -> used for blur
 red -> used for color
 
-text-transform -> inside the text transform we passed value like 
+2.text-transform -> inside the text transform we passed value like 
 capitalize -> ye fist letter ko capitalize kr dega
 uppercase -> ye pure text ko capital kr dega 
 lowercase -> ye pure text ko small kr dega
 
-div tag or section tag -> it used for the divide the structure of webpage
+3.div tag or section tag -> it used for the divide the structure of webpage
+it takes width 100% ye ek block tag hai
+
+##################################################################
+
+Date 26 / 11 / 2024
+
 
