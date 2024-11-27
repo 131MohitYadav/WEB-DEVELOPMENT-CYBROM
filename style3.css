@@ -1,0 +1,11 @@
+.container{
+    padding: 20px;
+    background-color: pink;
+    margin: 50px;
+    /* border: 18px double green; */
+    /* border-radius: 20px; */
+    box-shadow: 0px 0px 3px 8px red;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+}

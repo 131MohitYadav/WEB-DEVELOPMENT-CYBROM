@@ -182,3 +182,46 @@ Agar hmai charo direction mai same padding chaheye to sirf padding use krenge
 
 padding: 12px 120px; // 12px chalegi top to bottom and 120px left to right
  
+#########################################################################
+
+Date -> 27 / 11 / 24
+# BOX-MODEL 
+1.margin -> esko outside the container use krte hai
+Agar hmai charo direction mai same margin chaheye to sirf margin use kren
+
+2.border: 3px solid green; // 3px-> thickness of border , type of border , color
+emai bhi 4 types of border direction hote hai
+border-top
+border-left
+border-right
+border-bottom or agar nahi chaheye border to 
+border: none;
+
+esmai -> border de sakte hai solid , dashed , dotted , double
+
+3.border-radius -> ye corner ko curve krne ke leye use kreghe
+
+# hum ek corner ko bhi curve kr sakte hai
+border-top-left-radius
+border-top-right-radius
+border-bottom-left-radius
+border-bottom-right-radius
+
+4.box-shadow-> it take 5 values and text-shadow take 4 values 
+
+box-shadow-> 4px 3px 2px 3px red; // 
+4px -> horizontal
+3px -> vertical
+2px -> blur
+3px -> spread
+red 
+
+# flex-box
+
+5.display-flex (column ko row mai convert krdeta hai)->  agar kohi container or div or section  or esmai agar columns wise child hai to  wo display flex rowwise arrange kr dega 
+
+display-flex sirf parent mai hi lagega
+
+6.justify-content -> ye  row mai space dene ke leye use hota hai display flex mai or ye sirf tabhi km krega jab display-flex use krneghe
+
+justify-content -> space-around or space-evenly or space-between
