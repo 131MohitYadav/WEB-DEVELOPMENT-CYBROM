@@ -1,5 +1,6 @@
 .main_container{
     display: flex;
     background-color: aqua;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
 }

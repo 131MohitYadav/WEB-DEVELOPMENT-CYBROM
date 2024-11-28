@@ -185,6 +185,7 @@ padding: 12px 120px; // 12px chalegi top to bottom and 120px left to right
 #########################################################################
 
 Date -> 27 / 11 / 24
+
 # BOX-MODEL 
 1.margin -> esko outside the container use krte hai
 Agar hmai charo direction mai same margin chaheye to sirf margin use kren
@@ -222,6 +223,19 @@ red
 
 display-flex sirf parent mai hi lagega
 
-6.justify-content -> ye  row mai space dene ke leye use hota hai display flex mai or ye sirf tabhi km krega jab display-flex use krneghe
-
+6.justify-content(ye row ke leye use hoti hai )  or gap -> ye  row mai space dene ke leye use hota hai display flex mai or ye sirf tabhi km krega jab display-flex use krneghe
+ or 
+ gap: 23px ; use kr sakte hai (space dene ke leye km krta hai)
 justify-content -> space-around or space-evenly or space-between
+
+#######################################################################
+Date => 28 / 11 / 2024
+
+1.align-item ( ye columns ke leye use hoti hai): center or start or end use kr sakte hai; // ye columns ke  item ko center mai lane ke leye use hota hai 
+
+#flex model
+
+2.<nav> tag ( semantic tag) -> it used for navigation bar or menu bar 
+
+
+
