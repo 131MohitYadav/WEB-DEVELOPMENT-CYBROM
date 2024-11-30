@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    flex-wrap: wrap-reverse;
+
+}
+
+.ch{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border: 4px solid;
+}
+
+.ch1{
+    color: blue;
+}
+.ch2{
+    color: orange;
+}
+.ch3{
+    color: green;
+}

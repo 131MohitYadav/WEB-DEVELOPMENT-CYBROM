@@ -237,5 +237,21 @@ Date => 28 / 11 / 2024
 
 2.<nav> tag ( semantic tag) -> it used for navigation bar or menu bar 
 
+######################################################
+Date => 30 / 11 / 2024
+
+h1.eight -> 100Vh (view port height) , it used to assign column height 
+
+2.response website -> works on all type of devices(all screen)
+
+3.flex-wrap: wrap; make website responsive to all devices.
+
+4.We can make two class in one class by taking space between both class value
+
+5.if we take value wrap-reverse at the place of wrap in flex-wrap tag it will reverese the element 
+
+
+
+
 
 
