@@ -2,14 +2,14 @@
     display: flex;
     justify-content: center;
     background-color: yellow;
-    flex-wrap: wrap-reverse;
+    flex-wrap:wrap-reverse;
 
 }
 
 .ch{
     height: 200px;
-    width: 200px;
-    background-color: red;
+    width: 400px;
+    background-color: aliceblue;
     border: 4px solid;
 }
 
@@ -17,7 +17,7 @@
     color: blue;
 }
 .ch2{
-    color: orange;
+    color:darkmagenta;
 }
 .ch3{
     color: green;

@@ -248,10 +248,27 @@ h1.eight -> 100Vh (view port height) , it used to assign column height
 
 4.We can make two class in one class by taking space between both class value
 
-5.if we take value wrap-reverse at the place of wrap in flex-wrap tag it will reverese the element 
+5.if we take value wrap-reverse at the place of wrap in flex-wrap tag it will reverse the element 
 
+##############################################
 
+Date -> 4 Dec 2024
 
+1.header tag -> used for navbar and hero tag 
+2.hero tag -> used for hero section
+3. .some css tag used to insert image in the background of any container 
+
+4.background-image: url(address of image that we wanted on background);
+5. background-repeat: no-repeat; -> not repeat the image 
+6. background-size: cover; -> cover the whole background with image
+7. background-position: center; -> center the image in the background
+
+# Cdn => content deliver network
+
+# To use icon we go to the font awesome(website or Google font) then select free and search for the icon and then copy html code and past where we want that icon in website
+
+.we can also choose animated icon
+And then go to the font awesome cdn and copy firstlink and past after inside head tag
 
 
 

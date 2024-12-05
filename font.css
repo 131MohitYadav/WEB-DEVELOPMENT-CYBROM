@@ -1,0 +1,18 @@
+header{
+    background-image: url(bedroom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar ul{
+    display: flex;
+    gap: 40px;
+}
+
+.hero{
+    display: flex;
+}
