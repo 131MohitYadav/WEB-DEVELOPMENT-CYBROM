@@ -1,0 +1,33 @@
+*{
+    background-color: aqua;
+}
+
+.head1::first-letter{
+    font-size: 80px;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p::first-line{
+    text-decoration: underline;
+    color: yellow;
+}
+
+.head1::selection{
+    background-color: red;
+    color: aliceblue;
+}
+
+input::placeholder{
+    color: red;
+}
+.name::before{
+    content: "Mohit ";
+    color: red;
+
+}
+
+.name::after{
+    content: " Yadav";
+    color: blue;
+}

@@ -100,6 +100,9 @@ Action Attribute -> it used for rendering the page like when we sign up then we 
 anger tag are used any inside the tags
 
 ########################################################
+
+ CSS START
+
 Date -> 19 / 11 / 24
 
 CSS -> cascading style sheet
@@ -270,5 +273,14 @@ Date -> 4 Dec 2024
 .we can also choose animated icon
 And then go to the font awesome cdn and copy firstlink and past after inside head tag
 
+#################################################################
 
+Date -> 9/12/2024
+
+1.Psuedo Element -> it denote two colon :: , esmai or property use hoti hai css mai 
+like -> kohi class name .head1::first-letter -> esmai apan kohi bhi color and design kr skte first letter ka. etc.
+
+2.Position -> absolute , relative , sticky
+
+absolute -> it used only body se hi margin km upper or niche or left or right kregah box ka
 
