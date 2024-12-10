@@ -1,0 +1,48 @@
+*{
+    background-color: black;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes myanimation{
+
+    /* two state only */
+    /* to{
+ left: 300px;
+ top: 0px;
+    }
+    from{
+        left: 0px;
+        top: 0px;
+
+    } */
+/* 
+    when we select multiple state  so we used percentage*/
+
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    30%{
+        left: 350px;
+        top: 150px;
+        rotate: 360deg;
+    }
+    60%{
+        top: 0;
+        left: 400px;
+        border: 15px solid;
+        background-color: blue;
+        scale: 1.3;
+    }
+}

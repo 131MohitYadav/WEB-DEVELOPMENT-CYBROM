@@ -1,0 +1,18 @@
+*{
+    background-color: black;
+}
+
+button{
+    border: 10px solid red;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 8px solid yellow;
+    text-shadow: 2px 2px 2px 2px;
+}

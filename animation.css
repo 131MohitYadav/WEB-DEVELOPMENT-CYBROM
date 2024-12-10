@@ -1,14 +1,18 @@
-.box{
+/* .box{
     height: 500px;
     background-color: red;
     margin-top: 200px;
-}
+} */
+
+
 
 .box-ch{
     height: 200px;
     width: 200px;
     background-color: blue;
-    position: absolute;
-    top: 30px;
-    left: 50px;
+    /* position: absolute; */
+    /* position: fixed; */
+    position: sticky;
+    top: 0px;
+    /* left: 50px; */
 }

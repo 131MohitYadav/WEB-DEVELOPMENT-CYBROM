@@ -284,3 +284,12 @@ like -> kohi class name .head1::first-letter -> esmai apan kohi bhi color and de
 
 absolute -> it used only body se hi margin km upper or niche or left or right kregah box ka
 
+####################################################################
+
+Date-> 10/12/2024
+
+1.position: fixed ; -> ye fixed ho jahega when we scrol id doesnt move (navigation bar mai used hota hai)
+
+2.position: sticky; -> ye bhi fixed ho jata hai jab scrol krte hai but with the help margin top,bottom,right,left-> 0 px esleye dete hai taki sticky ho jahe jab bo opx toch krega
+(navigation bar mai used hota hai)
+
