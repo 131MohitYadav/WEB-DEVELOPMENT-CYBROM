@@ -1,0 +1,23 @@
+.slider{
+    height: 100vh;
+    background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: slider;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes slider {
+
+    0%{
+        background-image:url(bedroom.jpg);
+    }
+    50%{
+        background-image: url(tiger.jpg);
+    }
+    100%{
+    background-image: url(scenary.jpg);
+}
+}

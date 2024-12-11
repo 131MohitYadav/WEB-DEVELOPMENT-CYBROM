@@ -205,7 +205,7 @@ esmai -> border de sakte hai solid , dashed , dotted , double
 
 3.border-radius -> ye corner ko curve krne ke leye use kreghe
 
-# hum ek corner ko bhi curve kr sakte hai
+# hum ek corner ko bhi curve kr sakte hai with the help of these property
 border-top-left-radius
 border-top-right-radius
 border-bottom-left-radius
