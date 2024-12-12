@@ -1,0 +1,24 @@
+body{
+    background-color: red;
+    font-size: 50px;
+
+}
+
+@media screen and (max-width: 400px){
+    body{
+        background-color: blue;
+    }
+    .head{
+        color: aliceblue;
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (min-width:400px)  and (max-width:600px){
+
+    body{
+        background-color: green;
+    }
+    
+}

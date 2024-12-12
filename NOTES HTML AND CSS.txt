@@ -293,3 +293,16 @@ Date-> 10/12/2024
 2.position: sticky; -> ye bhi fixed ho jata hai jab scrol krte hai but with the help margin top,bottom,right,left-> 0 px esleye dete hai taki sticky ho jahe jab bo opx toch krega
 (navigation bar mai used hota hai)
 
+3. Animation -> it denote @keyframes and animation name
+
+######################################################################
+
+Date -> 11 / 12 / 2024
+
+1.slider -> used with animation we give animation state in percentage and inside the animation we give background-image: url() ;  in each percentage state;
+
+#####################################################################
+
+Date -> 12 / 11 / 2024 
+
+@media screen -> website ko responsive ka krane ke leye use hota 
