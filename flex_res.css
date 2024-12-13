@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+}
+
+.ch{
+    height: 200px;
+    width: 200px;
+    background-color: lightblue;
+    border: 5px solid black;
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        flex-direction: column;
+    }
+}

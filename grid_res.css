@@ -1,0 +1,21 @@
+.con_grid{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 30px;
+}
+
+.ch1,.ch2,.ch3,.ch4{
+    background-color: aquamarine;
+    border: 3px solid black;
+}
+@media screen and (min-width:400px) and (max-width: 600px) {
+    .con_grid{
+        grid-template-columns: repeat(2, auto);
+    }
+
+}
+@media screen and (max-width:399px) {
+    .con_grid{
+        grid-template-columns: repeat(1, auto);
+    }
+}

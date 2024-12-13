@@ -1,0 +1,47 @@
+.navbar{
+    background-color: yellow;
+    display: flex;
+    justify-content:space-around;
+      padding: 10px;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.navbar img{
+    border-radius: 50%;
+    
+}
+#check{
+    display: none;
+}
+.navbar label{
+    display: none;
+    padding-top: 20px;
+justify-content: center;
+
+}
+
+#check:checked~.navbar ul{
+    display: block;
+}
+
+@media screen and (max-width: 700px){
+    .navbar label{
+        display: block;
+    }
+    .navbar ul{
+        display: none;
+        position: absolute;
+        top: 87px;
+        width: 100%;
+        background-color: lightblue;
+    }
+    .navbar ul li{
+        padding: 12px;
+    }
+}

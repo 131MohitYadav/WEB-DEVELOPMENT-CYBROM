@@ -305,4 +305,10 @@ Date -> 11 / 12 / 2024
 
 Date -> 12 / 11 / 2024 
 
-@media screen -> website ko responsive ka krane ke leye use hota 
+@media screen and (max-width: 100px) -> website ko responsive ka krane ke leye use hota
+
+display:none; use display pe nhi dekhe
+
+Date -> 13 / 11 / 2024
+
+flex ko resonsive krne ke leye hm flex wrap use krte hai parent child mai or @media screen use kr skate flex-direction: columns; use krege
