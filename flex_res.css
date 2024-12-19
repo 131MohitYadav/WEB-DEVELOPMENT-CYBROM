@@ -1,7 +1,11 @@
 .container{
     display: flex;
     justify-content: space-evenly;
-    /* flex-wrap: wrap; */
+     flex-wrap: wrap; 
+    align-items: center;
+    color: black;
+    font-size: 30px;
+    
 }
 
 .ch{
@@ -10,9 +14,9 @@
     background-color: lightblue;
     border: 5px solid black;
 }
-
+/* 
 @media screen and (max-width:600px) {
     .container{
         flex-direction: column;
     }
-}
+} */
