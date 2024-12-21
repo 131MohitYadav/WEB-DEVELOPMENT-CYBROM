@@ -37,4 +37,40 @@ for example ->
   
   const name = "Mohit";
 
+# Date -> 21 / 12 / 2024
+
+// Operator -> are special symbols
+
+there are 3 types of operator
+
+# unary
+single -> ++ , -- increment or decrement
+-> ++v , v++
+-> --v , v--
+
+# Binary
+-> Arithmatics
++ , - , * , / , %
+
+/ -> Quotient
+% -> Remainder
+
+-> Relational Operator
+
+== , != , > , < , >= , <=
+
+-> Logical
+&& , || , !
+
+-> Assignment
+= , += , -= , *= , /= , %= 
+
+# Ternary
+
+? :
+
+# prompt -> predefined function or ye user input lene k leye km aata hai
+
+-> parseInt -> for converting any value into integer
+
 
