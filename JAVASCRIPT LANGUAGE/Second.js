@@ -9,9 +9,9 @@
 let a = 22;
 let b = 23;
 
-let temp = a;
-a = b;
-b = temp;
+let temp = a; // 22
+a = b; // 23
+b = temp; // 22
 console.log( "The value of a: " + a);
 console.log( "The value of b: " + b);
 console.log("The value of c : " + temp);
