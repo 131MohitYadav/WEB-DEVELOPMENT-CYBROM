@@ -63,21 +63,84 @@
 //                 }
 
 
-// nested if else
-let a = parseInt(prompt("Enter any number"))
+// // nested if else
+// let a = parseInt(prompt("Enter any number"))
 
-if ( a >= 18){
-    let n = parseInt(prompt("P 1 for Indian"))
-    if (  n == 1){
-        alert("Eligible voters")
-    }
-    else{
-        alert("Not Eligible voters")
-    }
+// if ( a >= 18){
+//     let n = parseInt(prompt("P 1 for Indian"))
+//     if (  n == 1){
+//         alert("Eligible voters")
+//     }
+//     else{
+//         alert("Not Eligible voters")
+//     }
     
-}
-else{
-    alert("Not Eligible voters")
-}
+// }
+// else{
+//     alert("Not Eligible voters")
+// }
 
 // comparison of three number
+
+// switch case
+
+let x = parseInt(prompt("ENTER NUMBER 1: "))
+let y = parseInt(prompt("ENTER SECOND NUMBER: "))
+
+let operation = prompt("ENTER ANY OPERATION ( + , - , / , *)")
+
+
+switch (operation){
+    case '+':
+        alert(x + y)
+        break;
+    case '-':
+        alert( x - y)
+        break;
+    case '*':
+        alert( x * y)
+        break;
+    case '/':
+        alert( x / y)
+        break;
+    default :
+    alert("Invalid Choice")
+    break;
+}
+
+
+    // Loops 
+
+    // do while loop ->
+
+    // let a = 25;
+
+    // do {
+    //     console.log(a)
+    //     a--;
+    // }while(a > 5);
+
+// while loop ->
+
+// let n = parseInt(prompt("ENTER ANY NUMBER: "))
+
+// if ( n % 2 == 0){
+//     let a = 1
+//     while( a <= 10){
+//         console.log(n*a)
+//     }
+// }
+
+// else{
+//     console.log(n * n * n)
+// }
+    
+
+// let a = 15;
+
+// while( a >= 1){
+//     if ( a % 2 == 1){
+//         console.log(a * a)
+//     }
+//     a--;
+// }

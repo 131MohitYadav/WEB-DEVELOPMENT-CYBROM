@@ -74,9 +74,13 @@ single -> ++ , -- increment or decrement
 -> parseInt -> for converting any value into integer
 
 
-# 22 / 12 / 2024
+# 23 / 12 / 2024
 # Conditional Statement
 if , else , ladder if else , switch
 
 if else -> used for check one condition
 ladder if else -> used for check multiple condition
+
+# 24 / 12 / 2024
+# Switch
+-> used for check multiple condition
