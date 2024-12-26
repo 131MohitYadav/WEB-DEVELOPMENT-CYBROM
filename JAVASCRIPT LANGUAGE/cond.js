@@ -84,29 +84,29 @@
 
 // switch case
 
-let x = parseInt(prompt("ENTER NUMBER 1: "))
-let y = parseInt(prompt("ENTER SECOND NUMBER: "))
+// let x = parseInt(prompt("ENTER NUMBER 1: "))
+// let y = parseInt(prompt("ENTER NUMBER 2: "))
 
-let operation = prompt("ENTER ANY OPERATION ( + , - , / , *)")
+// let operation = prompt("ENTER ANY OPERATION ( + , - , / , *)")
 
 
-switch (operation){
-    case '+':
-        alert(x + y)
-        break;
-    case '-':
-        alert( x - y)
-        break;
-    case '*':
-        alert( x * y)
-        break;
-    case '/':
-        alert( x / y)
-        break;
-    default :
-    alert("Invalid Choice")
-    break;
-}
+// switch (operation){
+//     case '+':
+//         alert(x + y)
+//         break;
+//     case '-':
+//         alert( x - y)
+//         break;
+//     case '*':
+//         alert( x * y)
+//         break;
+//     case '/':
+//         alert( x / y)
+//         break;
+//     default :
+//     alert("Invalid Choice")
+//     break;
+// }
 
 
     // Loops 
@@ -144,3 +144,11 @@ switch (operation){
 //     }
 //     a--;
 // }
+
+
+// for loop // 
+
+for ( let a = 1 ; a <= 10; a++){
+    console.log(a);
+    
+}

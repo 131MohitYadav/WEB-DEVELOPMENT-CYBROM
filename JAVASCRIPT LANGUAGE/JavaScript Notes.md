@@ -84,3 +84,12 @@ ladder if else -> used for check multiple condition
 # 24 / 12 / 2024
 # Switch
 -> used for check multiple condition
+
+# 26 / 12 / 2024
+# for Loop
+-> used for execute any block of code for multiple time
+
+# difference between parameter and arguments
+
+# function
+-> function is a block of code which can be called multiple time and used for reusability
