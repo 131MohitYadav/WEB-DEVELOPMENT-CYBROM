@@ -173,7 +173,7 @@ it takes width 100% ye ek block tag hai
 ##################################################################
 
 Date 26 / 11 / 2024
-# TEXT-FORMATTIN PROPERTIES
+# TEXT-FORMATTING PROPERTIES
 Google Fonts -> use kese krte hai 
 first download the font
 second add the font in the html file like <link>

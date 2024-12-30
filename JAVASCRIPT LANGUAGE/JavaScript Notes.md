@@ -90,6 +90,10 @@ ladder if else -> used for check multiple condition
 -> used for execute any block of code for multiple time
 
 # difference between parameter and arguments
+parameter -> function ke andar define kiye gaye variable
+argument -> function ke andar pass kiye gaye value
+and function ke leye argument as a input km krta hai
+
 
 # function
 -> function is a block of code which can be called multiple time and used for reusability
