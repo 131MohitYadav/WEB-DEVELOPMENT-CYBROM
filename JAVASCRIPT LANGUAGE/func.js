@@ -145,10 +145,10 @@ function fun(n){
   let sum = 0;
   while(n!=0){
    let r = n % 10; // 123
-   let sum = sum + r;
+   sum = sum + r;
    n = n/10;
   }
-  parseInt(console.log(sum))
+  console.log(parseInt(sum))
 }
 let n = parseInt(prompt("ENTER ANY NUMBER"))
 fun(n)
