@@ -92,7 +92,7 @@
 //     return "Mohit"
 // }
 
-// demo()
+// 
 
 // let a = demo() // ye tb use krenghe jab kohi operation perform krana ho
 // console.log(a);
@@ -123,14 +123,44 @@
 
 
 
-          function code(a){
-            return a*a*a
-          }
-console.log(code(2))
+// function code(a){
+//             return a*a*a
+//           }
 
-for(let i = a ; i<=a ; i++){
-    for(let j = i ; j <= i; j++ ){
-        document.write(i)
-    }
+// let a = parseInt(prompt("ENTER ANY NUMBER"))
+// let ans = fun(a)
+
+// for(let i = 0 ; i<=ans ; i++){
+
+//     for(let j = 0 ; j <= i; j++ ){
+//         document.write("*");
+//     }
+//     document.write("<br>");
+// }
+
+// user se input lena hai suppose user deta hai 123 number uska addition chaheye by using function with argument and no return value
+
+function fun(n){
+  
+  let sum = 0;
+  while(n!=0){
+   let r = n % 10; // 123
+   let sum = sum + r;
+   n = n/10;
+  }
+  parseInt(console.log(sum))
 }
+let n = parseInt(prompt("ENTER ANY NUMBER"))
+fun(n)
+
+
+
+
+
+
+
+
+
+
+
 
