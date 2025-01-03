@@ -7,10 +7,23 @@
 let head = document.getElementById("head")
 console.log(head);
 
-document.write(" <i>Hello Mohit Yadav</i>")
+// document.write(" <i>Hello Mohit Yadav</i>")
 // return nodelist in array format same as document.getElementsByTagName
 let head2 = document.getElementsByClassName("content2")
 console.log(head2); // it does not change any text
 head2[1].innerHTML = "<i>Aman kumar </i>"
 head2[2].textContent = " Manish Kumar"
+
+// change the value of an attribute
+
+// document.getElementById('picture').src = "codechef.jpg"
+
+let photo = document.getElementById("picture")
+console.log(photo);
+photo.src = "codechef.jpg"
+
+document.write(Date())
+
+
+
 
