@@ -122,7 +122,7 @@ it used for some change can be done html and css with respect to js
 
 # innerHTML -> ye content ko change kr deta hai inside html page it also change tag content like we given inside the html i tage , b tag etc
 
-# textContent -> ye sirf tag ko hi change kregha ye esmai i tag or b tag
+# textContent -> ye sirf tag ko hi change kregha ye esmai i tag or b tag nhi work krta hai
 
 
 # Finding HTML Elements
@@ -136,6 +136,7 @@ it used for some change can be done html and css with respect to js
 # Property	Description
 1.element.innerHTML =  new html content	Change the inner HTML of an element
 2.element.attribute = new value	Change the attribute value of an HTML element
+
 3.element.style.property = new style	Change the style of an HTML element
 4.element.textContent = new text	Change the text content of an HTML element
  # Method	Description
@@ -159,3 +160,7 @@ Ques -> what is ES6 AND ECMA and full form
 -> ECMA -> European Computer Manufacturers Association
 -> ES6 is a version of ECMAScript which is a standard for scripting language
 -> ECMAScript is a standard for scripting language
+
+# SetAttribute -> agar kohi style ko add krna hai to use krenge it takes two argument (attribute name , attribue value) FOR EXAMPLE
+head.setAttribute('bgcolor' ,'red')
+etc

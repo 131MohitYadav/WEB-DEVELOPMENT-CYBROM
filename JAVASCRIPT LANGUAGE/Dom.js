@@ -12,7 +12,7 @@ console.log(head);
 let head2 = document.getElementsByClassName("content2")
 console.log(head2); // it does not change any text
 head2[1].innerHTML = "<i>Aman kumar </i>"
-head2[2].textContent = " Manish Kumar"
+head2[2].textContent = " <i>Manish Kumar</i>"
 
 // change the value of an attribute
 
@@ -23,6 +23,11 @@ console.log(photo);
 photo.src = "codechef.jpg"
 
 document.write(Date())
+
+document.getElementById("head").style.color= "red";
+document.getElementById("head").style.fontSize = "50px";
+document.getElementById("head").style.fontFamily = "Arial";
+
 
 
 
