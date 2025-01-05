@@ -164,3 +164,8 @@ Ques -> what is ES6 AND ECMA and full form
 # SetAttribute -> agar kohi style ko add krna hai to use krenge it takes two argument (attribute name , attribue value) FOR EXAMPLE
 head.setAttribute('bgcolor' ,'red')
 etc
+
+# DOM EVENTS -> it is a event which occur when we interact with html element
+
+
+
