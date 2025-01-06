@@ -6,6 +6,7 @@ head.textContent = "Hello, We Are Developers!"
 // parent class
 let bd = document.body
 bd.append(head)
+
 bd.setAttribute('align','center')
 bd.setAttribute('bgcolor','red')
 

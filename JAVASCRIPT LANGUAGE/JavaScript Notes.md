@@ -166,6 +166,12 @@ head.setAttribute('bgcolor' ,'red')
 etc
 
 # DOM EVENTS -> it is a event which occur when we interact with html element
+or action perform by the user
+
+# javascript mai kohi class ko leke apply krna hai css to use krenghe
+
+elementidname.classList.add('classname')
+
 
 
 
