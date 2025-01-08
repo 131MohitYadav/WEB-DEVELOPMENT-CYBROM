@@ -172,6 +172,10 @@ or action perform by the user
 
 elementidname.classList.add('classname')
 
+# form -> to get the input from the form so we used form 
+
+or form automatic save hota hai usko rokne ke leye hm return use krte hai 
+
 
 
 
