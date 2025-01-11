@@ -177,5 +177,18 @@ elementidname.classList.add('classname')
 or form automatic save hota hai usko rokne ke leye hm return false use krte hai 
 
 
+# querySelector querySelector all -> indexing ki problem solve krne ke leye use kya gya hai
 
+querySelector -> 
+it is a method which return the first element which match the selector
 
+querySelector all ->
+it is a method which return all the element which match the selector
+
+addEventListener ->
+it is a method which add an event listener to the element or it used without used html agar kohi event fire krna hai to
+it take two two argument eventname , function like
+example
+element.addEventListener('click' , function(){
+  console.log('button clicked')
+  })
