@@ -110,6 +110,8 @@ it used for some change can be done html and css with respect to js
 -> har element ko node bolenge like ( h1 , p and etc)
 -> <h1> mohit </h1> = mohit is textnode 
 
+# onclick  events -> it passed in the opening tag with attribute and function
+
 # 3 types se target kr skate element node ko  in js mai
 
 1.id
@@ -192,3 +194,4 @@ example
 element.addEventListener('click' , function(){
   console.log('button clicked')
   })
+
