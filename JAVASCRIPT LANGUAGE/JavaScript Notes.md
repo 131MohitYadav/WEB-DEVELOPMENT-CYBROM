@@ -195,3 +195,10 @@ element.addEventListener('click' , function(){
   console.log('button clicked')
   })
 
+# Array 
+Need - > to stored multiple value in one variable
+array -> collection of multiple value 
+
+ . ordered - > position of element
+
+ # for of loop -> it used for access the array element
