@@ -12,18 +12,21 @@
 
 // console.log(sum);
 
-
+// push
 let ar = ['q',12,'Cybrom']
 ar.push("manish","helloo")
 console.log(ar);
 
+// pop
 ar.pop()
 
 console.log(ar);
 
+// unshift
 ar.unshift("chashma","lagao")
 console.log(ar);
 
+// shift
 ar.shift()
 console.log(ar);
 
