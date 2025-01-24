@@ -32,8 +32,21 @@ console.log(arr[4]);
  {
     if ( d % 2 != 0){
         
-        console.log(odd[d])
+        odd.push(d);
     }
  }
+ console.log(odd);
 
  // write a program to take input 10 number from the user and print the output in array
+ let num = [ ];
+ let sum = 0;
+ for ( let e = 0; e < 10; e++)
+   
+   {
+      num[e] = parseInt(prompt("ENTER ANY NUMBER"));
+      let add = num[3];
+
+      sum = sum + add;
+
+   }
+   console.log( "SUM OF ALL NUMBER: " ,sum)
