@@ -44,7 +44,8 @@ console.log(arr[4]);
    
    {
       num[e] = parseInt(prompt("ENTER ANY NUMBER"));
-      let add = num[3];
+      
+      let add = num[e];
 
       sum = sum + add;
 
