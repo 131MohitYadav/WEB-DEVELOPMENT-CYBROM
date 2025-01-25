@@ -24,4 +24,18 @@ for ( let x of ar4){
 }
 console.log(ar5)
 
+// similarly for odd case
+
+
+let ar7 = [];
+let ar6 = [1,2,3,4,5,6,7,8,9,10]
+
+for ( let y of ar6){
+    if ( y % 2 != 0){
+        ar7.push(y*y)
+        
+    }
+}
+console.log(ar7)
+
 
