@@ -3,7 +3,12 @@
 let [name,age,city,course] = ["Mohit",32,"Bhopal","FSD"];
 //console.log(name,age);
 
-document.getElementById('demo').innerHTML= name + " " + age;
+let nam = document.getElementById('demo')
+nam.innerHTML= city + " " + age
+nam.style.fontSize="40px"
+nam.style.color="blue"
+nam.style.textAlign="center"
+
 
 const person = {
     FirstName:"Mohit",
