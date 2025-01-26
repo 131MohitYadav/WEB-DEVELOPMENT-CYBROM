@@ -1,7 +1,26 @@
 
 // destructure
 let [name,age,city,course] = ["Mohit",32,"Bhopal","FSD"];
-console.log(name,age);
+//console.log(name,age);
+
+document.getElementById('demo').innerHTML= name + " " + age;
+
+const person = {
+    FirstName:"Mohit",
+    LastName: "Yadav",
+    Age: "20"
+
+};
+
+ let per =document.getElementById('demo2')
+ per.innerHTML = person.FirstName + " " + person.LastName;
+ per.style.color="red"
+ per.style.fontSize="30px"
+ per.style.textAlign="center"
+ per.style.backgroundColor="yellow"
+
+
+
 
 //  spread operator(...)
 
