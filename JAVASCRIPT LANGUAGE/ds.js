@@ -34,6 +34,13 @@ let ar2 = [7,7,8,9]
 let ar3 = [...ar1,...ar2]
 console.log(ar3);
 
+// string merge
+let ar10 = ["Mohit","Yadav","Manish","Kumar"]
+let ar11 = ["Satyam","Singh","Vikash","Arya"]
+let ar12 = [...ar10,...ar11]
+console.log(ar12);
+
+
 
 // Write a program to find the even number after that squaring of the even number and store the number in another array
 

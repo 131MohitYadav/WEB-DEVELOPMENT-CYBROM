@@ -216,3 +216,6 @@ array -> collection of multiple value
  # Destructuring of array -> when we don't use the indexing value we access the element with the help of variable so we used destructring of array
 
  # spread Operator(...) -> it used for the merging the array element
+
+ # object -> it is a  datatype used for stored multiple value
+  { } denote , unordered , key value pair
