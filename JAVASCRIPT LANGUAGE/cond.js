@@ -145,10 +145,16 @@
 //     a--;
 // }
 
+for ( let a = 15 ; a >= 1 ; a--){
+    if ( a % 2 == 1){
+        console.log(a*a)
+    }
+}
+
 
 // for loop // 
 
-for ( let a = 1 ; a <= 10; a++){
-    console.log(a);
+// for ( let a = 1 ; a <= 10; a++){
+//     console.log(a);
     
-}
+// }
