@@ -36,10 +36,11 @@ function inc(){
 }
 
 function dec(){
+    if ( count > 0){
     count = count - 1;
     head.innerHTML = count;
     
-    
+    }
 }
 
 function res(){

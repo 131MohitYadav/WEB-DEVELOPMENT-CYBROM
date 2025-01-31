@@ -24,7 +24,10 @@
 //     //person_std.fun();
 //     person_std.fun1("Mohit")
     
-    
+    let demo = document.getElementById('demo')
+    demo.innerHTML = "Hello Mohit"
+    demo.style.color="red"
+    demo.style.textAlign="center"
 let insaan = {
     name: "Mohit",
     age : 20,
@@ -33,7 +36,7 @@ let insaan = {
         console.log(this.name);
     }
 }
-insaan.fun();
+insaan.fun()
 
 
 // for in loop  print the key value of object
@@ -55,4 +58,14 @@ let ob = {
 }
 for ( let ky in ob){
     console.log(ob[ky]);
+}
+
+let ob1 = {
+    name:"Rohit",
+    age:25,
+    city:"Gwalior"
+    
+}
+for (let c in ob1){
+    console.log(ob1[c])
 }
