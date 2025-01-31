@@ -219,3 +219,12 @@ array -> collection of multiple value
 
  # object -> it is a  datatype used for stored multiple value
   { } denote , unordered , key value pair
+
+  # nestedobject -> ek object ke under dusra object
+
+  1 . in nested object we pass three thing
+
+  like -> object , array , function
+
+  # this -> ye bata ta hai usko refer krta ushi  or same object ke data ko
+  # for in loop -> it fetch the object key  value or it print the object key value or also array index value
