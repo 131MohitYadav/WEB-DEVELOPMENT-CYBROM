@@ -24,16 +24,32 @@
 //     //person_std.fun();
 //     person_std.fun1("Mohit")
     
-    let demo = document.getElementById('demo')
-    demo.innerHTML = "Hello Mohit"
-    demo.style.color="red"
-    demo.style.textAlign="center"
+    // let demo = document.getElementById('demo')
+    // demo.innerHTML = "Hello Mohit"
+    // demo.style.color="red"
+    // demo.style.textAlign="center"
+
+let person = {
+    name: "Mohit",
+    age : 20,
+    city: "Gwalior",
+};
+     person.nam = function(){
+        return(this.name).toUpperCase();
+    };
+
+let demo = document.getElementById('demo5')
+demo.innerHTML = "My name is : " + person.nam();
+
+
+
+    
 let insaan = {
     name: "Mohit",
     age : 20,
     city: "Gwalior",
     fun:function(){
-        console.log(this.name);
+        console.log (this.name).toUpperCase();
     }
 }
 insaan.fun()
