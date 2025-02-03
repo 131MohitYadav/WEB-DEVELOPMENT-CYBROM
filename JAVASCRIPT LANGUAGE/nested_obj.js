@@ -29,6 +29,16 @@
     // demo.style.color="red"
     // demo.style.textAlign="center"
 
+
+    // const person1 = {
+    //     firstName: "mohit",
+    //     LastName: "Yadav",
+    //     id: 5485,
+    //     fullname : function(){
+    //         return this.firstName + " " + this.LastName;
+    //     }
+    // };
+
 let person = {
     name: "Mohit",
     age : 20,
@@ -53,6 +63,18 @@ let insaan = {
     }
 }
 insaan.fun()
+
+let insaan1 = {
+ firstname: "Rohit",
+ age : 12,
+ city: "Tekanpur",
+};
+ insaan1.man = function(){
+    return(this.firstname).toUpperCase();
+ };
+
+ let para = document.getElementById('demo')
+ para.innerHTML = "The age of person: " + insaan1.man();
 
 
 // for in loop  print the key value of object
