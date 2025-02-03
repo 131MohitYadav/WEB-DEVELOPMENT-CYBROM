@@ -228,3 +228,13 @@ array -> collection of multiple value
 
   # this -> ye bata ta hai usko refer krta ushi  or same object ke data ko
   # for in loop -> it fetch the object key  value or it print the object key value or also array index value
+
+  # Method -> A method is a function definition stored as a property value
+
+  Accessing Object Methods -> syntax 
+  objectName.methodName();
+
+  # Displaying javaScript Objects -> 
+  first we will define inside the id or classname like <p id= "demo"></p>
+  the we will create class object inside the js file 
+  after that we will access object with the help of DOM events 
