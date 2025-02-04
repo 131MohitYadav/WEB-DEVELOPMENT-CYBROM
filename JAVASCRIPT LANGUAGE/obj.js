@@ -29,8 +29,4 @@ let ob1 = {
 
 console.log(ob1.nam , "\n" , ob1.age , "\n", ob1.email , "\n" , ob1.pass , "\n" , ob1.cont);
 return false
-
-
-
-
 }
