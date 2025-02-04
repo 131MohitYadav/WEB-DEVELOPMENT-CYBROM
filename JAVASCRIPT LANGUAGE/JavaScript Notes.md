@@ -226,7 +226,8 @@ array -> collection of multiple value
 
   like -> object , array , function
 
-  # this -> ye bata ta hai usko refer krta ushi  or same object ke data ko
+  # this -> ye bata ta hai usko refer krta ushi  or same object ke data
+  ko
   # for in loop -> it fetch the object key  value or it print the object key value or also array index value
 
   # Method -> A method is a function definition stored as a property value
@@ -238,3 +239,15 @@ array -> collection of multiple value
   first we will define inside the id or classname like <p id= "demo"></p>
   the we will create class object inside the js file 
   after that we will access object with the help of DOM events 
+
+  # Array of object => it used for multiple value storedl like emp data
+
+  # Arrow of function -> Arrow function is anonymous function 
+  1.it used for code concise
+  2.one line of funtion use krne k leye
+  
+  # syntax
+  1.()=>{return}
+  2.()=>()
+  3.()=>
+  4.=>
