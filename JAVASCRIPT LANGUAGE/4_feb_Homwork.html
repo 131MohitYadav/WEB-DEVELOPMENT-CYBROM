@@ -7,7 +7,7 @@
 </head>
 <body>
         
- <form action="" onsubmit="return display()">
+ <form action="" onsubmit="return fun(event)">
 
     
     <label for = "name">Enter name</label>
@@ -20,17 +20,20 @@
     <input type="text" id="email" placeholder="Enter email"> <br> <br>
 
     <label>Enter password</label>
-    <input type="text" id="pass" placeholder="Enter pass"> <br>
+    <input type="text" id="pass" placeholder="Enter pass"> <br> <br>
 
     <label>Enter Contact</label>
     <input type="text" id="cont" placeholder="Enter Contact"> <br> <br>
 
-    <input type="submit"> <br> <br>
+    
+    <button type="submit">Submit</button>
+    <button type="button" id = "dis" onclick="display()">Show</button>
 
- <button  id = "dis" onclick="display()">Show</button>
+ 
 
 
  </form>
+ 
 
  <script src="Homework.js"></script>
 
