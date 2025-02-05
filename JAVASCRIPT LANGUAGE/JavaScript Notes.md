@@ -251,3 +251,19 @@ array -> collection of multiple value
   2.()=>()
   3.()=>
   4.=>
+
+  # call back function -> kisi  function ke  object ke argument ke under dusre function ko call krte hai usko call back function kehte hai
+
+  syntax -> function demo ( function()){
+
+  }
+
+  # map function -> array ke data ko fetch krke new array mai return kr deta hai
+  1. it accept argument vo argument hota hai function mean ek argument mai function accept krta hai
+
+2. agar map function condition dete hai to ye sirf boolean value return kregha esleye hmm condition nhi dete hai map function mai
+
+# filter function -> data ko filter out   krne k kam kregha kisi bhi specific condition pe means esmai apan condition de sakte hai
+
+# setInterval is a  predefined function 
+1.it accept two argument pehla function dusra timer
