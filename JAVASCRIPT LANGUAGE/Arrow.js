@@ -12,3 +12,8 @@ let add = (a,b) => {
 }
 console.log(add(12,4))
 
+
+let btn = document.querySelector('#btn')
+btn.addEventListener( 'click',()=>{
+alert("hello Mohit")
+})

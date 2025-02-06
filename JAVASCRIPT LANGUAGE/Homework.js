@@ -1,14 +1,7 @@
-
+let ob1 = {};
 function fun(){
-    
-    alert("form submit successfully")
-    return true;
 
-}
-   // let display = document.getElementById('display')
-
-   function display(){
-    let ob1 = {
+     ob1 = {
         
         nam : document.getElementById('name').value,
         age : document.getElementById('age').value,
@@ -19,10 +12,18 @@ function fun(){
         
        
     };
+        
+    alert("form submit successfully")
+    return false;
 
-    // console.log(ob1.nam , "\n" , ob1.age , "\n", ob1.email , "\n" , ob1.pass , "\n" , ob1.cont);
+}
+
+
+function display(){
     console.log(ob1);
+    console.log(ob1.nam , "\n" , ob1.age , "\n", ob1.email , "\n" , ob1.pass , "\n" , ob1.cont);
+    
+}
+
     
     
-    
-   }

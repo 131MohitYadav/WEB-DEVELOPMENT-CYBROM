@@ -259,7 +259,7 @@ array -> collection of multiple value
   }
 
   # map function -> array ke data ko fetch krke new array mai return kr deta hai
-  1. it accept argument vo argument hota hai function mean ek argument mai function accept krta hai
+  1. it accept  argument vo argument hota hai function mean ek argument mai function accept krta hai
 
 2. agar map function condition dete hai to ye sirf boolean value return kregha esleye hmm condition nhi dete hai map function mai
 
@@ -267,3 +267,8 @@ array -> collection of multiple value
 
 # setInterval is a  predefined function 
 1.it accept two argument pehla function dusra timer
+
+
+# setTimeout is also predefined function 
+1. it also accept two similary to setInterval
+2. it give only one time pop

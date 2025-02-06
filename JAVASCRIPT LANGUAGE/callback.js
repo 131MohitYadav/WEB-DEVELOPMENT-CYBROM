@@ -27,3 +27,4 @@ let fdata = emp.filter((s)=>{
    return s.age > 25
 })
 console.log(fdata);
+
