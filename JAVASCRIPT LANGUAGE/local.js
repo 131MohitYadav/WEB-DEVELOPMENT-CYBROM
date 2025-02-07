@@ -32,19 +32,20 @@
 function fun(){
     
 let name = document.getElementById('name').value
-
 localStorage.setItem("name",name)
 
 
- let contact = document.getElementById("cont",cont).value
- localStorage.setItem(contact)
+ let contact = document.getElementById('cont',cont).value
+ localStorage.setItem("contant",contact)
+ 
+
+ let  email = document.getElementById('email',email).value
+localStorage.setItem("email",email)
+
+ let city = document.getElementById('city',city).value
+ localStorage.setItem("city",city)
+
  return false;
-
-// let  email = document.getElementById('email',email).value
-// localStorage.setItem(email)
-
-// let city = document.getElementById('city',city).value
-// localStorage.setItem(city)
 
 
 }
