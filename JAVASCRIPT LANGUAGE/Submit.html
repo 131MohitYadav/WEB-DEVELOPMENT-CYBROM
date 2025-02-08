@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .log{
+            border-radius: 20px solid black;
+            border: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,21 +35,33 @@
 
         let nam = document.getElementsByClassName("demo")
         nam[0].innerHTML = "My Name is: " + name;
+        nam[0].style.color = "red"
+        nam[0].style.textAlign = "center"
 
         let cnt = document.getElementsByClassName("demo")
         cnt[1].innerHTML = " My Contact number is: " + cont;
+        cnt[1].style.color = "blue"
+        cnt[1].style.textAlign = "center"
+
 
         let eml = document.getElementsByClassName("demo")
-        nam[2].innerHTML = "My Email Id is: " + email;
+        eml[2].innerHTML = "My Email Id is: " + email;
+        eml[2].style.color = "red"
+        eml[2].style.textAlign = "center"
+
 
         let city = document.getElementsByClassName("demo")
         city[3].innerHTML = "My City name  is: " + cty;
+        city[3].style.color = "blue"
+        city[3].style.textAlign = "center"
+
 
 
 
 
         let log = document.getElementById("logout")
         log.addEventListener("click", function () {
+            log.classList.add('log')
             localStorage.removeItem("username")
             let clr = document.getElementsByClassName("demo")
             clr[0].innerHTML = "";

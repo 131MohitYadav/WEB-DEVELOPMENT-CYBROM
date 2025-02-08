@@ -5,7 +5,7 @@ function fun() {
    let cont = document.getElementById("cont").value;
    let eml = document.getElementById("email").value;
    let cty = document.getElementById("city").value;
-
+   
    
 
    localStorage.setItem("username", name);
@@ -20,3 +20,5 @@ function fun() {
 
 
 }
+
+
