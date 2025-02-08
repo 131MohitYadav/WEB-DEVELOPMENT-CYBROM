@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- <h1 id="showdata"></h1>
     <h2 id="showdata1"></h2> -->
@@ -22,43 +24,44 @@
         let email = localStorage.getItem("email");
         let cty = localStorage.getItem("city");
 
-        
-       let nam = document.getElementsByClassName("demo")
-       nam[0].innerHTML = "My Name is: " + name;
 
-    let cnt = document.getElementsByClassName("demo")
+        let nam = document.getElementsByClassName("demo")
+        nam[0].innerHTML = "My Name is: " + name;
+
+        let cnt = document.getElementsByClassName("demo")
         cnt[1].innerHTML = " My Contact number is: " + cont;
 
         let eml = document.getElementsByClassName("demo")
-       nam[2].innerHTML = "My Email Id is: " + email;
+        nam[2].innerHTML = "My Email Id is: " + email;
 
-    let city = document.getElementsByClassName("demo")
+        let city = document.getElementsByClassName("demo")
         city[3].innerHTML = "My City name  is: " + cty;
-        
+
 
 
 
         let log = document.getElementById("logout")
-        log.addEventListener("click",function(){
+        log.addEventListener("click", function () {
             localStorage.removeItem("username")
-           let clr = document.getElementsByClassName("demo")
-           clr[0].innerHTML = "";
+            let clr = document.getElementsByClassName("demo")
+            clr[0].innerHTML = "";
 
-           localStorage.removeItem("contact")
-           let clr1 = document.getElementsByClassName("demo")
-           clr1[1].innerHTML = "";
+            localStorage.removeItem("contact")
+            let clr1 = document.getElementsByClassName("demo")
+            clr1[1].innerHTML = "";
 
-           localStorage.removeItem("email")
-           let clr2 = document.getElementsByClassName("demo")
-           clr2[2].innerHTML = "";
+            localStorage.removeItem("email")
+            let clr2 = document.getElementsByClassName("demo")
+            clr2[2].innerHTML = "";
 
-           localStorage.removeItem("city")
-           let clr3 = document.getElementsByClassName("demo")
-           clr3[3].innerHTML = "";
+            localStorage.removeItem("city")
+            let clr3 = document.getElementsByClassName("demo")
+            clr3[3].innerHTML = "";
 
 
-           
+
         });
     </script>
 </body>
+
 </html>
