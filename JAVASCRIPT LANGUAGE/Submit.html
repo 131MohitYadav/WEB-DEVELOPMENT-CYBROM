@@ -10,22 +10,31 @@
     <h2 id="showdata1"></h2> -->
     <h2 class="demo"></h2>
     <h2 class="demo"></h2>
+    <h2 class="demo"></h2>
+    <h2 class="demo"></h2>
     </p>
     <button id="logout">Logout</button>
 
     <script>
-        // used for retrieve data
+        // used for retrieve data used key value for access
         let name = localStorage.getItem("username");
         let cont = localStorage.getItem("contact");
+        let email = localStorage.getItem("email");
+        let cty = localStorage.getItem("city");
 
-        if(name){
+        
        let nam = document.getElementsByClassName("demo")
-       nam[0].innerHTML = "My name is: " + name;
-        }
-        else if(cont){
-            let cnt = document.getElementsByClassName("demo")
-            cnt[1].innerHTML = "Contact number is: " + cont;
-        }
+       nam[0].innerHTML = "My Name is: " + name;
+
+    let cnt = document.getElementsByClassName("demo")
+        cnt[1].innerHTML = " My Contact number is: " + cont;
+
+        let eml = document.getElementsByClassName("demo")
+       nam[2].innerHTML = "My Email Id is: " + email;
+
+    let city = document.getElementsByClassName("demo")
+        city[3].innerHTML = "My City name  is: " + cty;
+        
 
 
 
@@ -34,6 +43,20 @@
             localStorage.removeItem("username")
            let clr = document.getElementsByClassName("demo")
            clr[0].innerHTML = "";
+
+           localStorage.removeItem("contact")
+           let clr1 = document.getElementsByClassName("demo")
+           clr1[1].innerHTML = "";
+
+           localStorage.removeItem("email")
+           let clr2 = document.getElementsByClassName("demo")
+           clr2[2].innerHTML = "";
+
+           localStorage.removeItem("city")
+           let clr3 = document.getElementsByClassName("demo")
+           clr3[3].innerHTML = "";
+
+
            
         });
     </script>
