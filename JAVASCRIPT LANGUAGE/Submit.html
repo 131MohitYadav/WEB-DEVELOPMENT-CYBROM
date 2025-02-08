@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="showdata"></h1>
+    <h2 id="showdata1"></h2> -->
+    <h2 class="demo"></h2>
+    <h2 class="demo"></h2>
+    </p>
+    <button id="logout">Logout</button>
+
+    <script>
+        // used for retrieve data
+        let name = localStorage.getItem("username");
+        let cont = localStorage.getItem("contact");
+
+        if(name){
+       let nam = document.getElementsByClassName("demo")
+       nam[0].innerHTML = "My name is: " + name;
+        }
+        else if(cont){
+            let cnt = document.getElementsByClassName("demo")
+            cnt[1].innerHTML = "Contact number is: " + cont;
+        }
+
+
+
+        let log = document.getElementById("logout")
+        log.addEventListener("click",function(){
+            localStorage.removeItem("username")
+           let clr = document.getElementsByClassName("demo")
+           clr[0].innerHTML = "";
+           
+        });
+    </script>
+</body>
+</html>
