@@ -23,7 +23,7 @@
     <h2 class="demo"></h2>
     <h2 class="demo"></h2>
     </p>
-    <button id="logout" onclick="fun()">Logout</button>
+    <button id="logout">Logout</button>
 
     <script>
 
@@ -60,9 +60,10 @@ document.body.style.backgroundColor = "black";
 
 
 
-            function fun(){
+
         let log = document.getElementById("logout")
-        log.classList.add('log_1')
+         log.classList.add('log_1')
+        log.addEventListener("click", function () {
             // log.classList.add('log_1')
             localStorage.removeItem("username")
             let clr = document.getElementsByClassName("demo")
@@ -82,7 +83,7 @@ document.body.style.backgroundColor = "black";
 
 
 
-        };
+        });
     </script>
 </body>
 
