@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <style>
-        .log{
+        .log_1{
             border-radius: 20px solid black;
             border: 10px;
             text-align: center;
@@ -61,7 +61,7 @@
 
         let log = document.getElementById("logout")
         log.addEventListener("click", function () {
-            log.classList.add('log')
+            log.classList.add('log_1')
             localStorage.removeItem("username")
             let clr = document.getElementsByClassName("demo")
             clr[0].innerHTML = "";
