@@ -28,6 +28,6 @@ function loginform(){
 let log = document.getElementById('log')
 log.style.color= "red"
 
-let home = document.getElementsByClassName('home')
+let home = document.querySelector('#home')
 home.style.color = "blue"
 home.style.textAlign = "center"
