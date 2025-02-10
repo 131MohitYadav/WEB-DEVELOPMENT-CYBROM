@@ -272,3 +272,7 @@ array -> collection of multiple value
 # setTimeout is also predefined function 
 1. it also accept two similary to setInterval
 2. it give only one time pop
+
+# JSON.PARSE -> esmai jis type ka data pass karenge vo ushi format mai data convert krke de dega 
+
+# JSON.stringify -> ye kohi object ke data ko string mai convert kr deta hai
