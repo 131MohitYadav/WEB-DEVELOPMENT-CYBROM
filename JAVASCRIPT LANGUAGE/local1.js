@@ -23,3 +23,11 @@ function loginform(){
     }
 
 }
+
+
+let log = document.getElementById('log')
+log.style.color= "red"
+
+let home = document.getElementsByClassName('home')
+home.style.color = "blue"
+home.style.textAlign = "center"
