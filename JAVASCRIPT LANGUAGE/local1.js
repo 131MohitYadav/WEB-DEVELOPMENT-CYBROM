@@ -25,8 +25,11 @@ function loginform(){
 }
 
 
-let log = document.getElementById('log')
-log.style.color= "red"
+let log = document.getElementsByClassName('sign')
+log[0].style.color= "red"
+
+let sign = document.getElementsByClassName('sign')
+sign[1].style.color = "red"
 
 let home = document.querySelector('#home')
 home.style.color = "blue"
