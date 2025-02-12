@@ -4,9 +4,9 @@ async function datafetching(){
     
     let fdata = resdata.map((e)=>`
     <tr>
-    <td> $(e.id)</td>
-    <td> $(e.title)</td>
-    <td> $(e.body)</td>
+    <td> 101 </td>
+    <td> CS</td>
+    <td> Hello Mohit</td>
     </tr>
     `).join("")
     document.querySelector('#showdata').innerHTML = fdata
