@@ -1,0 +1,16 @@
+{
+    "student":[
+        {
+        "name":"Mohit Yadav",
+        "age":"21",
+        "contact":883874578,
+        "city":"Gwalior"
+    },
+    {
+        "name":"Manish kumar",
+        "age":"25",
+        "contact":878999548,
+        "city":"Bihar"
+    }
+]
+}
