@@ -276,3 +276,7 @@ array -> collection of multiple value
 # JSON.PARSE -> esmai jis type ka data pass karenge vo ushi format mai data convert krke de dega 
 
 # JSON.stringify -> ye kohi object ke data ko string mai convert kr deta hai
+
+# what is eventbubbling -> it is a process when event is happen on an element , then it first handle child and then parent then ancester of that.
+
+# what is event deligation -> it is a technique of DOM to use one event listener on parent at the place of taking event listener on multiple child
