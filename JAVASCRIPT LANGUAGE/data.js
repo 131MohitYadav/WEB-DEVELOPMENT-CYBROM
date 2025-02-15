@@ -14,3 +14,11 @@ async function fetchdata (){
     document.getElementById('display').innerHTML = tdata;
 }
 fetchdata();
+
+function mydel(id){
+    fetch(`http://localhost:5500/student/${id}`,{
+        method:'DELETE'
+        })
+    .then(r=>alert("Delete successfuly....!!!!"))
+
+}
