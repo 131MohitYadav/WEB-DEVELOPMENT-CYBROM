@@ -1,16 +1,32 @@
 {
-    "student":[
-        {
-        "name":"Mohit Yadav",
-        "age":"21",
-        "contact":883874578,
-        "city":"Gwalior"
-    },
-    {
-        "name":"Manish kumar",
-        "age":"25",
-        "contact":878999548,
-        "city":"Bihar"
-    }
-]
-}
+    "student": [
+      {
+        "name": "Manish kumar",
+        "age": "21",
+        "contact": 6206743012,
+        "city": "Purnia",
+        "id": "eac9"
+      },
+      {
+        "name": "Vikash kumar",
+        "age": "22",
+        "contact": 123456789,
+        "city": "Bhopal",
+        "id": "987e"
+      },
+      {
+        "id": "a5a1",
+        "name": "Manish Kumar",
+        "age": "20",
+        "contact": "45456",
+        "city": "Hazipur"
+      },
+      {
+        "id": "3e09",
+        "name": "satyam kumar",
+        "age": "22",
+        "contact": "5262622",
+        "city": "Indor"
+      }
+    ]
+  }
