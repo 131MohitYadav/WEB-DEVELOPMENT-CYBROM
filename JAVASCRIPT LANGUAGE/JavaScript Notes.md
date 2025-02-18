@@ -286,3 +286,14 @@ array -> collection of multiple value
 # for duration -> data-aos-duration = "1500"
 # vanta.js
 # swiper.js
+# sweetalert
+# whatfont -> it is a extension in browser chrome it check font , style etc.
+
+# project information -> agar kohi user book now or buy now  pehle sign up page open kr phir  loign page 
+-> login -> form page (booking)
+-> insert -> pop up booking success
+-> user -> booking data (cancel)
+
+Front page -> navigation var -> Admin login
+-> table page -> data all users
+-> delete  / edit 
