@@ -284,10 +284,14 @@ array -> collection of multiple value
 # AOS(animation of scroll library ) LIBRARY ->  it  is  a type of scroll library
 
 # for duration -> data-aos-duration = "1500"
+
+-> important project
+
 # vanta.js
 # swiper.js
 # sweetalert
 # whatfont -> it is a extension in browser chrome it check font , style etc.
+# coolers.com
 
 # project information -> agar kohi user book now or buy now  pehle sign up page open kr phir  loign page 
 -> login -> form page (booking)

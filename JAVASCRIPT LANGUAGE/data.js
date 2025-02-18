@@ -1,5 +1,5 @@
 async function fetchdata (){
-    let data = await fetch('http://localhost:5500/student')
+    let data = await fetch('http://localhost:3000/student')
     let fdata = await data.json();
     let tdata = fdata.map((e)=>`
     <tr>
@@ -16,7 +16,7 @@ async function fetchdata (){
 fetchdata();
 
 function mydel(id){
-    fetch(`http://localhost:5500/student/${id}`,{
+    fetch(`http://localhost:3000/student/${id}`,{
         method:'DELETE'
         })
     .then(r=>alert("Delete successfuly....!!!!"))
