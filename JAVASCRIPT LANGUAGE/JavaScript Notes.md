@@ -280,4 +280,9 @@ array -> collection of multiple value
 # what is eventbubbling -> it is a process when event is happen on an element , then it first handle child and then parent then ancester of that.
 
 # what is event deligation -> it is a technique of DOM to use one event listener on parent at the place of taking event listener on multiple child
-.00
+
+# AOS(animation of scroll library ) LIBRARY ->  it  is  a type of scroll library
+
+# for duration -> data-aos-duration = "1500"
+# vanta.js
+# swiper.js
