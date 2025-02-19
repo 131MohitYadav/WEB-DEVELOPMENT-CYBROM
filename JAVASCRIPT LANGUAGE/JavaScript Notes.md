@@ -315,6 +315,8 @@ Front page -> navigation var -> Admin login
 9.why we use async a await
 10. what is json
 11.what is call back and hire order function
+12. Difference between synchronous and asynchronou
+13. Explain this keyword
 
 # QUESTION FOR CSS AND HTML 
 1.what is responsive
