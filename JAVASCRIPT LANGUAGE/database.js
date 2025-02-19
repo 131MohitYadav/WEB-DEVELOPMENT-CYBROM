@@ -32,7 +32,8 @@ function mydel(id) {
         .then(r => alert("delete successfully..!!"))
 }
 
-function insertData() {
+
+function insertdata() {
 
     let frmdata = {
 

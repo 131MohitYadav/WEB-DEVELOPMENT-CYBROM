@@ -1,40 +1,32 @@
 {
-    "student": [
-      {
-        "name": "Manish kumar",
-        "age": "21",
-        "contact": 6206743012,
-        "city": "Purnia",
-        "id": "eac9"
-      },
-      {
-        "name": "Vikash kumar",
-        "age": "22",
-        "contact": 123456789,
-        "city": "Bhopal",
-        "id": "987e"
-      },
-      {
-        "id": "a5a1",
-        "name": "Manish Kumar",
-        "age": "20",
-        "contact": "45456",
-        "city": "Hazipur"
-      },
-      {
-        "id": "3e09",
-        "name": "satyam kumar",
-        "age": "22",
-        "contact": "5262622",
-        "city": "Indor"
-      },
-      {
-        "name": " niharika singh",
-        "age": " 21",
-        "contact": " 5526",
-        "city": " gwl",
-        "id": "3cd5"
-  
-      }
-    ]
-  }
+  "student": [
+    {
+      "name": "MOHIT YADAV",
+      "age": " 22",
+      "contact": "665899",
+      "city": " Bhopal",
+      "id": "987e"
+    },
+    {
+      "id": "3e09",
+      "name": "satyam kumar",
+      "age": "22",
+      "contact": "5262622",
+      "city": "Indor"
+    },
+    {
+      "name": " niharika singh",
+      "age": " 21",
+      "contact": " 5526",
+      "city": " gwl",
+      "id": "3cd5"
+    },
+    {
+      "id": "85ed",
+      "name": "ROHIT YADAV",
+      "age": "21",
+      "contact": "56165156165",
+      "city": "BHOPAL"
+    }
+  ]
+}
