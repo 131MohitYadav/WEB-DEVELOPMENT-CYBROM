@@ -302,7 +302,7 @@ Front page -> navigation var -> Admin login
 -> table page -> data all users
 -> delete  / edit 
 
-# QUESTION FOR 
+# QUESTION FOR  JAVASCRIPT FOR INTERVIEW
 
 1. Differenct between let , var , const with scope
 2.what is fade arrow function
@@ -315,3 +315,12 @@ Front page -> navigation var -> Admin login
 9.why we use async a await
 10. what is json
 11.what is call back and hire order function
+
+# QUESTION FOR CSS AND HTML 
+1.what is responsive
+2.how to make are website responisve
+3.differece between flex and grid
+4.what is selectors and how many type of selectors
+5.what is media query
+6.explain box model
+7. what is attributes
