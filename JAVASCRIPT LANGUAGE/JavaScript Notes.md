@@ -301,3 +301,17 @@ array -> collection of multiple value
 Front page -> navigation var -> Admin login
 -> table page -> data all users
 -> delete  / edit 
+
+# QUESTION FOR 
+
+1. Differenct between let , var , const with scope
+2.what is fade arrow function
+3.what is hoisting
+4.what is closure
+5.what is event bubbling  
+6. what is event deligation
+7. what is event propogation
+8.what is promise
+9.why we use async a await
+10. what is json
+11.what is call back and hire order function
