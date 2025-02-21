@@ -30,8 +30,24 @@ ki agr react ka project bana rahe to boo kohn kohn se library use kr raha hai
 for creating react project some command below follow
 # cmd command ->
 agar project banana ho to 
-1. npm create vite vite@latest
+1. npm create  vite@latest
 # agar node module ka folder banana ho to
 2. npm install
 # agar run krana ho to project ko
 3. npm run dev
+
+1. node modules  folder -> ke under packages , dependencies and library aayenghe
+
+# bebble is a compiler -> it convert javascript code to React mai
+
+2. public folder -> static files rehti hai like images
+
+3. src folder -> it is a main folder  esmai files create karenghe
+
+4. package.json folder -> agar kabhi bhi apan kohi bhi library use krte hai to uski library install hogi es folder mai
+
+5. package-lock.json -> jo bhi library hogi unki details hogi eske under like kaha se har rahi hai , konse src ha rahi hai etc.
+
+# import and export there are two type between the files
+1.default -> agr ek hi function hai javascript mai to default  use krenghe
+2.named -> agr multiple function ko krna hai to name use krenghe 
