@@ -56,10 +56,13 @@ agar project banana ho to
 
 # jsx(javascript xml) -> jab html and javascript ke code sath m chalana ho to jsx use krenghe.
 . it provide html like code
+. it return only single element
 
 #Homework
 # what is Fragments
 ans->
+# Difference between npm and npx
+
 # jsx Rules for writing -> 
 1. ek bar mai ek hi tag ko return kra sakte hai so we used 
 
@@ -74,6 +77,15 @@ or  we used fragments it denote <>(empty div)
 <h1>mohit yadafdf </h1>
 <p>loafdlafjsdojfsdflkjsokfj<p>
 </>
+
+App.jsx -> Main.jsx -> index.html yahi follow hota hai criteria
+
+# COMPONENTS -> section ko react mai components bolte hai or enhi components ki file create hoti hai
+
+There are two types of components 
+1.Functional components -> nowdays we used Functional components only
+2.class components -> 
+
 
 
 
