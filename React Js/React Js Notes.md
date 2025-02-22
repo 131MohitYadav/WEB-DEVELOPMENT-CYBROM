@@ -32,9 +32,11 @@ for creating react project some command below follow
 agar project banana ho to 
 1. npm create  vite@latest
 # agar node module ka folder banana ho to
-2. npm install
+2. npm install ( npm full from -> node package manager)
 # agar run krana ho to project ko
 3. npm run dev
+
+# Folder Structure
 
 1. node modules  folder -> ke under packages , dependencies and library aayenghe
 
@@ -51,3 +53,27 @@ agar project banana ho to
 # import and export there are two type between the files
 1.default -> agr ek hi function hai javascript mai to default  use krenghe
 2.named -> agr multiple function ko krna hai to name use krenghe 
+
+# jsx(javascript xml) -> jab html and javascript ke code sath m chalana ho to jsx use krenghe.
+. it provide html like code
+
+#Homework
+# what is Fragments
+ans->
+# jsx Rules for writing -> 
+1. ek bar mai ek hi tag ko return kra sakte hai so we used 
+
+
+<div>
+<h1>Hello Mohit</h1>
+<p>loremljakdfjas;fds ff</p>
+</div>
+
+or  we used fragments it denote <>(empty div)
+<>
+<h1>mohit yadafdf </h1>
+<p>loafdlafjsdojfsdflkjsokfj<p>
+</>
+
+
+
