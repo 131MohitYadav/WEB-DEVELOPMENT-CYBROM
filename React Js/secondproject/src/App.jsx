@@ -12,6 +12,11 @@ function App() {
   <ol type = "1">
     <li>Mohit</li>
     <li>Rohit</li>
+    <li>Manish</li>
+    <li>Aman</li>
+    <li>Virat</li>
+    <li>Abhishek</li>
+    
   </ol>
   <h2>This is a Image</h2>
   <img src="image.jpg"></img>
