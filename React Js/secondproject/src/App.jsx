@@ -16,8 +16,20 @@ function App() {
     <li>Aman</li>
     <li>Virat</li>
     <li>Abhishek</li>
-    
+
   </ol>
+
+  <h2 > This is a Unordered List</h2>
+
+<ul type = "circle">
+  <li>Mohit</li>
+  <li>Rohit</li>
+  <li>Manish</li>
+  <li>Aman</li>
+  <li>Virat</li>
+  <li>Abhishek</li>
+  
+</ul>
   <h2>This is a Image</h2>
   <img src="image.jpg"></img>
  </div>
