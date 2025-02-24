@@ -60,7 +60,7 @@ agar project banana ho to
 
 #Homework
 # what is Fragments
-ans->In ReactJS, a Fragment is like an invisible wrapper or parent. If lets we group multiple elements together without adding an extra <div> to the HTML. so we used Fragments
+ans->In ReactJS, a Fragment is like an invisible wrapper or parent. If  we group multiple elements together without adding an extra <div> to the HTML. so we used Fragments
 
 
 # Difference between npm and npx
@@ -143,6 +143,7 @@ App.jsx -> Main.jsx -> index.html yahi follow hota hai criteria
 There are two types of components 
 1.Functional components -> nowdays we used Functional components only
 2.class components -> 
+
 
 
 
