@@ -8,7 +8,7 @@ function App() {
   // let age = 21
 
   
-
+// INTERNAL CSS APPLY
   // let st = {
   //   color:"Yellow",
   //   backgroundColor:"black",
@@ -36,6 +36,14 @@ function App() {
 //  <div>
 //   <h1>Welcome to React Class</h1>
 //   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ab saepe dolor optio amet aspernatur, quidem deleniti sint animi possimus? Adipisci distinctio quasi ipsum ipsam dolorem dignissimos vitae temporibus beatae.</p>
+
+ // INLINE CSS
+// <h1 style = {{backgroundColor:"blue",color:"black"}}>My name is {Mohit} </h1>
+
+// FOR INTERNAL CSS
+// <h1 style = {st}>My Age is {age}</h1>
+
+
 
 //   <h2 > This is a Ordered List</h2>
 
