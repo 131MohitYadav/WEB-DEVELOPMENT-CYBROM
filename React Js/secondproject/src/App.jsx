@@ -1,17 +1,23 @@
 
+//import myimg from './image.jpg'
+import './App.css'
 
 function App() {
 
-  let name = "Mohit Yadav"
-  let age = 21
+  // let name = "Mohit Yadav"
+  // let age = 21
 
   
 
-  let st = {
-    color:"Yellow",
-    backgroundColor:"black",
-    padding:"20px"
-   }
+  // let st = {
+  //   color:"Yellow",
+  //   backgroundColor:"black",
+  //   padding:"20px"
+  //  }
+
+
+
+
     return (
       <>
      <div className='navbar'>
@@ -56,6 +62,10 @@ function App() {
 // </ul>
 //   <h2>This is a Image</h2>
 //   <img src="image.jpg"></img>
+//<img src={myimage} height = "200px"/>
+
+
+
 //  </div>
 
  
