@@ -85,6 +85,42 @@ return (
   </>
 );
 
+2. Use className Instead of class
+example ->
+<p className="text-red">Hello</p>
+
+
+3.Close All Non-container Tags Properly
+example ->
+<img src="logo.png" alt="Logo" />
+<br />
+
+4.JavaScript Expressions Must Be Inside {}
+To insert JavaScript code inside JSX, wrap it in curly braces {}.
+example ->
+const name = "John";
+return <h1>Hello, {name}!</h1>;
+
+5.Use camelCase for HTML Attributes
+example ->
+<button onClick={handleClick}>Click Me</button>
+
+
+6.Conditional Rendering Uses Ternary Operator or &&
+# Using Ternary Operator:
+
+
+const isLoggedIn = true;
+return <h1>{isLoggedIn ? "Welcome Back!" : "Please Sign In"}</h1>;
+
+# Using && Operator:
+const isAdmin = true;
+return <>{isAdmin && <p>Admin Panel</p>}</>;
+
+
+
+
+
 
 
 
