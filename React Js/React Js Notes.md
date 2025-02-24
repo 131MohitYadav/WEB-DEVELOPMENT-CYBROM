@@ -60,11 +60,33 @@ agar project banana ho to
 
 #Homework
 # what is Fragments
-ans->
+ans->In ReactJS, a Fragment is like an invisible wrapper or parent. If lets we group multiple elements together without adding an extra <div> to the HTML. so we used Fragments
+
+
 # Difference between npm and npx
 
+npm -> stand for Node package Manager
+. npm used when you want to install package permanently
+.command -> npm install lodash
+
+npx -> stands for Node package Execute
+.npx used when you want to run a package without installing it
+.npx create-react-app my-app
+
+
 # jsx Rules for writing -> 
-1. ek bar mai ek hi tag ko return kra sakte hai so we used 
+
+1️. Return a Single Parent Element
+example -> 
+return (
+  <>
+    <h1>Hello</h1>
+    <p>Welcome to React.</p>
+  </>
+);
+
+
+
 
 
 <div>
