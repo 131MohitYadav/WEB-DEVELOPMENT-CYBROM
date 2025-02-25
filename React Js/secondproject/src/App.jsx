@@ -1,7 +1,11 @@
 
 //import myimg from './image.jpg'
 //import './App.css'
-import  About from './About.jsx'
+//import  Ab from './About.jsx'
+//import  Contact from './Contact.jsx'
+import {About,Contact1} from './About'
+import Gallery from './Gallery.jsx'
+import  Service from './Service.jsx'
 
 function App() {
 
@@ -10,6 +14,9 @@ function App() {
     <>
     <h1>Welcome to Reactjs class</h1>
     <About/>
+    <Contact1/>
+    <Gallery/>
+    <Service/>
     </>
   )
 }

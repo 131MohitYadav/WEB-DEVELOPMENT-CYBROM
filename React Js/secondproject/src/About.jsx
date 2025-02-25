@@ -7,4 +7,14 @@ const About = () =>{
     )
 
 }
-export default About
+
+const Contact1 = () => {
+    return (
+        <>
+        <h1>This is Contact Section</h1></>
+    )
+}
+// This is named components
+export {About,Contact1} 
+
+//export default About
