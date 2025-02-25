@@ -1,8 +1,20 @@
 
 //import myimg from './image.jpg'
-import './App.css'
+//import './App.css'
+import  About from './About.jsx'
 
 function App() {
+
+
+  return (
+    <>
+    <h1>Welcome to Reactjs class</h1>
+    <About/>
+    </>
+  )
+}
+export default App;
+
 
   // let name = "Mohit Yadav"
   // let age = 21
@@ -18,17 +30,17 @@ function App() {
 
 
 
-    return (
-      <>
-     <div className='navbar'>
-           <h1>Man</h1>
-           <ul>
-            <li>Home</li>
-            <li>Cart</li>
-            <li>Login</li>
-           </ul>
-     </div>
-     </>
+    // return (
+    //   <>
+    //  <div className='navbar'>
+    //        <h1>Man</h1>
+    //        <ul>
+    //         <li>Home</li>
+    //         <li>Cart</li>
+    //         <li>Login</li>
+    //        </ul>
+    //  </div>
+    //  </>
   
 
 
@@ -79,7 +91,7 @@ function App() {
  
 
  
-  )
-}
+//   )
+// }
 
-export default App
+

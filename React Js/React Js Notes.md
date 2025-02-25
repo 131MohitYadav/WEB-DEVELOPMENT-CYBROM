@@ -50,6 +50,8 @@ agar project banana ho to
 
 5. package-lock.json -> jo bhi library hogi unki details hogi eske under like kaha se har rahi hai , konse src ha rahi hai etc.
 
+# App.jsx -> is root element emai upon render only components krahenge
+
 # import and export there are two type between the files
 1.default -> agr ek hi function hai javascript mai to default  use krenghe
 2.named -> agr multiple function ko krna hai to name use krenghe 
@@ -144,6 +146,7 @@ There are two types of components
 1.Functional components -> nowdays we used Functional components only
 2.class components -> 
 
+# kabhi bhi apan import krahenge components ko to usko use krahenge is in tag use krahenghe
 
 
 
