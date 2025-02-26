@@ -1,0 +1,39 @@
+
+.navbar{
+  background-color: wheat;
+  color: black;
+  padding: 2px;
+  display: flex;
+  justify-content: space-around;
+
+}
+.navbar h1{
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(174, 16, 105);
+}
+.navbar ul{
+  display: flex;
+  gap: 20px;
+  font-size: 30px;
+  list-style: none;
+  margin-top: 40px;
+  
+}
+.content img{
+  width: 1200px;
+  margin-top: 0px;
+}
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  margin:40px;
+}
+
+
+
+.footer ul{
+  display: flex;
+  justify-content: space-evenly;
+
+}

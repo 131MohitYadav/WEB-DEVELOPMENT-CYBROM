@@ -3,7 +3,7 @@
 //import './App.css'
 //import  Ab from './About.jsx'
 //import  Contact from './Contact.jsx'
-import {About,Contact1} from './About'
+import {About as Ab,Contact1 as Cont1} from './About'
 import Gallery from './Gallery.jsx'
 import  Service from './Service.jsx'
 
@@ -13,8 +13,8 @@ function App() {
   return (
     <>
     <h1>Welcome to Reactjs class</h1>
-    <About/>
-    <Contact1/>
+    <Ab/>
+    <Cont1/>
     <Gallery/>
     <Service/>
     </>

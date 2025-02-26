@@ -11,7 +11,10 @@ const About = () =>{
 const Contact1 = () => {
     return (
         <>
-        <h1>This is Contact Section</h1></>
+        <h1>This is Contact Section</h1>
+        <p>Hello Mohit yadav</p>
+        </>
+        
     )
 }
 // This is named components

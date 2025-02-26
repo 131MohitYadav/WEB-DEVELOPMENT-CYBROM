@@ -78,7 +78,7 @@ npx -> stands for Node package Execute
 
 # jsx Rules for writing -> 
 
-1️. Return a Single Parent Element
+# 1. Return a Single Parent Element
 example -> 
 return (
   <>
@@ -87,28 +87,28 @@ return (
   </>
 );
 
-2. Use className Instead of class
+ # 2. Use className Instead of class
 example ->
 <p className="text-red">Hello</p>
 
 
-3.Close All Non-container Tags Properly
+ # 3.Close All Non-container Tags Properly
 example ->
 <img src="logo.png" alt="Logo" />
 <br />
 
-4.JavaScript Expressions Must Be Inside {}
+ # 4.JavaScript Expressions Must Be Inside {}
 To insert JavaScript code inside JSX, wrap it in curly braces {}.
 example ->
 const name = "John";
 return <h1>Hello, {name}!</h1>;
 
-5.Use camelCase for HTML Attributes
+# 5.Use camelCase for HTML Attributes
 example ->
 <button onClick={handleClick}>Click Me</button>
 
 
-6.Conditional Rendering Uses Ternary Operator or &&
+# 6.Conditional Rendering Uses Ternary Operator or &&
 # Using Ternary Operator:
 
 
