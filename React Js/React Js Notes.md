@@ -148,6 +148,11 @@ There are two types of components
 
 # kabhi bhi apan import krahenge components ko to usko use krahenge is in tag use krahenghe
 
+# props -> it is a properties  and the combination of attribute and arguments.
+
+# Attribute -> property of tag
+.jab ek components se dusre components mai data transfer krna ho to properties ka use krte hai
+.data flow parent to child
 
 
 

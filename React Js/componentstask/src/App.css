@@ -36,4 +36,9 @@
   display: flex;
   justify-content: space-evenly;
 
+
+}
+
+.footer li{
+  list-style: none;
 }
