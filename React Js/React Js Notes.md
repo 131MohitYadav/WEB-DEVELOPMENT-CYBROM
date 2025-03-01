@@ -154,5 +154,7 @@ There are two types of components
 .jab ek components se dusre components mai data transfer krna ho to properties ka use krte hai
 .data flow parent to child
 
+# variable -> ye function ke neeche and return ke uppar banaega
+
 
 
