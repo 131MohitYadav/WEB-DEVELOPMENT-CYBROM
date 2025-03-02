@@ -5,10 +5,14 @@ function fun(){
     return(
 
         <>
+
     <button onClick={fun}>Click</button> 
-    <button onDoubleClick={fun}> Double Click</button>
+    <br></br><br></br>
+    <button onDoubleClick={fun}> Double Click</button>\
+    <br></br><br></br>
     
     <button onMouseEnter={fun}>Mouse Enter Click</button>
+    <br></br> <br></br>
     <button onContextMenu={fun}> Context Click</button>
 
         </>
