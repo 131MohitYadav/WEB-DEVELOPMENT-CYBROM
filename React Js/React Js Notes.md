@@ -148,13 +148,24 @@ There are two types of components
 
 # kabhi bhi apan import krahenge components ko to usko use krahenge is in tag use krahenghe
 
-# props -> it is a properties  and the combination of attribute and arguments.
+# props -> it is a properties  and the combination of attribute and arguments/parameter.
 
 # Attribute -> property of tag
 .jab ek components se dusre components mai data transfer krna ho to properties ka use krte hai
 .data flow parent to child
 
 # variable -> ye function ke neeche and return ke uppar banaega
+
+# Attribute -> use krete hai jaha se value ko bejna ho 
+# Argument/parameter -> use krte hai jaha value ko get krna ho
+
+
+# props driling -> agar parent se data sab child mai pass hote hue ja rah hai to usko props drilling kehte
+
+
+# Question
+1. what is virtual DOM 
+2. Diference between virtual DOM AND Real DOM
 
 
 
