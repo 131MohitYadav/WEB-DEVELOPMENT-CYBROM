@@ -165,7 +165,18 @@ There are two types of components
 
 # Question
 1. what is virtual DOM 
+ans -> The Virtual DOM (VDOM) is a lightweight, in-memory representation of the actual DOM (Document Object Model) used in web development, primarily by frameworks like React, Vue.js, and Svelte. It helps optimize UI updates by minimizing direct manipulation of the real DOM, which can be slow and inefficient.
+
 2. Diference between virtual DOM AND Real DOM
+ans -> 
+# VIRTUAL DOM
+1.It is a lightweight copy of the original DOM
+2. It is maintained by javascript libraries
+3. Performance is fast and UX is optimised
+# REAL DOM
+1.it is tree representation of HTML elements
+2.it is maintained by the browser after parsing HTML Element
+3.Performance is slow and the UX quality is low
 
 
 
