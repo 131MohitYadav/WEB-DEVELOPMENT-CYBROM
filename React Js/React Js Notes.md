@@ -172,11 +172,25 @@ ans ->
 # VIRTUAL DOM
 1.It is a lightweight copy of the original DOM
 2. It is maintained by javascript libraries
-3. Performance is fast and UX is optimised
+3. Performance is fast and UX is optimised   
 # REAL DOM
 1.it is tree representation of HTML elements
 2.it is maintained by the browser after parsing HTML Element
 3.Performance is slow and the UX quality is low
+
+# Hooks -> special type of functions provided by react
+jab bhi html mai UI pe km kran ho to hooks use karengh
+
+.ui update -> state -> hook -> useState
+.state -> jaha ui pe change krna ho usko state kehte hai
+. useState( ye Hooks ek) -> ui ko update krne ke leye useState use krte hai
+
+# Rules 
+1. hook declare -> top of the function
+2. hook import krna hai pehle
+syntax : 
+
+let [variable,function] = useState(initial_value)
 
 
 
