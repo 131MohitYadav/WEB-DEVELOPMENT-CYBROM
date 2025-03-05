@@ -193,4 +193,7 @@ syntax :
 let [variable,function] = useState(initial_value)
 
 
+# initial value -> variable ki value hoti hai
+
+
 
