@@ -2,6 +2,8 @@ import { useState } from "react"
 
 import './App.css';
 import About from "./About";
+import Hide from "./Hide";
+
 
 function App() {
   
@@ -39,11 +41,13 @@ function fun(){
     <h1>My Age is {age}</h1>
     <button onClick={()=>{setAge(20)}}>click for change age</button>
     <br></br><br></br>
-    <button onClick={()=>{setColor('white')}}>Light</button>
-    <button onClick={()=> {setColor('black')}}>Dark</button>
+    <button onClick={()=>{setColor('white')}}>Light Theme</button>
+    <button onClick={()=> {setColor('black')}}>Dark Theme</button>
     <button onClick={()=>{setColor('green')}}>Green</button>
     <button onClick={()=> {setColor('yellow')}}>Yellow</button>
+
     <About/>
+    <Hide/>
     
 
 </div>
