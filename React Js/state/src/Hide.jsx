@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import './App.css'
 
 
 function Hide(){
@@ -16,11 +16,13 @@ function show(){
 }
     return(
         <>
+        <div className="hideandshow">
   <button onClick={show}>
-        {isVisible ? "Hide" : "Show"}
+        {visible ? "Hide" : "Show"}
       </button>
 
-      {isVisible ? <p>This is visible content.</p> : null}
+      {visible ? <p>This is visible content.</p> : null}
+      </div>
         </>
     )
 }
