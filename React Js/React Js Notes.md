@@ -207,7 +207,13 @@ These are components
 1.BrowserRouter -> use main.jsx
 # ye routing ko enable kr dega takki sarre components use kr sakke or link
 
+# jo bhi components render hoge bo url pe honge 
+. To create url with the help of Routes and Route
+
 2.Routes ->  use App.jsx
 3.Route ->  use App.jsx
+# we passed two attribute 
+A. Path -> espe konsa components render hoga
+B. element
 Link
 Outlet
