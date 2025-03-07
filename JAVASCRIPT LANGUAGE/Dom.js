@@ -9,6 +9,8 @@ console.log(head);
 head.style.color="red"
 head.style.textAlign="center"
 head.style.fontSize = "40px"
+head.style.fontStyle= "italic"
+head.style.fontWeight = "bold"
 
 // document.write(" <i>Hello Mohit Yadav</i>")
 // return nodelist in array format same as document.getElementsByTagName
