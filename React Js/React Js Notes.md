@@ -195,5 +195,19 @@ let [variable,function] = useState(initial_value)
 
 # initial value -> variable ki value hoti hai
 
+# navigation(router) -> one components to another components jana or rendering components main.jsx
 
+.react-router-dom -> ek libarary hai jo navigate ka km krta hai
+1. command to install -> npm i react-router-dom
+# using -> it use for the rendering the components
 
+. After installing react-router-dom 
+# there are three main things
+These are components 
+1.BrowserRouter -> use main.jsx
+# ye routing ko enable kr dega takki sarre components use kr sakke or link
+
+2.Routes ->  use App.jsx
+3.Route ->  use App.jsx
+Link
+Outlet

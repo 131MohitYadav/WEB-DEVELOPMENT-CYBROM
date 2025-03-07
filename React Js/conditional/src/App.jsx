@@ -29,7 +29,7 @@ function decrment(){
 <br></br><br></br>
 
 <h1>{count}</h1>
-<button onClick={decrment}>-</button>
+<button onClick={decrement}>-</button>
 <button onClick={()=>setCount(count+1)}>+</button>
 
 
