@@ -202,7 +202,7 @@ let [variable,function] = useState(initial_value)
 # using -> it use for the rendering the components
 
 . After installing react-router-dom 
-# there are three main things
+# there are three main things in react-router-dom
 These are components 
 1.BrowserRouter -> use main.jsx
 # ye routing ko enable kr dega takki sarre components use kr sakke or link
