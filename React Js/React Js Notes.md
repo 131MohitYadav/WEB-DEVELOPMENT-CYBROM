@@ -217,3 +217,19 @@ A. Path -> espe konsa components render hoga
 B. element
 Link
 Outlet
+
+
+# Bootstrap -> it is a framework of  css and js
+   # COMMAND FOR INSTALL -> npm i  react-bootstrap bootstrap
+
+   -> After that import bootstrap folder in main.jsx
+    import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.js'
+ # ye sab components main aahegi bootstrap mai
+1 container and container-fluid-> . it divide 12 parts
+. Container Fluid it take width 100% and container - margin choodtha hai left and right thoda thoda
+.Col-sm -> mobile ke leye chlta hai
+.Col-md -> tab ke leye chalegha
+.Col-lg -> Desktop ke leye chalegha
+
+# React Bootstrap  website
