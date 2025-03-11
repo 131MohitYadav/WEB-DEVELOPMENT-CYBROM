@@ -15,13 +15,29 @@ function App() {
 
   return (
     <>
-    <Navbar/>
+
+    {/* First Method called */}
+    
+    {/* <Navbar/>
 <Routes>
   <Route index element={<Home />}/>
   <Route path="/about" element={<About />}/>
   <Route path="/service" element={<Services/>}/>
   <Route path="/contact" element={<Contact/>}/>
   <Route path="/profile" element={<Profile />}/>
+  
+</Routes> */}
+
+
+
+<Routes>
+  <Route path="/" element = {<Navbar/>} >
+  <Route index element={<Home />}/>
+  <Route path="/about" element={<About />}/>
+  <Route path="/service" element={<Services/>}/>
+  <Route path="/contact" element={<Contact/>}/>
+  <Route path="/profile" element={<Profile />}/>
+  </Route>
   
 </Routes>
     </>

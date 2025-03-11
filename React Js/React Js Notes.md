@@ -216,7 +216,8 @@ These are components
 A. Path -> espe konsa components render hoga
 B. element
 Link
-Outlet
+Outlet-> ye middle mai navigation bar and footer ke beech mai componetns ko render karhegha
+or it render child components
 
 
 # Bootstrap -> it is a framework of  css and js
