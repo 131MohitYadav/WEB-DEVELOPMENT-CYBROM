@@ -41,12 +41,20 @@
   color: #888;
 } */
 
+.nav{
+  background-color: blanchedalmond;
+}
+
+footer{
+  background-color: bisque;
+  padding: 10px;
+}
 
 ul{
   display: flex;
   justify-content: space-around;
   font-weight: bold;
-  background-color: bisque;
+  
 }
 
 .cardd{

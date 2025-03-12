@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg" className="nav">
       <Container fluid>
         <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
