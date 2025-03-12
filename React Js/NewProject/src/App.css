@@ -40,3 +40,18 @@
 .read-the-docs {
   color: #888;
 } */
+
+
+ul{
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  background-color: bisque;
+}
+
+.cardd{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+
+}

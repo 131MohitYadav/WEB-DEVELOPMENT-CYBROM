@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import './App.css';
 
 
 
@@ -87,9 +88,9 @@ function App() {
       </Carousel.Item>
     </Carousel>
 
-
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="image1.jpeg" />
+<p className='cardd'> 
+    <Card  style={{ width: '18rem'}}>
+      <Card.Img variant="top" src="image1.jpeg" /> 
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -100,8 +101,65 @@ function App() {
       </Card.Body>
     </Card>
 
-
     
+    <Card className='cad' style={{ width: '18rem'}}>
+      <Card.Img variant="top" src="image1.jpeg" /> 
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+    
+    <Card className='cad' style={{ width: '18rem'}}>
+      <Card.Img variant="top" src="image1.jpeg" /> 
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+</p>
+    <hr />
+
+    <footer>
+      <ul>
+        <li>HOlj</li>
+        <li>jojdfs</li>
+        <li>sfhhsfd</li>
+        <li>lajfd</li>
+      </ul>
+
+      <ul>
+        <li>HOlj</li>
+        <li>jojdfs</li>
+        <li>sfhhsfd</li>
+        <li>lajfd</li>
+      </ul>
+      <ul>
+        <li>HOlj</li>
+        <li>jojdfs</li>
+        <li>sfhhsfd</li>
+        <li>lajfd</li>
+      </ul>
+      <ul>
+        <li>HOlj</li>
+        <li>jojdfs</li>
+        <li>sfhhsfd</li>
+        <li>lajfd</li>
+      </ul>
+
+
+    </footer>
+
+
+   
 
 
 
