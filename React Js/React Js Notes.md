@@ -178,6 +178,7 @@ ans ->
 2.it is maintained by the browser after parsing HTML Element
 3.Performance is slow and the UX quality is low
 
+
 # Hooks -> special type of functions provided by react
 jab bhi html mai UI pe km kran ho to hooks use karengh
 
@@ -234,3 +235,14 @@ import 'bootstrap/dist/js/bootstrap.js'
 .Col-lg -> Desktop ke leye chalegha
 
 # React Bootstrap  website
+
+
+# useEffect Hooks (  meanis sideeffect over components )-> API hit krna ho tabb hooks use krte hai 
+
+why use useEffect Hooks -> jab pura components load ho jahe web page usek baad api hit krenghe
+
+
+1. it takes two arguments
+ # useEFfect(callbackfunction , depenedencies in arrray format, []) -> agar hmm useEffect ek hi barr render krana ho to empty dependenices use krenghe
+ 2. dependinceis  -> useEffect kis kis par dependent hai 
+
