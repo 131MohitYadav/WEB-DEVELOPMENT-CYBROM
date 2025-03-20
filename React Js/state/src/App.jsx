@@ -73,6 +73,8 @@ function App(){
     <h1>{valu}</h1>
     <h1> useEffect HOOks</h1>
     <button onClick={()=>setValu(valu + 1)}>Inc</button>
+    <button onClick={() => setValu(valu - 1)}>Dec</button>
+    <button onClick={() => setValu( 0)}>Res</button>
     </>
   )
 }

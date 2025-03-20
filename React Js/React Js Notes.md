@@ -243,6 +243,6 @@ why use useEffect Hooks -> jab pura components load ho jahe web page usek baad a
 
 
 1. it takes two arguments
- # useEFfect(callbackfunction , depenedencies in arrray format, []) -> agar hmm useEffect ek hi barr render krana ho to empty dependenices use krenghe
+ # useEFfect(callbackfunction , depenedencies in arrray format []) -> agar hmm useEffect ek hi barr render krana ho to empty dependenices use krenghe
  2. dependinceis  -> useEffect kis kis par dependent hai 
 
