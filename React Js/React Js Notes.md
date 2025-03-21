@@ -246,3 +246,12 @@ why use useEffect Hooks -> jab pura components load ho jahe web page usek baad a
  # useEFfect(callbackfunction , depenedencies in arrray format []) -> agar hmm useEffect ek hi barr render krana ho to empty dependenices use krenghe
  2. dependinceis  -> useEffect kis kis par dependent hai 
 
+# context api -> props drilling ko solve krna ke leye props drilling banaya gya hai
+
+. it also flow data parent to child
+
+1. In context api  three things main
+
+a. create 
+b. provider
+c.consumer
