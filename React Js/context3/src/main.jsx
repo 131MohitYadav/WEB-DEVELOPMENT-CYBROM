@@ -12,12 +12,16 @@ let emp = {
   city : "Gwalior",
 }
 
+let emp1 = {
+  name : "Manish",
+  age : 22,
+}
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <senddata.Provider value={emp}  >
+    <senddata.Provider value={[emp, emp1]}  >
     <App />
     </senddata.Provider>
   </StrictMode>,
