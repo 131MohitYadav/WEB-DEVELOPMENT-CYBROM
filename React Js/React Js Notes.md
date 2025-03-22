@@ -255,3 +255,5 @@ why use useEffect Hooks -> jab pura components load ho jahe web page usek baad a
 a. create 
 b. provider
 c.consumer
+
+# useContext HOoks -> consumer ko solve krne ke leye ye hooks ka use krte hai 
