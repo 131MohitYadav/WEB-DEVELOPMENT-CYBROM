@@ -17,11 +17,16 @@ let emp1 = {
   age : 22,
 }
 
+let emp2 = {
+  name : "Vikash",
+  age : 23,
+}
+
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <senddata.Provider value={[emp, emp1]}  >
+    <senddata.Provider value={[emp, emp1 , emp2]}  >
     <App />
     </senddata.Provider>
   </StrictMode>,
