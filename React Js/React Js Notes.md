@@ -237,7 +237,7 @@ import 'bootstrap/dist/js/bootstrap.js'
 # React Bootstrap  website
 
 
-# useEffect Hooks (  meanis sideeffect over components )-> API hit krna ho tabb hooks use krte hai 
+# useEffect Hooks (  means sideeffect over components )-> API hit krna ho tabb hooks use krte hai 
 
 why use useEffect Hooks -> jab pura components load ho jahe web page usek baad api hit krenghe
 
@@ -246,7 +246,7 @@ why use useEffect Hooks -> jab pura components load ho jahe web page usek baad a
  # useEFfect(callbackfunction , depenedencies in arrray format []) -> agar hmm useEffect ek hi barr render krana ho to empty dependenices use krenghe
  2. dependinceis  -> useEffect kis kis par dependent hai 
 
-# context api -> props drilling ko solve krna ke leye props drilling banaya gya hai
+# context api -> props  ko solve krna ke leye props drilling banaya gya hai
 
 . it also flow data parent to child
 
@@ -257,3 +257,9 @@ b. provider
 c.consumer
 
 # useContext HOoks -> consumer ko solve krne ke leye ye hooks ka use krte hai 
+
+# useNavigate HOoks -> ye use ho ti navigate krane k leye 
+. it return  function  kohi bhi function name de sakte hai like 
+# let navigator = useNavigate()
+
+ navigator is a function
