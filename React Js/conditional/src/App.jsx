@@ -9,7 +9,7 @@ function App() {
 let [visible,setVisible] = useState(true)
 let [count,setCount] = useState(0)
 
-function decrment(){
+function decrement(){
   if ( count > 0){
     setCount(count-1)
   }
@@ -31,6 +31,7 @@ function decrment(){
 <h1>{count}</h1>
 <button onClick={decrement}>-</button>
 <button onClick={()=>setCount(count+1)}>+</button>
+<button onClick={()=>setCount(0)}>Res</button>
 
 
 
