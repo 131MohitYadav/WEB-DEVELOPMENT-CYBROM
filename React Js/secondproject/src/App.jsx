@@ -3,20 +3,28 @@
 //import './App.css'
 //import  Ab from './About.jsx'
 //import  Contact from './Contact.jsx'
+import { useState } from 'react'
 import {About as Ab,Contact1 as Cont1} from './About'
 import Gallery from './Gallery.jsx'
 import  Service from './Service.jsx'
 
+
 function App() {
 
+  let [color, setColor] = useState("")
 
   return (
     <>
-    <h1>Welcome to Reactjs class</h1>
+    <div style={{height : "100vh" , backgroundColor : color}}>
+    <h1 style={{color:"red"}}>Welcome to Reactjs class</h1>
     <Ab/>
     <Cont1/>
     <Gallery/>
     <Service/>
+    <button onClick={()=>{setColor('white')}}>Light Theme</button>
+    <button onClick={()=>{setColor('black')}}>Dark Theme</button>
+
+</div>
     </>
   )
 }
