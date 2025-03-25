@@ -1,6 +1,6 @@
 
 //import myimg from './image.jpg'
-//import './App.css'
+import './App.css'
 //import  Ab from './About.jsx'
 //import  Contact from './Contact.jsx'
 import { useState } from 'react'
@@ -15,13 +15,16 @@ function App() {
 
   return (
     <>
-    <div style={{height : "100vh" , backgroundColor : color}}>
+    <div style={{height : "100vh" , width: "100%", backgroundColor : color}}>
     <h1 style={{color:"red"}}>Welcome to Reactjs class</h1>
     <Ab/>
     <Cont1/>
     <Gallery/>
     <Service/>
-    <button onClick={()=>{setColor('white')}}>Light Theme</button>
+    <button  onClick={()=>{setColor('white')}}
+      >Light Theme</button>
+
+
     <button onClick={()=>{setColor('black')}}>Dark Theme</button>
 
 </div>
