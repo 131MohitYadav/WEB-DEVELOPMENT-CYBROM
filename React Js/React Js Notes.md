@@ -263,3 +263,11 @@ c.consumer
 # let navigator = useNavigate()
 
  navigator is a function
+
+
+
+// FORM // 
+
+ # onChange -> it is event it call function because it is a event
+
+ . onChange jese hi event fire krega ye ek object pass kregha function ko
