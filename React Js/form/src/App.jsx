@@ -1,6 +1,8 @@
 
 import { useState } from 'react';
-import './App.css'
+import './App.css';
+//import Form from './Data';
+
 
 function App() {
   
@@ -17,6 +19,7 @@ function App() {
   function finalsubmit(e){
     e.preventDefault()
     console.log(frmdata);
+    localStorage.setItem("userdata",JSON.stringify(frmdata))
     
   }
 
@@ -43,6 +46,8 @@ function App() {
 
 
     </form>
+
+
       
     </>
   )
