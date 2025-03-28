@@ -26,7 +26,7 @@ function App() {
   return (
     <>
     <h1 className='head1'>Form</h1>
-    <h1>My name is </h1>
+    <h1>Form Validation </h1>
     {/* <h1>My age is : {frmdata2}</h1>
     <h1>My city name is : {frmdata3} </h1>
     <h1>My clg  name is : {frmdata4} </h1>
