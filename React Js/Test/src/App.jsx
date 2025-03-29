@@ -42,11 +42,15 @@ function App() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+
+    <h2>Welcome to Test</h2>
 <div className="head1">
   
-<h1>Hello Welcome to Test</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus consequuntur hic nihil unde nulla error voluptatum dolorem ab est! Cumque, modi! Dicta doloremque magnam ipsum! Amet minus nisi ullam?</p>
+
 
 <img src="image.jpg"  />
+
 
 </div>
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, officiis perferendis! Cum ad facere, sapiente nostrum nisi eum minima expedita. Provident saepe deserunt quas fuga hic praesentium doloremque vero optio.
