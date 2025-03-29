@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   
   let [frmdata,setFrmdata] = useState({
-    username:"",age:"", city:"", clg:"",mobile:"",add:"",
+    username:"",age:"", city:"", clg:"",mobile:"",add:"",dob:"",
   });
 
   function InputValue(e){
@@ -44,6 +44,9 @@ function App() {
       <input type="text" name='mobile' onChange={InputValue}/> <br></br>
       <label htmlFor ="">Address : </label>
       <input type="text" name='add' onChange={InputValue}/> <br></br>
+
+      <label htmlFor ="">DOB: </label>
+      <input type="text" name='dob' onChange={InputValue}/> <br></br>
       <input type='submit' value="Submit" />
 
 
