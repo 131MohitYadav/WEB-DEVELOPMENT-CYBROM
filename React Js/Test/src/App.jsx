@@ -85,6 +85,12 @@ function App() {
         <li>contact</li>
         <li>list</li>
     </ul>
+    <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>contact</li>
+        <li>list</li>
+    </ul>
 </footer>
     
     </>
