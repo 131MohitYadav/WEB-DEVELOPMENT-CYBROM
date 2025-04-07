@@ -47,7 +47,7 @@ function App() {
 <div className="head1">
   
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus consequuntur hic nihil unde nulla error voluptatum dolorem ab est! Cumque, modi! Dicta doloremque magnam ipsum! Amet minus nisi ullam?</p>
-
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate architecto reiciendis nobis inventore quod voluptatem ea ipsum non error. Nulla dolore consectetur aliquam aperiam inventore quos repellat tenetur, asperiores eius?</p>
 
 <img src="image.jpg"  />
 
