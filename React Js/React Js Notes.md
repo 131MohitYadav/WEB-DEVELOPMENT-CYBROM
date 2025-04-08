@@ -278,3 +278,11 @@ c.consumer
 
  format -> key value
  type -> string 
+
+# REACT IMPORTANT QUESTION
+ 
+ 1. What is reconsulation
+ 2.Difference between class components and functional components
+ 3. Difference between stats and props
+ 4 . Why we need context api
+ 
