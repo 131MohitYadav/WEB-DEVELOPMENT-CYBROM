@@ -273,3 +273,8 @@ c.consumer
  . onChange jese hi event fire krega ye ek object pass kregha function ko
 
  . preventDefault -> is a function ye form submit hone ko rokegha 
+
+ # localstorage -> setIteme , getItem , removeItem , clear
+
+ format -> key value
+ type -> string 

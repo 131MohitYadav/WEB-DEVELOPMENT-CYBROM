@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 // import Data from './Data';
 
@@ -7,14 +7,18 @@ import './App.css';
 function App() {
   
   let [frmdata,setFrmdata] = useState({
-    username:"",age:"", city:"", clg:"",mobile:"",add:"",dob:"",
+    username:"",age:"", city:"", clg:"",mobile:"",
   });
+
+  let [userdataa,setUserdata] = useState({})
 
   function InputValue(e){
     const{name,value} = e.target
     setFrmdata({...frmdata , [name] : value})
 
   }
+
+  
     
   function finalsubmit(e){
     e.preventDefault()
@@ -22,6 +26,11 @@ function App() {
     localStorage.setItem("userdata",JSON.stringify(frmdata))
     
   }
+
+  useEffect(()=>{
+    let localdata = JSON.parse(localStorage.getItem('userdata'))
+    setUserdata(localdata)
+  },[finalsubmit])
 
   return (
     <>
@@ -37,21 +46,32 @@ function App() {
       <label htmlFor ="">Age : </label>
       <input type="text" name = 'age' onChange={InputValue}/> <br></br><br></br>
       <label htmlFor ="">City : </label>
-      <input type="text" name =' city' onChange={InputValue}/><br></br><br></br>
+      <input type="text" name ='city' onChange={InputValue}/><br></br><br></br>
       <label htmlFor ="">Clg : </label>
       <input type="text" name='clg' onChange={InputValue}/> <br></br><br></br>
       <label htmlFor ="">Mobile : </label>
       <input type="text" name='mobile' onChange={InputValue}/> <br></br>
-      <label htmlFor ="">Address : </label>
+      {/* <label htmlFor ="">Address : </label>
       <input type="text" name='add' onChange={InputValue}/> <br></br>
 
       <label htmlFor ="">DOB: </label>
-      <input type="text" name='dob' onChange={InputValue}/> <br></br>
+      <input type="text" name='dob' onChange={InputValue}/> <br></br> */}
       <input type='submit' value="Submit" />
 
 
     </form>
 
+<hr />
+
+<h1>name: {userdataa.username}</h1>
+
+<h1>Age: {userdataa.age}</h1>
+
+<h1>City: {userdataa.city}</h1>
+
+<h1>Clg: {userdataa.clg}</h1>
+
+<h1>Mobile: {userdataa.mobile}</h1>
 
       
     </>
