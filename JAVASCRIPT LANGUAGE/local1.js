@@ -1,4 +1,4 @@
-const multi = () => {
+ const multi = () => {
     let userdata = {
         name: document.querySelector('#name').value,
         email: document.querySelector('#email').value,

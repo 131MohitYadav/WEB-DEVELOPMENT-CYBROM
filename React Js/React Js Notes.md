@@ -191,6 +191,7 @@ jab bhi html mai UI pe km kran ho to hooks use karengh
 2. hook import krna hai pehle
 syntax : 
 
+// In array format and destructuring of array
 let [variable,function] = useState(initial_value)
 
 
@@ -216,7 +217,9 @@ These are components
 # we passed two attribute 
 A. Path -> espe konsa components render hoga
 B. element
+
 Link
+
 Outlet-> ye middle mai navigation bar and footer ke beech mai componetns ko render karhegha
 or it render child components
 
