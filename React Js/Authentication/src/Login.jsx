@@ -36,7 +36,7 @@ useEffect(()=>{
   return (
    <>
 
-<h1 style={{color:"red",margin:"20px"}}>LOGIN FORM</h1>
+<h2 style={{color:"red",margin:"20px"}}>Login Form</h2>
 
 <form action="" onSubmit={finalSubmit}>
 
