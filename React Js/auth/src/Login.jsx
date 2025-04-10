@@ -17,8 +17,8 @@ const Login = () => {
       function finalSubmit(e){
         e.preventDefault()
         console.log(frmdata);
-        localStorage.setItem('signdata', JSON.stringify(frmdata))
-       navigator('/login')
+        localStorage.setItem('logindata', JSON.stringify(frmdata))
+       navigator('/home')
         
       
       }
