@@ -37,6 +37,8 @@ useEffect(()=>{
 
   <h1>LOGIN AND SIGNUP FORM AUTHENTICATION</h1>
 
+  <h2 style={{color:"red" , margin:"30px"}}>Sign Up Form</h2>
+
   <form action="" onSubmit={finalSubmit}>
 
 
