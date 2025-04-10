@@ -24,6 +24,9 @@ function finalSubmit(e){
 
 }
 
+function signalert(){
+    alert("Account Created Successfully")
+}
 
   return (
     <>
@@ -40,7 +43,8 @@ function finalSubmit(e){
     <label>Password: </label>
     <input type="text" name="password" onChange={Inputhandle} /> <br></br><br></br>
 
-    <input type="submit"/>
+    {/* <input type="submit"/> */}
+    <button onClick={signalert}>SUBMIT</button>
 </form>
 
     </>
