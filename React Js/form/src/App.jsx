@@ -62,7 +62,7 @@ function App() {
     </form>
 
 <hr />
-
+{/* 
 <h1>name: {userdataa.username}</h1>
 
 <h1>Age: {userdataa.age}</h1>
@@ -71,7 +71,7 @@ function App() {
 
 <h1>Clg: {userdataa.clg}</h1>
 
-<h1>Mobile: {userdataa.mobile}</h1>
+<h1>Mobile: {userdataa.mobile}</h1> */}
 
       
     </>

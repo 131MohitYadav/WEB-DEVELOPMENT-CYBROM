@@ -1,18 +1,19 @@
 import { useEffect, useState } from 'react'
 
 import './App.css'
+import Login from './Login';
 
 function App() {
 
 let [frmdata , setFrmdata] = useState({
-  username:"", email:"", pass:"",
+  usern:"", email:"", pass:"",
 });
 
 let[person,setPerson] = useState({})
 
 
-function InputValue(e){
-  const[name,value] = e.target 
+function InputValue(f){
+  const{name,value} = f.target 
   setFrmdata({...frmdata , [name] : value})
 }
  
@@ -40,7 +41,7 @@ useEffect(()=>{
 
 
     <label>ENTER YOUR USERNAME</label>
-    <input type="text" name="username" onChange={InputValue}/><br></br><br></br>
+    <input type="text" name="usern" onChange={InputValue}/><br></br><br></br>
 
     
     <label>ENTER YOUR EMAIL</label>
@@ -53,6 +54,9 @@ useEffect(()=>{
     <input type="submit" value="SUBMIT" />
 
   </form>
+
+ <Login name={person.usern}/>
+ 
       
     </>
   )
