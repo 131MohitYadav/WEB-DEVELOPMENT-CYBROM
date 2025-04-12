@@ -289,3 +289,22 @@ c.consumer
  3. Difference between stats and props
  4 . Why we need context api
  
+ 
+# axios library -> for fetch the api it used
+
+command for install -> npm install axios
+
+# Https request -> get , put , post , delete , fetch
+
+1. json placeholder data utanan hai( search in google)
+
+#  state -> promise , pending , fullfill
+
+then -> used for handle states
+
+
+# command for json run -> 
+# befor json  muje api app close nhi krna new terminal kholni hai  uske badd 
+1. cd src
+uske badd ye command lekhenge
+2.json-server --watch db.json
