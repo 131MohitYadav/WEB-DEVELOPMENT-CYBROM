@@ -10,7 +10,7 @@
             "uname":"Rohit yadav",
             "age":20,
             "contact":895689,
-            "city":"Gwalior"
+            "city":"Tekanpur"
         },
         {
             "uname":"Arun yadav",
@@ -22,7 +22,7 @@
             "uname":"Manish Kumar",
             "age":20,
             "contact":895689,
-            "city":"Gwalior"
+            "city":"Bihar"
         },
         {
             "uname":"Aman yadav",
@@ -37,28 +37,28 @@
             "city":"Gwalior"
         },
         {
-            "uname":"Vikash singh",
+            "uname":"Anand singh",
+            "age":20,
+            "contact":895689,
+            "city":"Indore"
+        },
+        {
+            "uname":"Urvesh singh",
+            "age":20,
+            "contact":895689,
+            "city":"Bhind"
+        },
+        {
+            "uname":"Manshi Kumari",
             "age":20,
             "contact":895689,
             "city":"Gwalior"
         },
         {
-            "uname":"Vikash singh",
+            "uname":"Yash yadav",
             "age":20,
             "contact":895689,
-            "city":"Gwalior"
-        },
-        {
-            "uname":"Vikash singh",
-            "age":20,
-            "contact":895689,
-            "city":"Gwalior"
-        },
-        {
-            "uname":"Vikash singh",
-            "age":20,
-            "contact":895689,
-            "city":"Gwalior"
+            "city":"Bhind"
         }
     ]
 }
