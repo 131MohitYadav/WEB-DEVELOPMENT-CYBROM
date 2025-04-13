@@ -5,6 +5,36 @@
             "age":20,
             "contact":895689,
             "city":"Gwalior"
+        },
+        {
+            "uname":"Rohit yadav",
+            "age":20,
+            "contact":895689,
+            "city":"Gwalior"
+        },
+        {
+            "uname":"Arun yadav",
+            "age":20,
+            "contact":895689,
+            "city":"Gwalior"
+        },
+        {
+            "uname":"Manish Kumar",
+            "age":20,
+            "contact":895689,
+            "city":"Gwalior"
+        },
+        {
+            "uname":"Aman yadav",
+            "age":20,
+            "contact":895689,
+            "city":"Gwalior"
+        },
+        {
+            "uname":"Vikash singh",
+            "age":20,
+            "contact":895689,
+            "city":"Gwalior"
         }
     ]
 }
