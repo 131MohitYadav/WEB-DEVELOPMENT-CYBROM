@@ -29,6 +29,9 @@ const Insert = () => {
         
         
       }
+      function alertfun(){
+        alert("Data insert Successful")
+      }
     
     
 
@@ -45,7 +48,7 @@ const Insert = () => {
         <input type='text' name="contact" onChange={InputValue} /><br /> <br />
         <label>CITY: </label>
         <input type='text' name="city" onChange={InputValue} /><br /> <br />
-        <input type='submit'/>
+        <input type='submit' onClick={alertfun}/>
     </form>
     </>
   )
