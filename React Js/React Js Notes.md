@@ -294,7 +294,7 @@ c.consumer
 
 command for install -> npm install axios
 
-# Https request -> get , put , post , delete , fetch
+# Https request -> get , put , post , delete , patch
 
 1. json placeholder data utanan hai( search in google)
 
