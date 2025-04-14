@@ -1,11 +1,13 @@
 import axios from 'axios';
 import React, {  useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Insert = () => {
 
     let [frmdata,setFrmdata] = useState({
         uname:"",age:"", contact:"", city:"",
       });
+      let navigator = useNavigate()
     
     
     
@@ -22,6 +24,8 @@ const Insert = () => {
         console.log(frmdata);
         axios.post('http://localhost:3000/userdata' , 
         frmdata)
+        navigator('/fetchapi')
+
         
         
       }
