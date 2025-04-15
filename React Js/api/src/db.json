@@ -36,13 +36,6 @@
       "id": "29ad"
     },
     {
-      "uname": "Vikash singh",
-      "age": 20,
-      "contact": 895689,
-      "city": "Gwalior",
-      "id": "a6b8"
-    },
-    {
       "uname": "Anand singh",
       "age": 20,
       "contact": 895689,
@@ -50,70 +43,7 @@
       "id": "bc74"
     },
     {
-      "uname": "Urvesh singh",
-      "age": 20,
-      "contact": 895689,
-      "city": "Bhind",
-      "id": "2b0c"
-    },
-    {
-      "uname": "Manshi Kumari",
-      "age": 20,
-      "contact": 895689,
-      "city": "Gwalior",
       "id": "2635"
-    },
-    {
-      "uname": "Yash yadav",
-      "age": 20,
-      "contact": 895689,
-      "city": "Bhind",
-      "id": "933e"
-    },
-    {
-      "id": "b14b"
-    },
-    {
-      "id": "2293",
-      "uname": "Taniska",
-      "age": "12",
-      "contact": "9856587455",
-      "city": "BHOPAL"
-    },
-    {
-      "id": "71a0",
-      "uname": "Taniska",
-      "age": "12",
-      "contact": "9856587455",
-      "city": "BHOPAL"
-    },
-    {
-      "id": "3651",
-      "uname": "Tanshiq",
-      "age": "12",
-      "contact": "9856587455",
-      "city": "BHOPAL"
-    },
-    {
-      "id": "3e30",
-      "uname": "Qasim sir",
-      "age": "40",
-      "contact": "454123",
-      "city": "BHOPAL"
-    },
-    {
-      "id": "e608",
-      "uname": "NAIRA",
-      "age": "YADAV",
-      "contact": "5",
-      "city": "TEKANPUR"
-    },
-    {
-      "id": "5d69",
-      "uname": "ISHANI YADAV",
-      "age": "6",
-      "contact": "85695874521",
-      "city": "GWALIOR"
     }
   ]
 }

@@ -7,6 +7,7 @@ const Insert = () => {
     let [frmdata,setFrmdata] = useState({
         uname:"",age:"", contact:"", city:"",
       });
+      
       let navigator = useNavigate()
     
     
