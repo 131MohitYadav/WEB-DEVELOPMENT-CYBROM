@@ -8,7 +8,7 @@
       "id": "5d5f"
     },
     {
-      "uname": "Rohit yadav",
+      "uname": "ROHIT YADAV",
       "age": 20,
       "contact": 895689,
       "city": "Tekanpur",
@@ -16,7 +16,7 @@
     },
     {
       "uname": "Arun yadav",
-      "age": 20,
+      "age": "28",
       "contact": 895689,
       "city": "Gwalior",
       "id": "2eca"
@@ -36,14 +36,11 @@
       "id": "29ad"
     },
     {
-      "uname": "Anand singh",
+      "uname": "Anand kumar",
       "age": 20,
       "contact": 895689,
       "city": "Indore",
       "id": "bc74"
-    },
-    {
-      "id": "2635"
     }
   ]
 }

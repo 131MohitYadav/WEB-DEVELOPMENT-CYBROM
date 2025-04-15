@@ -27,12 +27,16 @@ function handleInput(e){
 
 function finalsubmit(e){
   e.preventDefault()
-  axios.put(`http://localhost:3000/userdata/${editdata.id}`)
+  axios.put(`http://localhost:3000/userdata/${editdata.id}` , editdata)
+}
+
+function update(){
+  alert("Data Update Successfully")
 }
 
   return (
     <>
-  <h1>api data fetch here</h1>
+  <h1>Api Data Fetch Here</h1>
   <h2>ALL USER DATA</h2>
   <table border="2px solid black" align='center'>
     <tr>
@@ -64,7 +68,7 @@ function finalsubmit(e){
       <>
 <h1>Edit form</h1>
 
-<form onSubmit={finalsubmit}>
+<form onSubmit={finalsubmit} style={{textAlign:'center'}}>
 
   
 <label>USER_ID: </label>
@@ -81,7 +85,7 @@ function finalsubmit(e){
 
         <label>CITY: </label>
         <input type='text' name='city' value={editdata.city} onChange={handleInput}  /><br /> <br />
-        <input type='submit'/>
+        <input type='submit' onClick={update}/>
 </form>
       </>
     )
