@@ -288,7 +288,7 @@ c.consumer
  2.Difference between class components and functional components
  3. Difference between stats and props
  4 . Why we need context api
- 
+ 5. Difference between fetch and axios
  
 # axios library -> for fetch the api it used
 
@@ -308,3 +308,8 @@ then -> used for handle states
 1. cd src
 uske badd ye command lekhenge
 2.json-server --watch db.json
+
+
+# ye project ko live krtah hai 
+open app in cmd  enter command
+1. npm run build
