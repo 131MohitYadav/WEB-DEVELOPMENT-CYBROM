@@ -28,6 +28,7 @@ function handleInput(e){
 function finalsubmit(e){
   e.preventDefault()
   axios.put(`http://localhost:3000/userdata/${editdata.id}` , editdata)
+  setFrm(false)
 }
 
 function update(){
