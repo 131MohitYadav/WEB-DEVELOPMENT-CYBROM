@@ -59,63 +59,60 @@ const Home = () => {
       </Carousel>
     </section>
 
-
-  
-    <section class="choseus-section spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <span>Why chose us?</span>
-                        <h2>PUSH YOUR LIMITS FORWARD</h2>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="cs-item">
-                        <span class="flaticon-034-stationary-bike">
-                          <img src='/img/dumbell.png' />
-                        </span>
-                        <h4>Modern equipment</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            dolore facilisis.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="cs-item">
-                        <span class="flaticon-033-juice">
-                        <img src='/img/juices.png' />
-                        </span>
-                        <h4>Healthy nutrition plan</h4>
-                        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                            facilisis.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="cs-item">
-                        <span class="flaticon-002-dumbell">
-                        <img src='/img/dum.png' />
-                        </span>
-                        <h4>Proffesponal training plan</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            dolore facilisis.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="cs-item">
-                        <span class="flaticon-014-heart-beat">
-                        <img src='/img/heartbeat.png' />
-                        </span>
-                        <h4>Unique to your needs</h4>
-                        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                            facilisis.</p>
-                    </div>
+{/* 
+  choose us section */}
+  <section class="choseus-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <span>Why choose us?</span>
+                    <h2>PUSH YOUR LIMITS FORWARD</h2>
                 </div>
             </div>
         </div>
-    </section>
+        
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="cs-item">
+                    <span class="flaticon-034-stationary-bike">
+                        <img src='/img/dumbell.png' />
+                    </span>
+                    <h4>Modern Equipment</h4>
+                    <p>Our gym is equipped with state-of-the-art machines and tools to help you train efficiently and safely.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="cs-item">
+                    <span class="flaticon-033-juice">
+                        <img src='/img/juices.png' />
+                    </span>
+                    <h4>Healthy Nutrition Plan</h4>
+                    <p>Get personalized nutrition plans tailored to your fitness goals, so you can fuel your body the right way.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="cs-item">
+                    <span class="flaticon-002-dumbell">
+                        <img src='/img/dum.png' />
+                    </span>
+                    <h4>Professional Training Programs</h4>
+                    <p>Train under certified fitness experts who design effective workout routines to maximize your performance.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="cs-item">
+                    <span class="flaticon-014-heart-beat">
+                        <img src='/img/heartbeat.png' />
+                    </span>
+                    <h4>Customized for You</h4>
+                    <p>Every fitness journey is unique — that’s why we offer plans that are personalized to match your individual needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 
