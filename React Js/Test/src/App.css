@@ -293,3 +293,83 @@ ol {
     margin-top: 24px;
     margin-bottom: 16px;
   }
+
+
+/* classes sectoin */
+  
+.classes-section {
+	background: #151515;
+	padding-bottom: 80px;
+}
+
+.classes-section .section-title {
+	margin-bottom: 35px;
+}
+
+.class-item {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.class-item .ci-pic img {
+	min-width: 100%;
+}
+
+.class-item .ci-text {
+	background: #0a0a0a;
+	position: relative;
+	padding: 10px 30px 26px 30px;
+	z-index: 1;
+}
+
+.class-item .ci-text:after {
+	position: absolute;
+	left: -5px;
+	top: -44px;
+	height: 100px;
+	width: 600px;
+	border-top: 4px solid #464646;
+	background: #0a0a0a;
+	content: "";
+	-webkit-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+	z-index: -1;
+}
+
+.class-item .ci-text span {
+	color: #f36100;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.class-item .ci-text h5 {
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 4px;
+}
+
+.class-item .ci-text h4 {
+	font-size: 26px;
+	color: #ffffff;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 4px;
+}
+
+.class-item .ci-text a {
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	background: rgba(255, 255, 255, 0.1);
+	line-height: 46px;
+	text-align: center;
+	font-size: 24px;
+	color: #ffffff;
+	position: absolute;
+	right: 30px;
+	bottom: 26px;
+}
