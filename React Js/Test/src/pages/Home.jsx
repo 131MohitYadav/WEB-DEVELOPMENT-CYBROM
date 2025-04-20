@@ -21,6 +21,7 @@ const Home = () => {
             alt="First slide"
           />
           <div className="hero-text">
+            
             <h1>
               BE STRONG <span style={{ color: '#f36100' }}>TRAINING HARD</span>
             </h1>
