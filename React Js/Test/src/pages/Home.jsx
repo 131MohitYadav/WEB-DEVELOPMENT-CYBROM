@@ -85,7 +85,9 @@ const Home = () => {
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="cs-item">
-                        <span class="flaticon-033-juice"></span>
+                        <span class="flaticon-033-juice">
+                        <img src='/img/juices.png' />
+                        </span>
                         <h4>Healthy nutrition plan</h4>
                         <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
                             facilisis.</p>
@@ -93,7 +95,9 @@ const Home = () => {
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="cs-item">
-                        <span class="flaticon-002-dumbell"></span>
+                        <span class="flaticon-002-dumbell">
+                        <img src='/img/dum.png' />
+                        </span>
                         <h4>Proffesponal training plan</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             dolore facilisis.</p>
@@ -101,7 +105,9 @@ const Home = () => {
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="cs-item">
-                        <span class="flaticon-014-heart-beat"></span>
+                        <span class="flaticon-014-heart-beat">
+                        <img src='/img/heartbeat.png' />
+                        </span>
                         <h4>Unique to your needs</h4>
                         <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
                             facilisis.</p>
