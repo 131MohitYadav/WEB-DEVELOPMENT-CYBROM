@@ -545,3 +545,30 @@ ol {
 	opacity: 0;
 	visibility: hidden;
 }
+
+a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.note-text {
+  position: relative;
+  padding: 10px 0;
+  font-size: 20px;
+  color: white;
+}
+
+.note-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #dee2e6, transparent);
+}
+
+.btn-normal {
+  text-decoration: none;
+}
