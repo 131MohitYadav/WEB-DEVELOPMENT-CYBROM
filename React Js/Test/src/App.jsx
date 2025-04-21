@@ -8,6 +8,8 @@ import Classes from './pages/Classes';
 import Services from './pages/Services';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
+import Proudct from './Proudct';
+
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/appointment" element={<Proudct />} />
+
       </Routes>
     </>
   );
