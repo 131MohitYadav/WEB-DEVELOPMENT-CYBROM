@@ -299,6 +299,12 @@ const Home = () => {
   </div>
 </section>
 
+{/* 
+Gallery section */}
+
+
+
+
 
 
 
