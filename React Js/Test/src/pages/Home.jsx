@@ -299,9 +299,45 @@ const Home = () => {
   </div>
 </section>
 
-{/* 
-Gallery section */}
 
+
+{/* Gallery Section Begin */}
+<div className="gallery-section">
+    <div className="gallery">
+        <div className="grid-sizer"></div>
+        <div className="gs-item grid-wide" style={{ backgroundImage: "url('/img/gallery-1.jpg')" }}>
+            <a href="/img/gallery-1.jpg" className="thumb-icon image-popup">
+                <i className="fa fa-picture-o"></i>
+            </a>
+        </div>
+        <div className="gs-item" style={{ backgroundImage: "url('/img/gallery-2.jpg')" }}>
+            <a href="/img/gallery-2.jpg" className="thumb-icon image-popup">
+                <i className="fa fa-picture-o"></i>
+            </a>
+        </div>
+        <div className="gs-item" style={{ backgroundImage: "url('/img/gallery-3.jpg')" }}>
+            <a href="/img/gallery-3.jpg" className="thumb-icon image-popup">
+                <i className="fa fa-picture-o"></i>
+            </a>
+        </div>
+        <div className="gs-item" style={{ backgroundImage: "url('/img/gallery-4.jpg')" }}>
+            <a href="/img/gallery-4.jpg" className="thumb-icon image-popup">
+                <i className="fa fa-picture-o"></i>
+            </a>
+        </div>
+        <div className="gs-item" style={{ backgroundImage: "url('/img/gallery-5.jpg')" }}>
+            <a href="/img/gallery-5.jpg" className="thumb-icon image-popup">
+                <i className="fa fa-picture-o"></i>
+            </a>
+        </div>
+        <div className="gs-item grid-wide" style={{ backgroundImage: "url('/img/gallery-6.jpg')" }}>
+            <a href="/img/gallery-6.jpg" className="thumb-icon image-popup">
+                <i className="fa fa-picture-o"></i>
+            </a>
+        </div>
+    </div>
+</div>
+{/* Gallery Section End */}
 
 
 
