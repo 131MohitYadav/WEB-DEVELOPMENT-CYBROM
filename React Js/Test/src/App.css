@@ -761,6 +761,7 @@ a{
 -----------------------*/
 
 .team-section {
+	
 	background: #151515;
 }
 
@@ -833,6 +834,7 @@ a{
 }
 
 .ts-item {
+	display: flex;
 	height: 450px;
 	position: relative;
 	overflow: hidden;
@@ -878,6 +880,7 @@ a{
 	-ms-transform: skewY(5deg);
 	transform: skewY(5deg);
 }
+
 
 /*---------------------
   Get Touch Section
