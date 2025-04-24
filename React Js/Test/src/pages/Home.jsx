@@ -16,13 +16,14 @@ const teamMembers = [
 
 const Home = () => {
 
-
     const settings = {
         dots: true,
         infinite: true,
         speed: 600,
         slidesToShow: 3,
         slidesToScroll: 1,
+        autoplay: true,          // Enable auto-scroll
+        autoplaySpeed: 2000,     // 3 seconds delay
         responsive: [
           { breakpoint: 1024, settings: { slidesToShow: 2 } },
           { breakpoint: 768, settings: { slidesToShow: 1 } },
@@ -366,34 +367,37 @@ const Home = () => {
 </div>
 {/* Gallery Section End */}
 
-
-{/* // Team section */}
-<section className="team-section">
-      <div className="container">
-        <div className="team-title">
-          <div className="section-title">
-            <span>Our Team</span>
-            <h2>TRAIN WITH EXPERTS</h2>
-          </div>
-          <button className="primary-btn appoinment-btn">Appointment</button>
+{/* Team section */}
+<section className="team-section spad">
+  <div className="container">
+    <div className="row">
+      <div className="col-lg-12">
+        <div className="section-title">
+          <span>Our Team</span>
+          <h2>TRAIN WITH EXPERTS</h2>
         </div>
-
-        <Slider className="ts-slider" {...settings}>
-          {teamMembers.map((member, index) => (
-            <div className="ts-item" key={index} style={{ backgroundImage: `url(${member.pic})` }}>
-              <div className="ts_text">
-                <h4>{member.name}</h4>
-                <span>{member.role}</span>
-              </div>
-            </div>
-          ))}
-        </Slider>
       </div>
-    </section>
-
-
-
-
+    </div>
+    
+    <Slider {...settings} className="ts-slider">
+      {teamMembers.map((member, index) => (
+        <div key={index} className="ts-item">
+          <div className="ti-pic">
+            <img src={member.pic} alt={member.name} />
+          </div>
+          <div className="ts_text">
+            <h5>{member.name}</h5>
+            <span>{member.role}</span>
+          </div>
+        </div>
+      ))}
+    </Slider>
+    
+    <div className="text-center mt-5">
+      <button className="primary-btn">Appointment</button>
+    </div>
+  </div>
+</section>
 
 
 

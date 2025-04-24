@@ -704,7 +704,7 @@ a{
 	transform: skewY(5deg);
   }
   
-  .ts_text h4 {
+  .ts_text h5 {
 	color: #fff;
 	font-weight: 600;
 	margin-bottom: 14px;
@@ -715,7 +715,12 @@ a{
 	font-size: 12px;
 	font-weight: 700;
 	text-transform: uppercase;
-  }
+  } 
+
+
+  
+ 
+  
   
 /*---------------------
   Get Touch Section
