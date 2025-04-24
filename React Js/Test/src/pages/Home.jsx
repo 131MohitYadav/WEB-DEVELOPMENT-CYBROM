@@ -5,12 +5,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const teamMembers = [
-    { name: "Athart Rachel", role: "Gym Trainer", img: "/img/team-1.jpg" },
-    { name: "Athart Rachel", role: "Gym Trainer", img: "/img/team-2.jpg" },
-    { name: "Athart Rachel", role: "Gym Trainer", img: "/img/team-3.jpg" },
-    { name: "Athart Rachel", role: "Gym Trainer", img: "/img/team-4.jpg" },
-    { name: "Athart Rachel", role: "Gym Trainer", img: "/img/team-5.jpg" },
-    { name: "Athart Rachel", role: "Gym Trainer", img: "/img/team-6.jpg" },
+    { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-1.jpg" },
+    { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-2.jpg" },
+    { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-3.jpg" },
+    { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-4.jpg" },
+    { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-5.jpg" },
+    { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-6.jpg" },
   ];
 
 
@@ -380,7 +380,7 @@ const Home = () => {
 
         <Slider className="ts-slider" {...settings}>
           {teamMembers.map((member, index) => (
-            <div className="ts-item" key={index} style={{ backgroundImage: `url(${member.img})` }}>
+            <div className="ts-item" key={index} style={{ backgroundImage: `url(${member.pic})` }}>
               <div className="ts_text">
                 <h4>{member.name}</h4>
                 <span>{member.role}</span>
