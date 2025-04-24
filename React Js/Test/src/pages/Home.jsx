@@ -1,8 +1,35 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import Slider from "react-slick"; // make sure to install: npm i react-slick slick-carousel
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const teamMembers = [
+    { name: "Athart Rachel", role: "Gym Trainer", img: "/img/team-1.jpg" },
+    { name: "Athart Rachel", role: "Gym Trainer", img: "/img/team-2.jpg" },
+    { name: "Athart Rachel", role: "Gym Trainer", img: "/img/team-3.jpg" },
+    { name: "Athart Rachel", role: "Gym Trainer", img: "/img/team-4.jpg" },
+    { name: "Athart Rachel", role: "Gym Trainer", img: "/img/team-5.jpg" },
+    { name: "Athart Rachel", role: "Gym Trainer", img: "/img/team-6.jpg" },
+  ];
 
 
 const Home = () => {
+
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          { breakpoint: 1024, settings: { slidesToShow: 2 } },
+          { breakpoint: 768, settings: { slidesToShow: 1 } },
+        ],
+      };
+
+
   return (
     <>
     <section className="hero-section">
@@ -340,75 +367,29 @@ const Home = () => {
 {/* Gallery Section End */}
 
 
-{/* Team Section Begin */}
-<section className="team-section spad">
-    <div className="container">
-        <div className="row">
-            <div className="col-lg-12">
-                <div className="team-title">
-                    <div className="section-title">
-                        <span>Our Team</span>
-                        <h2>TRAIN WITH EXPERTS</h2>
-                    </div>
-                    <a href="#" className="primary-btn btn-normal appoinment-btn">appointment</a>
-                </div>
-            </div>
+{/* // Team section */}
+<section className="team-section">
+      <div className="container">
+        <div className="team-title">
+          <div className="section-title">
+            <span>Our Team</span>
+            <h2>TRAIN WITH EXPERTS</h2>
+          </div>
+          <button className="primary-btn appoinment-btn">Appointment</button>
         </div>
-        <div className="row">
-            <div className="ts-slider owl-carousel">
-                <div className="col-lg-4">
-                    <div className="ts-item" style={{ backgroundImage: "url('/img/team-1.jpg')" }}>
-                        <div className="ts_text">
-                            <h4>Athart Rachel</h4>
-                            <span>Gym Trainer</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-4">
-                    <div className="ts-item" style={{ backgroundImage: "url('/img/team-2.jpg')" }}>
-                        <div className="ts_text">
-                            <h4>Athart Rachel</h4>
-                            <span>Gym Trainer</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-4">
-                    <div className="ts-item" style={{ backgroundImage: "url('/img/team-3.jpg')" }}>
-                        <div className="ts_text">
-                            <h4>Athart Rachel</h4>
-                            <span>Gym Trainer</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-4">
-                    <div className="ts-item" style={{ backgroundImage: "url('/img/team/team-4.jpg')" }}>
-                        <div className="ts_text">
-                            <h4>Athart Rachel</h4>
-                            <span>Gym Trainer</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-4">
-                    <div className="ts-item" style={{ backgroundImage: "url('/img/team/team-5.jpg')" }}>
-                        <div className="ts_text">
-                            <h4>Athart Rachel</h4>
-                            <span>Gym Trainer</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-4">
-                    <div className="ts-item" style={{ backgroundImage: "url('/img/team/team-6.jpg')" }}>
-                        <div className="ts_text">
-                            <h4>Athart Rachel</h4>
-                            <span>Gym Trainer</span>
-                        </div>
-                    </div>
-                </div>
+
+        <Slider className="ts-slider" {...settings}>
+          {teamMembers.map((member, index) => (
+            <div className="ts-item" key={index} style={{ backgroundImage: `url(${member.img})` }}>
+              <div className="ts_text">
+                <h4>{member.name}</h4>
+                <span>{member.role}</span>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
-{/* Team Section End */}
+          ))}
+        </Slider>
+      </div>
+    </section>
 
 
 
