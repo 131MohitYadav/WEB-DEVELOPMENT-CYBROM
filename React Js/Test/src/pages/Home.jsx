@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Slider from "react-slick"; // make sure to install: npm i react-slick slick-carousel
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaFacebookF, FaInstagram, FaTwitter, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 const teamMembers = [
     { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-1.jpg" },
@@ -398,6 +399,9 @@ const Home = () => {
     </div>
   </div>
 </section>
+
+
+{/* // footer  section // */}
 
 
 
