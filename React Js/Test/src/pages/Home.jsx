@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Slider from "react-slick"; // make sure to install: npm i react-slick slick-carousel
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaFacebookF, FaInstagram, FaTwitter, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaEnvelope } from 'react-icons/fa';
 
 const teamMembers = [
     { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-1.jpg" },
@@ -404,42 +404,79 @@ const Home = () => {
 {/* // footer  section // */}
 
 <footer className="footer">
-      <div className="footer-overlay">
-        <div className="footer-container">
-          <div className="footer-about">
-            <h2>GYM<span>M</span></h2>
-            <p>Shape your body and achieve your fitness goals with us!</p>
-            <div className="footer-socials">
-              <a href="#"><FaFacebookF /></a>
-              <a href="#"><FaInstagram /></a>
-              <a href="#"><FaTwitter /></a>
-            </div>
-          </div>
-
-          <div className="footer-links">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Classes</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-
-          <div className="footer-contact">
-            <h3>Contact Us</h3>
-            <p><FaPhoneAlt /> +1 234 567 890</p>
-            <p><FaEnvelope /> info@gymwebsite.com</p>
+      <div className="footer-top">
+        <div className="contact-item">
+          <i className="icon"><FaEnvelope /></i>
+          <div>
+            <h4>Address</h4>
+            <p></p>
           </div>
         </div>
-
-        <div className="footer-bottom">
-          <p>© 2025 GYM M. All Rights Reserved.</p>
+        <div className="contact-item">
+          <i className="icon"><FaEnvelope /></i>
+          <div>
+            <h4>Phone</h4>
+            <p> +91 9876543210 | +91 9123456780</p>
+          </div>
+        </div>
+        <div className="contact-item">
+          <i className="icon"><FaEnvelope /></i>
+          <div>
+            <h4>Email</h4>
+            <p>Support.gymcenter@gmail.com</p>
+          </div>
         </div>
       </div>
-    </footer>
 
+      <div className="footer-main">
+        <div className="footer-col logo-section">
+          <h2 className="logo">GY<span>M</span></h2>
+          <p>We at GymM are committed to building a stronger, healthier India. 
+Join us for expert fitness training, personal coaching, and a vibrant community. 
+Transform your lifestyle with us today!
+</p>
+          <div className="social-icons">
+            <FaFacebookF />
+            <FaTwitter />
+            <FaYoutube />
+            <FaInstagram />
+            <FaEnvelope />
+          </div>
+        </div>
+
+        <div className="footer-col">
+          <h4>Useful links</h4>
+          <ul>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Classes</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <div className="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li>Login</li>
+            <li>My Account</li>
+            <li>Subscribe</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <div className="footer-col">
+          <h4>Tips & Guides</h4>
+          <ul>
+            <li>Physical fitness may help prevent depression, anxiety</li>
+            <li>Fitness: Best exercise to lose belly fat and tone up</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="footer-bottom">
+        <p>Copyright ©2025 All rights reserved</p>
+      </div>
+    </footer>
 
 
 
