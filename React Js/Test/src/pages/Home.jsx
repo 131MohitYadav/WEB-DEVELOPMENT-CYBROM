@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Slider from "react-slick"; // make sure to install: npm i react-slick slick-carousel
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaEnvelope } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaEnvelope, FaHome , FaPhoneAlt } from 'react-icons/fa';
 
 const teamMembers = [
     { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-1.jpg" },
@@ -406,14 +406,14 @@ const Home = () => {
 <footer className="footer">
       <div className="footer-top">
         <div className="contact-item">
-          <i className="icon"><FaEnvelope /></i>
+          <i className="icon"><FaHome /></i>
           <div>
             <h4>Address</h4>
-            <p></p>
+            <p>7th Floor, GymM Fitness Hub, Andheri West, Mumbai, Maharashtra 400053</p>
           </div>
         </div>
         <div className="contact-item">
-          <i className="icon"><FaEnvelope /></i>
+          <i className="icon"><FaPhoneAlt /></i>
           <div>
             <h4>Phone</h4>
             <p> +91 9876543210 | +91 9123456780</p>
