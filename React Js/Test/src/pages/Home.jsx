@@ -403,6 +403,43 @@ const Home = () => {
 
 {/* // footer  section // */}
 
+<footer className="footer">
+      <div className="footer-overlay">
+        <div className="footer-container">
+          <div className="footer-about">
+            <h2>GYM<span>M</span></h2>
+            <p>Shape your body and achieve your fitness goals with us!</p>
+            <div className="footer-socials">
+              <a href="#"><FaFacebookF /></a>
+              <a href="#"><FaInstagram /></a>
+              <a href="#"><FaTwitter /></a>
+            </div>
+          </div>
+
+          <div className="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Classes</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div className="footer-contact">
+            <h3>Contact Us</h3>
+            <p><FaPhoneAlt /> +1 234 567 890</p>
+            <p><FaEnvelope /> info@gymwebsite.com</p>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <p>© 2025 GYM M. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
 
 
 
