@@ -917,6 +917,7 @@ a{
 	display: inline-block;
 	position: relative;
 	margin-right: 20px;
+	text-decoration: none;
 }
 
 .breadcrumb-text .bt-option a:after {
@@ -924,9 +925,9 @@ a{
 	right: -14px;
 	top: 6px;
 	font-family: "FontAwesome";
-	content: "";
-	font-size: 13px;
-	font-weight: 400;
+	content: "...";
+	font-size: 14px;
+	font-weight: bold;
 }
 
 .breadcrumb-text .bt-option span {
