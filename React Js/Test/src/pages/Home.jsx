@@ -24,7 +24,7 @@ const Home = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,          // Enable auto-scroll
-        autoplaySpeed: 2000,     // 3 seconds delay
+        autoplaySpeed: 1000,     // 2 seconds delay
         responsive: [
           { breakpoint: 1024, settings: { slidesToShow: 2 } },
           { breakpoint: 768, settings: { slidesToShow: 1 } },
@@ -52,7 +52,7 @@ const Home = () => {
           <div className="hero-text">
             
             <h1>
-              BE STRONG <span style={{ color: '#f36100' }}>TRAINING HARD</span>
+              BE STRONG <br/><span style={{ color: '#f36100' }}>TRAINING HARD</span>
             </h1>
             <button className="primary-btn">GET INFO</button>
           </div>
@@ -66,7 +66,7 @@ const Home = () => {
           />
           <div className="hero-text">
             <h1>
-              SHAPE YOUR <span style={{ color: '#f36100' }}>BODY</span>
+              SHAPE YOUR <br/> <span style={{ color: '#f36100' }}>BODY</span>
             </h1>
             <button className="primary-btn">JOIN NOW</button>
           </div>
@@ -80,7 +80,7 @@ const Home = () => {
           />
           <div className="hero-text">
             <h1>
-              PUSH YOUR <span style={{ color: '#f36100' }}>LIMITS</span>
+              PUSH YOUR<br/> <span style={{ color: '#f36100' }}>LIMITS</span>
             </h1>
             <button className="primary-btn">CONTACT US</button>
           </div>
@@ -394,9 +394,9 @@ const Home = () => {
       ))}
     </Slider>
     
-    <div className="text-center mt-5">
+    {/* <div className="text-center mt-5">
       <button className="primary-btn">Appointment</button>
-    </div>
+    </div> */}
   </div>
 </section>
 

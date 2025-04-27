@@ -824,6 +824,7 @@ a{
 	flex-wrap: wrap;
 	justify-content: space-around;
 	padding: 50px 20px;
+	
   }
   
   .footer-col {
@@ -887,3 +888,7 @@ a{
 	color: orange;
   }
   
+
+  .logo{
+	font-weight: bold;
+  }

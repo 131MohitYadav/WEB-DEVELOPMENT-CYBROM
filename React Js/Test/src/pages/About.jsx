@@ -4,7 +4,7 @@ const About = () => {
   return (
    <>
 
-   <h1>Hello Mohit Yadav</h1>
+   
    
    </>
   )
