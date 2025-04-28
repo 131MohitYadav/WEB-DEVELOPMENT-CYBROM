@@ -940,3 +940,156 @@ a{
 /* // video // */
 
 /* Gym Tour Section Styles */
+
+
+/* Base Styles */
+.gym-videos-container {
+
+	margin: 0 auto;
+	padding: 3rem 1rem;
+background-color: black;
+	
+  }
+  
+  .section-title {
+	font-size: 3rem;
+	margin-bottom: 3rem;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	position: relative;
+  }
+  
+  .section-title::after {
+	content: '';
+	display: block;
+	width: 100px;
+	height: 4px;
+	background: #00f7ff;
+	margin: 15px auto;
+	border-radius: 2px;
+  }
+  
+  /* Video Grid Layout */
+  .video-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+	gap: 3rem;
+	padding: 0 2rem;
+  }
+  
+  /* Unique Card Design */
+  .video-card {
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 15px;
+	padding: 2rem;
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .video-card::before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: linear-gradient(45deg, #00f7ff, #0088ff, #00f7ff);
+	background-size: 400%;
+	z-index: -1;
+	border-radius: 16px;
+	opacity: 0;
+	transition: 0.5s;
+  }
+  
+  .video-card:hover::before {
+	opacity: 1;
+	animation: animate-border 8s linear infinite;
+  }
+  
+  @keyframes animate-border {
+	0% { background-position: 0 0; }
+	50% { background-position: 400% 0; }
+	100% { background-position: 0 0; }
+  }
+  
+  .video-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 15px 30px rgba(0, 247, 255, 0.2);
+  }
+  
+  .video-title {
+	font-size: 1.8rem;
+	margin-bottom: 1.5rem;
+	color: #fff;
+	text-align: center;
+	font-weight: 300;
+  }
+  
+  /* Neon Text Effect */
+  .neon-text {
+	text-shadow: 0 0 5px #00f7ff, 0 0 10px #00f7ff;
+  }
+  
+  /* Video Container */
+  .responsive-iframe-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 0 0 20px rgba(0, 247, 255, 0.3);
+	transition: all 0.3s ease;
+  }
+  
+  .glow-effect:hover {
+	box-shadow: 0 0 30px rgba(0, 247, 255, 0.6);
+  }
+  
+  .youtube-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+	.video-grid {
+	  grid-template-columns: 1fr;
+	  padding: 0 1rem;
+	  gap: 2rem;
+	}
+	
+	.section-title {
+	  font-size: 2rem;
+	}
+	
+	.video-title {
+	  font-size: 1.5rem;
+	}
+	
+	.video-card {
+	  padding: 1.5rem;
+	}
+  }
+  
+  /* Animation for page load */
+  @keyframes fadeIn {
+	from { opacity: 0; transform: translateY(20px); }
+	to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .video-card {
+	animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  .video-card:nth-child(2) {
+	animation-delay: 0.3s;
+  }
