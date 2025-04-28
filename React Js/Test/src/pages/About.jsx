@@ -33,42 +33,43 @@ const About = () => {
       </section>
 
 
-
-      <section className="gym-videos-container">
-      <h1 className="section-title">Our Gym Experience</h1>
+      <div className="gym-video-showcase">
+      <h1 className="main-title">EXPERIENCE OUR <span>GYM</span></h1>
       
-      <div className="video-grid">
-        {/* Gym Tour Video - Will autoplay */}
-        <div className="video-card neon-card">
-          <h2 className="video-title neon-text">Gym Facility Tour</h2>
-          <div className="responsive-iframe-container glow-effect">
+      <div className="video-duo-container">
+        {/* Left Video - Tour */}
+        <div className="video-card left-card">
+          <div className="video-wrapper">
             <iframe
-              src="https://www.youtube.com/embed/eaRQF-7hhmo?rel=0&modestbranding=1"
-              title="Our Gym Facility Tour"
+              src="https://www.youtube.com/embed/eaRQF-7hhmo?autoplay=1&mute=1&loop=1&playlist=eaRQF-7hhmo&controls=0&modestbranding=1"
+              title="Gym Facility Tour"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              className="youtube-video"
             />
+          </div>
+          <div className="video-caption">
+            <h3>PREMIUM FACILITY TOUR</h3>
+            <div className="caption-bar"></div>
           </div>
         </div>
 
-        {/* Workout Video - Will autoplay */}
-        <div className="video-card neon-card">
-          <h2 className="video-title neon-text">Workout Highlights</h2>
-          <div className="responsive-iframe-container glow-effect">
+        {/* Right Video - Workout */}
+        <div className="video-card right-card">
+          <div className="video-wrapper">
             <iframe
-              src="https://www.youtube.com/embed/HQfF5XRVXjU?rel=0&modestbranding=1"
-              title="Gym Workout Highlights"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              src="https://www.youtube.com/embed/HQfF5XRVXjU?autoplay=1&mute=1&loop=1&playlist=HQfF5XRVXjU&controls=0&modestbranding=1"
+              title="Workout Highlights"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              referrerPolicy="strict-origin-when-cross-origin"
-              className="youtube-video"
             />
+          </div>
+          <div className="video-caption">
+            <h3>WORKOUT HIGHLIGHTS</h3>
+            <div className="caption-bar"></div>
           </div>
         </div>
       </div>
-    </section>
-
+    </div>
 
    
    </>
