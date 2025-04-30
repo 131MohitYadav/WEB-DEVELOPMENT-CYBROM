@@ -30,7 +30,7 @@ const About = () => {
     autoplay: true,
     autoplaySpeed: 1000
   };
-
+  
   return (
     <>
       {/* Breadcrumb */}
