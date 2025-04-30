@@ -12,7 +12,7 @@ const About = () => {
       stars: 5
     },
     {
-      image: 'https://i.ibb.co/z8ZCNjv/girl.jpg',
+      image: '/img/testimonial-1.jpg',
       name: 'Sophie Martinez',
       text: 'The trainers are very helpful and professional. Highly recommended!',
       stars: 4
