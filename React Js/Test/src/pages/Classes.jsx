@@ -17,18 +17,22 @@ const Classes =() => {
           <div className="row">
             <div className="col-lg-12 text-center">
               <div className="breadcrumb-text">
-                <h2>About us</h2>
+                <h2>Classes</h2>
                 <div className="bt-option">
                   <Link to="/">Home</Link>
-                  <span>About</span><span>Body Building</span>
+                  <span>Body Building</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+{/* 
+      // our Classes timetable // */}
 
-      
+<div className="gym-video-showcase">
+<h1 className="main-title">EXPERIENCE OUR <span>GYM</span></h1>
+</div>
 
 
 
