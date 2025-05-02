@@ -1129,12 +1129,12 @@ a{
 
 .class-timetable-section {
 	background: #151515;
-	margin-top: 100px;
+	margin-top: 0px;
 	padding: 50px 0; /* Add some padding */
 }
 .timet{
 	color: white;
-	margin: 100px auto 30px; /* top | horizontal | bottom */
+	margin: 0px auto 30px; /* top | horizontal | bottom */
 	text-align: center;
 	/* Remove background - it's already on parent */
 	font-size: 2.5rem;
@@ -1145,7 +1145,7 @@ a{
   }
 
 .class-timetable-section.class-details-timetable {
-	padding-top: 0;
+	padding-top: 20px;
 	
 }
 
@@ -1231,10 +1231,12 @@ a{
 
 .class-timetable.details-timetable td h5 {
 	color: #ffffff1a;
+	text-align: center;
 }
 
 .class-timetable.details-timetable td span {
 	color: #363636;
+	text-align: center;
 }
 
 .class-timetable.details-timetable td.hover-dp h5 {
@@ -1277,6 +1279,7 @@ a{
 	border-right: 1px solid #363636;
 	padding: 15px 0;
 	font-weight: 400;
+	text-align: center;
 }
 
 .class-timetable table tbody tr td {
@@ -1289,6 +1292,7 @@ a{
 	color: #f36100;
 	background: #000000;
 	border: 1px solid #363636;
+	text-align: center;
 }
 
 .class-timetable table tbody tr td.dark-bg {
@@ -1336,9 +1340,3 @@ a{
 	color: #a9a9a9;
 }
 
-.class-timetable th {
-	color: white;
-	padding: 15px;
-	background: #f36100;
-	text-transform: uppercase;
-  }

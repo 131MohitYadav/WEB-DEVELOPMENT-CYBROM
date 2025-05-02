@@ -52,7 +52,7 @@ const Classes =() => {
                         <table>
                             <thead>
                                 <tr>
-                                    <th></th>
+                                    <th>Day/Time</th>
                                     <th>Monday</th>
                                     <th>Tuesday</th>
                                     <th>Wednesday</th>
