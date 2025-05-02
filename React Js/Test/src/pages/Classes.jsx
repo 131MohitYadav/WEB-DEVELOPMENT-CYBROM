@@ -31,7 +31,7 @@ const Classes =() => {
       // our Classes timetable // */}
 
 <div className="gym-video-showcase">
-<h1 className="main-title">EXPERIENCE OUR <span>GYM</span></h1>
+<h1 className="main-title">OUR CLASSES <span>TIMETABLE</span></h1>
 </div>
 
 
