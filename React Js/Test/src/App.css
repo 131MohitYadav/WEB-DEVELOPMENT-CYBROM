@@ -1129,10 +1129,24 @@ a{
 
 .class-timetable-section {
 	background: #151515;
+	margin-top: 100px;
+	padding: 50px 0; /* Add some padding */
 }
+.timet{
+	color: white;
+	margin: 100px auto 30px; /* top | horizontal | bottom */
+	text-align: center;
+	/* Remove background - it's already on parent */
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+.timet span {
+	color: #f36100; /* Orange color for "SCHEDULE" */
+  }
 
 .class-timetable-section.class-details-timetable {
 	padding-top: 0;
+	
 }
 
 .class-timetable-section .section-title {
@@ -1248,8 +1262,8 @@ a{
 }
 
 .class-timetable table {
-	border: 1px solid #363636;
-	text-align: center;
+	width: 100%;
+	border-collapse: collapse;
 }
 
 .class-timetable table thead {
@@ -1321,3 +1335,10 @@ a{
 	font-size: 12px;
 	color: #a9a9a9;
 }
+
+.class-timetable th {
+	color: white;
+	padding: 15px;
+	background: #f36100;
+	text-transform: uppercase;
+  }
