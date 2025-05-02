@@ -415,6 +415,9 @@ ol {
 	background: transparent;
 	border: 2px solid #f36100;
 }
+.bs-text .primary-btn:hover{
+	color:orangered;
+}
 
 .bs-text .play-btn {
 	display: inline-block;
