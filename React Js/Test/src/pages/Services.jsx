@@ -73,9 +73,7 @@ const Services = () => {
                         <h2>CALCULATE YOUR BMI</h2>
                     </div>
                     <div className="chart-calculate-form">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-                            viverra maecenas accumsan lacus vel facilisis.</p>
+                        <p>BMI ( Body Mass Index) is a simple calculatior that uses your height and weight to assess whether your weight is in a healthy range. It's a useful screening tool that can indicate potential weight-related health risks. Enter your details below to calculate your BMI and see where you fail on the standard weight status categories.</p>
                         <form action="#">
                             <div className="row">
                                 <div className="col-sm-6">
