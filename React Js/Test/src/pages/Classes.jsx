@@ -20,6 +20,8 @@ const Classes =() => {
                 <h2>Classes</h2>
                 <div className="bt-option">
                   <Link to="/">Home</Link>
+                  <Link to ="about-us">About</Link>
+      
                   <span>Body Building</span>
                 </div>
               </div>
