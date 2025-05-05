@@ -154,15 +154,24 @@ const Services = () => {
                   </div>
                 </form>
                 {bmi && (
-                  <div className='result mt-4 p-3 bg-light rounded'>
-                    <h3>Your Details:</h3>
-                    <p><strong>Age:</strong> {age}</p>
-                    <p><strong>Sex:</strong> {sex}</p>
-                    <h4 className="mt-3">BMI Result:</h4>
-                    <p><strong>BMI Value:</strong> {bmi}</p>
-                    <p><strong>Status:</strong> {status}</p>
-                  </div>
-                )}
+  <div className='resultbmi'>
+    <h3>Your Details:</h3>
+    <p><strong>Age: </strong> {age} years</p>
+    <p><strong>Sex: </strong> {sex}</p>
+    <h4 className="mt-3">BMI RESULT -></h4>
+    <p><strong>BMI Value: </strong> {bmi}</p>
+    <p><strong>Status: </strong> 
+      <span style={{
+        color: status === 'Underweight' ? '#4da6ff' : 
+               status === 'Normal weight' ? '#4dff4d' : 
+               status === 'Overweight' ? '#ffcc00' : '#ff4d4d',
+        fontWeight: 'bold'
+      }}>
+        {status}
+      </span>
+    </p>
+  </div>
+)}
               </div>
             </div>
           </div>

@@ -1439,3 +1439,72 @@ a{
 	padding: 15px 0;
 	background: #f36100;
 }
+
+
+
+/* // calc result css // */
+
+// Add this to your CSS file or style section
+.resultbmi {
+  background: linear-gradient(135deg, #1e1e2f 0%, #2d2d44 100%);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #3a3a5a;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.resultbmi h3 {
+  color: #ff4d4d;
+  font-size: 22px;
+  margin: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #ff4d4d;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.resultbmi h4 {
+  color: #ff8a4d;
+  font-size: 18px;
+  margin: 15px 0 10px;
+}
+
+.resultbmi p {
+  font-size: 16px;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.resultbmi strong {
+  color: #ff8a4d;
+  font-weight: 600;
+}
+
+/* Add some animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.resultbmi {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Add pulse effect for the BMI value */
+.resultbmi p:nth-last-child(2) {
+  position: relative;
+}
+
+.resultbmi p:nth-last-child(2)::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ff4d4d, transparent);
+  bottom: -5px;
+  left: 0;
+}
