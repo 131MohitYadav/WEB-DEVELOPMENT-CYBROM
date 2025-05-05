@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaEnvelope, FaHome , FaPhoneAlt } from 'react-icons/fa';
 
 const Services = () => {
+
+  const[weight , setWeight] = useState('');
+  const[height , setHeight] = useState('');
+  const[age , setAge] = useState('');
+  const[sex , setSex] = useState('');
   return (
     <>
     
@@ -77,10 +82,18 @@ const Services = () => {
                         <form action="#">
                             <div className="row">
                                 <div className="col-sm-6">
-                                    <input type="text" placeholder="Height / cm" />
+                                    <input 
+                                    type="number"
+                                    value={height}
+                                    onChange={(e)=> setHeight(e.target.value)} 
+                                    placeholder="Height / cm" />
                                 </div>
                                 <div className="col-sm-6">
-                                    <input type="text" placeholder="Weight / kg" />
+                                    <input 
+                                    type="text"
+                                    value={weight}
+                                    onChange={(e) => setWeight(e.target.value)} 
+                                    placeholder="Weight / kg" />
                                 </div>
                                 <div className="col-sm-6">
                                     <input type="text" placeholder="Age" />
