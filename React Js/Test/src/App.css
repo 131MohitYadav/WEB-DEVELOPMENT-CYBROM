@@ -62,16 +62,19 @@
   .adm a {
 	display: inline-block;
 	padding: 8px 16px;
-	background-color: #4CAF50;
+background: transparent;
 	color: white;
 	text-decoration: none;
-	border-radius: 4px;
+	border: 2px solid orangered;
+	
+	border-radius: 22px;
 	font-weight: bold;
 	transition: 0.3s;
   }
   
   .adm a:hover {
-	background-color: #45a049;
+	background-color: orangered;
+	color: black;
   }
 
 

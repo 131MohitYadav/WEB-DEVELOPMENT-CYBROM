@@ -75,7 +75,7 @@ const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 hero-image"
-            src="/img/hero-1.jpg"
+            src="/img/hero-3.jpg"
             alt="Third slide"
           />
           <div className="hero-text">
