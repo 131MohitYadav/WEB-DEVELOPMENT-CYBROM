@@ -20,6 +20,11 @@ const Header = () => {
                 <li><Link to="/services">Services</Link></li>
                 <li><Link to="/team">Profile</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
+                <div className='adm'>
+
+                <a href='/admin'>ADMIN LOGIN</a>
+                </div>
+                
                 
               </ul>
             </nav>
