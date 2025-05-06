@@ -50,6 +50,34 @@
   color: #f36100;
 }
 
+
+/* Positions ADMIN at top-right */
+.adm {
+	position: absolute;
+	margin: 0 30px;
+	right: 0;
+  }
+  
+  /* Styles the admin button */
+  .adm a {
+	display: inline-block;
+	padding: 8px 16px;
+	background-color: #4CAF50;
+	color: white;
+	text-decoration: none;
+	border-radius: 4px;
+	font-weight: bold;
+	transition: 0.3s;
+  }
+  
+  .adm a:hover {
+	background-color: #45a049;
+  }
+
+
+
+
+
 /* Responsive tweaks (optional) */
 @media (max-width: 768px) {
   .nav-menu ul {
