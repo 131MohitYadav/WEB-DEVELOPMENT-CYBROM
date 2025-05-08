@@ -467,6 +467,11 @@ ol {
   Pricing Section
 -----------------------*/
 
+
+.popular-tag{
+	color:red;
+	font-weight: bold;
+}
 .pricing-section {
 	background: #151515;
 }
