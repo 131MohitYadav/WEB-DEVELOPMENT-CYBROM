@@ -86,7 +86,7 @@ const Home = () => {
           </div>
         </Carousel.Item>
       </Carousel>
-    </section>
+    </section> 
 
 {/* 
   choose us section */}
@@ -331,6 +331,8 @@ const Home = () => {
 
 
 {/* Gallery Section Begin */}
+
+<h2 className='gal'>OUR GALLERY </h2>
 <div className="gallery-section">
     <div className="gallery">
         <div className="grid-sizer"></div>
