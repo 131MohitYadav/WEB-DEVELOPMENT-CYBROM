@@ -44,11 +44,11 @@ const Contact = () => {
           <div className="row">
             <div className="col-lg-12 text-center">
               <div className="breadcrumb-text">
-                <h2>Bmi Calculator</h2>
+                <h2>Contact - US</h2>
                 <div className="bt-option">
                   <Link to="/">Home</Link>
                   <Link to="/classes">Classes</Link>
-                  <span>Bmi Calculator</span>
+                  <span>Contact</span>
                 </div>
               </div>
             </div>
