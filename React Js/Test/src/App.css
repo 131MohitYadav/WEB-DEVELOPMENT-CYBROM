@@ -1481,7 +1481,7 @@ a{
 
 /* // calc result css // */
 
-// Add this to your CSS file or style section
+
 .resultbmi {
   background: linear-gradient(135deg, #1e1e2f 0%, #2d2d44 100%);
   border-radius: 10px;
@@ -1591,7 +1591,7 @@ font-size: 35px;
   /* Contact Info Section */
   .contact-info {
 	padding: 60px 0;
-	background-color: #f8f9fa;
+	background-color: #1c1f21ba;
   }
   
   .contact-grid {
@@ -1633,20 +1633,20 @@ font-size: 35px;
   
   /* Contact Form Section */
   .contact-form-section {
-	padding: 80px 0;
-	background-color: white;
+	padding: 50px 0;
+	background-color: #1c1f21ba;
   }
   
   .contact-form-section h2 {
 	text-align: center;
 	font-size: 2.5rem;
 	margin-bottom: 15px;
-	color: #333;
+	color: white
   }
   
   .subtitle {
 	text-align: center;
-	color: #666;
+	color:white;
 	font-size: 1.2rem;
 	margin-bottom: 40px;
   }
