@@ -94,7 +94,7 @@ const Contact = () => {
       {/* Contact Form Section */}
       <section className="contact-form-section">
         <div className="container">
-          <h2>SEND US A MESSAGE</h2>
+          <h2>SEND US A <span>MESSAGE</span></h2>
           <p className="subtitle">We'll help you achieve your fitness goals</p>
           
           <form onSubmit={handleSubmit} className="gymp-contact-form">
@@ -171,7 +171,7 @@ const Contact = () => {
       {/* Map Section */}
       <section className="map-section">
         <div className="container">
-          <h2>FIND OUR GYM</h2>
+          <h2>FIND OUR <span>GYM</span></h2>
           <div className="map-container">
             <iframe 
               title="GYMP Location"

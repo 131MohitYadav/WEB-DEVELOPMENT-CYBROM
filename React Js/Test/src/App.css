@@ -1748,3 +1748,7 @@ font-size: 35px;
 	  padding: 30px 20px;
 	}
   }
+
+  .container span{
+	color: orangered;
+  }
