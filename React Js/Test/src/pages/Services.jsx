@@ -27,7 +27,7 @@ const Services = () => {
       bmiStatus = 'Underweight';
     }
     else if (bmiValue < 24.9) {
-      bmiStatus = 'Normal weight';
+      bmiStatus = 'Healthy';
     }
     else if (bmiValue < 29.9) {
       bmiStatus = 'Overweight';
