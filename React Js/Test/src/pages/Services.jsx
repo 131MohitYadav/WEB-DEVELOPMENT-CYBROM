@@ -68,7 +68,7 @@ const Services = () => {
             <div className="col-lg-6">
               <div className="section-title chart-title">
                 <span>check your body</span>
-                <h2>BMI CALCULATOR CHARTting</h2>
+                <h2>BMI CALCULATOR CHART</h2>
               </div>
               <div className="chart-table">
                 <table>
