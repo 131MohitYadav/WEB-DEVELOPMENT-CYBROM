@@ -93,7 +93,7 @@ const Services = () => {
                     </tr>
                     <tr>
                       <td className="point">30.0 - and Above</td>
-                      <td>Obese</td>
+                      <td><Obesity></Obesity></td>
                     </tr>
                   </tbody>
                 </table>
