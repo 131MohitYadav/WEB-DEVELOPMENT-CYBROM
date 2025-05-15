@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Carousel from 'react-bootstrap/Carousel';
 import Slider from "react-slick"; // make sure to install: npm i react-slick slick-carousel
 import "slick-carousel/slick/slick.css";
@@ -7,7 +7,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaEnvelope, FaHome , Fa
 
 const teamMembers = [
     { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-1.jpg" },
-    { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-2.jpg" },
+    { name: "Gunnar Petterson", role: "Gym Trainer", pic: "/img/team-2.jpg" },
     { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-3.jpg" },
     { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-4.jpg" },
     { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-5.jpg" },
