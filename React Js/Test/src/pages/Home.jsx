@@ -7,7 +7,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaEnvelope, FaHome , Fa
 
 const teamMembers = [
     { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-1.jpg" },
-    { name: "Gunnar Petterson", role: "Gym Trainer", pic: "/img/team-2.jpg" },
+    { name: "Gunnar Petterson", role: "Fiteness Trainer", pic: "/img/team-2.jpg" },
     { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-3.jpg" },
     { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-4.jpg" },
     { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-5.jpg" },
