@@ -101,7 +101,7 @@ const Services = () => {
             </div>
             <div className="col-lg-6">
               <div className="section-title chart-calculate-title">
-                <span>check your body</span>
+                <span>Check Your Body</span>
                 <h2>CALCULATE YOUR BMI</h2>
               </div>
               <div className="chart-calculate-form">
