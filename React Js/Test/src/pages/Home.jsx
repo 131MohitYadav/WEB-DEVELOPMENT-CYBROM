@@ -6,10 +6,10 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaEnvelope, FaHome , FaPhoneAlt } from 'react-icons/fa';
 
 const teamMembers = [
-    { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-1.jpg" },
+    { name: "Jeanette Jenkins", role: "Strength and Conditioning Coach", pic: "/img/team-1.jpg" },
     { name: "Gunnar Petterson", role: "Fiteness Trainer", pic: "/img/team-2.jpg" },
     { name: "Michael Smoak", role: "BodyBuilding Coach", pic: "/img/team-3.jpg" },
-    { name: "Athart Rachel", role: "Gym Trainer", pic: "/img/team-4.jpg" },
+    { name: "Tony Harton", role: "Gym Trainer", pic: "/img/team-4.jpg" },
     { name: "Kiry Myers", role: "Weight Loss Specialist", pic: "/img/team-5.jpg" },
     { name: "Kathey Kaehler", role: "Fitnees Group Instructor", pic: "/img/team-6.jpg" },
   ];
