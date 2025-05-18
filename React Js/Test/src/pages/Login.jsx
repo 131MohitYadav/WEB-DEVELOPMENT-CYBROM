@@ -26,8 +26,22 @@ const Login = () => {
             <button className="login-button">Log in</button>
 
             <p className="login21-register">
-                
+                Don't have an account? <a href="#">Register</a>
+
             </p>
+
+            <div  className="login21-terms">
+                <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+
+        <div className="login21-image-section">
+            <img 
+            src="img/hero-3.jpg"
+            alt="Fintness"
+            className="login21-image"
+            />
+
         </div>
     </div>
    </div>
