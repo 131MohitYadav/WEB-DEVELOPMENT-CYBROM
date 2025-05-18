@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom';
+import Login from '../pages/Login';
 const Header = () => {
   return (
     <>
@@ -17,12 +18,14 @@ const Header = () => {
        
               <ul>
                 
-                <li><Link to="/">Home</Link></li>
+                 <li><Link to="/">Login</Link></li>
+                <li><Link to="/home">Home</Link></li>
                 <li><Link to="/about-us">About Us</Link></li>
                 <li><Link to="/classes">Classes</Link></li>
                 <li><Link to="/services">Services</Link></li>
                 <li><Link to="/team">Profile</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
+                
              
                 
                  </ul>
@@ -39,6 +42,9 @@ const Header = () => {
         </div>
       </div>
     </header>
+
+
+    
 
     <Outlet/>
 

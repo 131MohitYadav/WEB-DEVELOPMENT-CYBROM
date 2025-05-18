@@ -9,6 +9,8 @@ import Services from './pages/Services';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
 import Proudct from './Proudct';
+import Login from './pages/Login';
+
 
 
 
@@ -17,7 +19,9 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/services" element={<Services />} />
