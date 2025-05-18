@@ -14,7 +14,20 @@ const Login = () => {
 
 
             <input type="email" placeholder="Email" className="login21-input" />
-            
+            <input type="password" placeholder="Password" className="login21-input" />
+
+            <div className="login21-options">
+                <label>
+                    <input type="checkbox" />
+                    Keep me logged in
+                </label>
+                <a href="#" className="login21-forgot">Forgot password</a>
+            </div>
+            <button className="login-button">Log in</button>
+
+            <p className="login21-register">
+                
+            </p>
         </div>
     </div>
    </div>
