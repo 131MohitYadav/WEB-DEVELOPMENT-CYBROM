@@ -37,7 +37,7 @@ const Login = () => {
 
         <div className="login21-image-section">
             <img 
-            src="img/l1.jpeg"
+            src="img/g3.jpg"
             alt="Fintness"
             className="login21-image"
             />
