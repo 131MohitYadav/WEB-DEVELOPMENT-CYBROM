@@ -1780,7 +1780,7 @@ font-size: 35px;
 .login21-form-section {
   flex: 1;
   padding: 40px;
-  background: linear-gradient(to bottom right,  #e1bee7 , #dab00b);
+  background: linear-gradient(to bottom right,  #e1bee7 , rgb(231, 198, 10));
 }
 
 .login21-logo {
@@ -1847,6 +1847,7 @@ font-size: 35px;
 .login21-register {
   margin-top: 20px;
   font-size: 14px;
+  color: black;
 }
 
 .login21-register a {
@@ -1857,13 +1858,15 @@ font-size: 35px;
 .login21-terms {
   margin-top: 20px;
   font-size: 12px;
-  color: #999;
+  color: black;
 }
 
 .login21-terms a {
-  color: #999;
+  color: black;
   text-decoration: none;
 }
+
+
 
 .login21-image-section {
   flex: 1;
