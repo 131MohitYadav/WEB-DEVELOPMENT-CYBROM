@@ -1885,6 +1885,8 @@ font-size: 35px;
 
 .login-button{
 	border-radius: 20px;
-	padding: 20px auto;
+	color: white;
+	padding: 10px 30px;
 	background-color: green;
+	border: none;
 }
