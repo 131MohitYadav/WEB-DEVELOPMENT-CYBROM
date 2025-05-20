@@ -1780,7 +1780,7 @@ font-size: 35px;
 .login21-form-section {
   flex: 1;
   padding: 40px;
-  background: linear-gradient(to bottom right,  #e1bee7 , rgb(231, 198, 10));
+  background: linear-gradient(to bottom right,  #e1bee7 , rgb(244, 205, 10));
 }
 
 .login21-logo {
@@ -1880,4 +1880,11 @@ font-size: 35px;
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+
+.login21-button{
+	border-radius: 20px;
+	padding: 10px 20px;
+	background-color: green;
 }
