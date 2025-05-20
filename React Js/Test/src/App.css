@@ -1842,6 +1842,12 @@ font-size: 35px;
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
+  font-weight: bold;
+}
+
+.login-button:hover{
+	color: black;
+	background-color: lightgreen;
 }
 
 .login21-register {
