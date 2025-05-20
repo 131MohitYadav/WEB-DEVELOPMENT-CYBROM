@@ -1883,8 +1883,8 @@ font-size: 35px;
 }
 
 
-.login21-button{
+.login-button{
 	border-radius: 20px;
-	padding: 10px 20px;
+	padding: 20px auto;
 	background-color: green;
 }
