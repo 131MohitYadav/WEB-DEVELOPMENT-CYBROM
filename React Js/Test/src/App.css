@@ -1833,7 +1833,7 @@ font-size: 35px;
   text-decoration: none;
 }
 
-.login21-button {
+.login-button {
   width: 100%;
   background-color: black;
   color: white;
@@ -1883,10 +1883,11 @@ font-size: 35px;
 }
 
 
-.login-button{
+/* .login-button{
 	border-radius: 20px;
 	color: white;
 	padding: 10px 30px;
 	background-color: green;
 	border: none;
-}
+	font-weight: bold;
+} */
