@@ -1833,6 +1833,10 @@ font-size: 35px;
   text-decoration: none;
 }
 
+.login21-forgot:hover{
+	color: red;
+}
+
 .login-button {
   width: 100%;
   background-color: black;
