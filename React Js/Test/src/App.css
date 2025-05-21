@@ -1787,6 +1787,7 @@ font-size: 35px;
   font-size: 30px;
   font-weight: bold;
   color: #333;
+  text-align: center;
 }
 
 .login21-logo span {
@@ -1798,6 +1799,7 @@ font-size: 35px;
   font-size: 14px;
   color: #666;
   font-weight: bold;
+  text-align: center;
 }
 
 .login21-title {
