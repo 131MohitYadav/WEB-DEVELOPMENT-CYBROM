@@ -1,5 +1,6 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import {  Routes, Route } from 'react-router-dom';
 import './App.css';
+// import './Flaticon.css'
 import Header from './components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -10,17 +11,18 @@ import Contact from './pages/Contact';
 import Proudct from './Proudct';
 import Login from './pages/Login';
 
+
+
+
 function App() {
-  const location = useLocation();
-
-  // Only show header if not on login page
-  const isLoginPage = location.pathname === '/login';
-
   return (
     <>
-      {!isLoginPage && <Header />}
 
+    <Login />
+      <Header />
       <Routes>
+        
+        
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/classes" element={<Classes />} />
@@ -28,7 +30,7 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/appointment" element={<Proudct />} />
-        <Route path="/login" element={<Login />} />
+
       </Routes>
     </>
   );

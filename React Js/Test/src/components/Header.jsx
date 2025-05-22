@@ -1,12 +1,10 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom';
-import Login from '../pages/Login';
 
 
 const Header = () => {
   return (
     <>
-    <Login />
 
     <header className="header-section">
       <div className="container-fluid">
