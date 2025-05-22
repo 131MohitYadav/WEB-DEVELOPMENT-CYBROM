@@ -51,7 +51,7 @@ const Services = () => {
               <div className="breadcrumb-text">
                 <h2>Bmi Calculator</h2>
                 <div className="bt-option">
-                  <Link to="/">Home</Link>
+                  <Link to="/home">Home</Link>
                   <Link to="/classes">Classes</Link>
                   <span>Bmi Calculator</span>
                 </div>
