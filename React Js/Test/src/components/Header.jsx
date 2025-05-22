@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom';
+import Login from '../pages/Login';
+
 
 const Header = () => {
   return (
     <>
+    <Login />
+
     <header className="header-section">
       <div className="container-fluid">
         <div className="row">
@@ -18,7 +22,7 @@ const Header = () => {
        
               <ul>
                 
-                <li><Link to="/home">Home</Link></li>
+                <li><Link to="/">Home</Link></li>
                 <li><Link to="/about-us">About Us</Link></li>
                 <li><Link to="/classes">Classes</Link></li>
                 <li><Link to="/services">Services</Link></li>
