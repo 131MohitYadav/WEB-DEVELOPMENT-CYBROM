@@ -46,7 +46,7 @@ const Contact = () => {
                 <div className="breadcrumb-text">
                   <h2>Contact - US</h2>
                   <div className="bt-option">
-                    <Link to="/">Home</Link>
+                    <Link to="/home">Home</Link>
                     <Link to="/classes">Classes</Link>
                     <span>Contact</span>
                   </div>
