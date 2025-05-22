@@ -19,7 +19,7 @@ const Classes =() => {
               <div className="breadcrumb-text">
                 <h2>Classes</h2>
                 <div className="bt-option">
-                  <Link to="/">Home</Link>
+                  <Link to="/home">Home</Link>
                   <Link to ="/about-us">About</Link>
       
                   <span>Body Building</span>

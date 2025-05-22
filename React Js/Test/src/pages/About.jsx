@@ -44,7 +44,7 @@ const About = () => {
               <div className="breadcrumb-text">
                 <h2>About us</h2>
                 <div className="bt-option">
-                  <Link to="/">Home</Link>
+                  <Link to="/home">Home</Link>
                   <span>About</span>
                 </div>
               </div>
