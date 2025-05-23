@@ -17,7 +17,7 @@ function App() {
   // Hide Header on login/register pages
   const isAuthPage =
     location.pathname === '/' ||
-    location.pathname === '/login' ||
+    
     location.pathname === '/register';
 
   return (
