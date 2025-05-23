@@ -29,7 +29,7 @@ const Register = () => {
             </button>
 
             <p className="login21-register">
-              Already have a account <a href="/login">Login Here</a>
+              Already have a account | <a href="/login">Login Here</a>
             </p>
 
             <div className="login21-terms">
