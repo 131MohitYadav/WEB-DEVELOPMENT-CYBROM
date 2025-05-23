@@ -9,18 +9,26 @@ import Team from './pages/Team';
 import Contact from './pages/Contact';
 import Proudct from './Proudct';
 import Login from './pages/Login';
+import Register from './pages/Register';
 
 function App() {
   const location = useLocation();
-  const isLoginPage = location.pathname === '/' || location.pathname === '/login';
+
+  // Hide Header on login/register pages
+  const isAuthPage =
+    location.pathname === '/' ||
+    location.pathname === '/login' ||
+    location.pathname === '/register';
 
   return (
     <>
-      {!isLoginPage && <Header />}
+      {!isAuthPage && <Header />}
 
       <Routes>
-        <Route path="" element={<Login />} />
+        <Route path="/" element={<Register />} />        
+        <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+
         <Route path="/about-us" element={<About />} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/services" element={<Services />} />

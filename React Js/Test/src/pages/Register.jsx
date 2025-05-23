@@ -1,12 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Login = () => {
+const Register = () => {
   const navigate = useNavigate(); 
 
   const handleLogin = () => {
 
-    navigate('/home'); 
+    navigate('/login'); 
   };
 
   return (
@@ -16,25 +16,20 @@ const Login = () => {
           <div className="login21-form-section">
             <h1 className="login21-logo">GY<span>M</span></h1>
             <p className="login21-subtitle">Gym management</p>
-            <h2 className="login21-title">Log In</h2>
+            <h2 className="login21-title">Create Your Account</h2>
 
-            <input type="email" placeholder="Email" className="login21-input" />
+            <input type="text" placeholder="Username" className="login21-input" />
+             <input type="email" placeholder="Email" className="login21-input" />
             <input type="password" placeholder="Password" className="login21-input" />
 
-            <div className="login21-options">
-              <label>
-                <input type="checkbox" />
-                Keep me logged in
-              </label>
-              <a href="#" className="login21-forgot">Forgot password</a>
-            </div>
+          
 
             <button className="login-button" onClick={handleLogin}>
-              Log in
+              Sign Up
             </button>
 
             <p className="login21-register">
-              Don't have an account? <a href="/">Register</a>
+              Already have a account <a href="/login">Login Here</a>
             </p>
 
             <div className="login21-terms">
@@ -55,4 +50,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
