@@ -1808,6 +1808,13 @@ font-size: 35px;
   font-weight: bold;
 }
 
+
+.login22-title {
+  margin: 60px 0 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .login21-input {
   width: 100%;
   padding: 12px;

@@ -16,7 +16,7 @@ const Register = () => {
           <div className="login21-form-section">
             <h1 className="login21-logo">GY<span>M</span></h1>
             
-            <h2 className="login21-title">Create Your Account</h2>
+            <h2 className="login22-title">Create Your Account</h2>
 
             <input type="text" placeholder="Username" className="login21-input" />
              <input type="email" placeholder="Email" className="login21-input" />
