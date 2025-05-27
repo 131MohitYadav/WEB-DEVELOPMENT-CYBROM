@@ -126,7 +126,7 @@ const Home = () => {
                         <img src='/img/dum.png' />
                     </span>
                     <h4>Professional Training Programs</h4>
-                    <p>Train under certiffitness experts who design effective workout routines to maximize your performance.</p>
+                    <p>Train under certified fitness experts who design effective workout routines to maximize your performance.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
