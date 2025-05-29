@@ -187,7 +187,7 @@ const Home = () => {
                     </div>
                     <div className="ci-text">
                         <span>STRENGTH</span>
-                        <h5>Kettlebell power</h5>
+                        <h5>Power</h5>
                         {/* <a href="#"><i className="fa fa-angle-right"></i></a> */}
                     </div>
                 </div>
