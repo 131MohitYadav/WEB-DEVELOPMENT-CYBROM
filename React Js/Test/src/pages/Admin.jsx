@@ -28,7 +28,7 @@ const Admin = () => {
         loop 
         className="video-background29"
       >
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-woman-doing-squats-with-a-barbell-3982-large.mp4" type="video/mp4" />
+        <source  src="https://www.youtube.com/embed/uNN62f55EV0?autoplay=1&mute=1" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       
