@@ -1,7 +1,7 @@
 import React from 'react';
 import './GymAdmin29.css'; // External CSS file for extra styling if needed
 
-const GymAdmin29 = () => {
+const Admin = () => {
   return (
     <div className="relative h-screen w-screen overflow-hidden">
       {/* Background Video */}
