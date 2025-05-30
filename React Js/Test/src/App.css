@@ -1903,23 +1903,9 @@ font-size: 35px;
 
 
 
+/* // Admin login form // */
 
 
 
 
-/* GymAdmin29.css */
-.shadow-lg29 {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
 
-.max-w-md29 {
-  max-width: 400px;
-}
-
-.w-full29 {
-  width: 100%;
-}
-
-.transition29 {
-  transition: all 0.3s ease;
-}
