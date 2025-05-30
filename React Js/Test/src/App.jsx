@@ -10,6 +10,8 @@ import Contact from './pages/Contact';
 import Proudct from './Proudct';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Admin from './pages/Admin';
+
 
 function App() {
   const location = useLocation();
@@ -36,6 +38,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/appointment" element={<Proudct />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/admin" element={<Admin />} />
+
       </Routes>
     </>
   );

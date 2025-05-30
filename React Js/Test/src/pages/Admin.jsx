@@ -1,5 +1,4 @@
-import React from 'react';
-import './GymAdmin29.css'; // External CSS file for extra styling if needed
+
 
 const Admin = () => {
   return (
@@ -51,4 +50,4 @@ const Admin = () => {
   );
 };
 
-export default GymAdmin29;
+export default Admin;
