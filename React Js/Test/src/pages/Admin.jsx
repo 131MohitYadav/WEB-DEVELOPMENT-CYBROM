@@ -38,7 +38,7 @@ const Admin = () => {
       {/* Login Form */}
       <div className="login-form-container29">
         <form onSubmit={handleSubmit} className="login-form29">
-          <h2>GYM ADMIN LOGIN</h2>
+          <h2> ADMIN LOGIN</h2>
           
           <div className="form-group29">
             <label htmlFor="email">Email</label>
