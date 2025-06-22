@@ -318,7 +318,7 @@ Front page -> navigation var -> Admin login
 12. Difference between synchronous and asynchronou
 13. Explain this keyword
 
-# QUESTION FOR CSS AND HTML 
+# QUESTION FOR CSS AND HTML FOR INTERVIEW 
 1.what is responsive
 2.how to make are website responisve
 3.differece between flex and grid
