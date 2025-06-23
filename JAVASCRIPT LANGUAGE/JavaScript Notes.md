@@ -290,6 +290,7 @@ array -> collection of multiple value
 # vanta.js
 # swiper.js
 # sweetalert
+# AOS Library -> Animated of Scroll
 # whatfont -> it is a extension in browser chrome it check font , style etc.
 # coolers.com
 
