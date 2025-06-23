@@ -329,3 +329,4 @@ Front page -> navigation var -> Admin login
 
 
 
+# END OF THE JAVASCRIPT NOTES #
