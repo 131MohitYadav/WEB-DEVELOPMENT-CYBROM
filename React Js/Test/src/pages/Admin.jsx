@@ -7,7 +7,7 @@ function Admin(){
    const [error , setError] = useState('');
    
 
-   const adminEmail = 'mohit@gmail.com';
+   const adminEmail = 'Mohit@gmail.com';
    const adminPassword = 'admin123';
 
    const handleLogin = () => {
@@ -27,7 +27,7 @@ return(
       <div className="login-avatar27">
         <img src="avatar.png" alt = "Admin" />
       </div> 
-      <h2 className="login-title27">Adming Login</h2>
+      <h2 className="login-title27">Admin Login</h2>
 
       <input 
       type="email"
@@ -46,7 +46,7 @@ return(
       />
 
       {error && <p style={{color: 'red' , fontSize: '0.9em'}} > {error}</p>}
-      <button className="login=-button27" onClick={handleLogin}>
+      <button className="login-button27" onClick={handleLogin}>
         Sign In
       </button>
 
