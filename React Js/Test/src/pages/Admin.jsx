@@ -45,6 +45,11 @@ return(
       onChange={(e) => setPassword(e.target.value)}
       />
 
+      {error && <p style={{color: 'red' , fontSize: '0.9em'}} > {error}</p>}
+      <button className="login=-button27" onClick={handleLogin}>
+        Sign In
+      </button>
+
 
     </div>
   </div>
@@ -52,7 +57,9 @@ return(
 
 
   
-)
+);
 
 
 }
+
+export default Admin;

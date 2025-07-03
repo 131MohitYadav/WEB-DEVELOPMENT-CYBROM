@@ -2033,4 +2033,29 @@ font-size: 35px;
 
 
 
+ /* // Admin page css // */
 
+
+ body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .login-container27 {
+	height: 100vh;
+	background: linear-gradient(135deg, #ff914d, #ff6b00, #ff914d);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ }
+
+ .login-card27 {
+	  background: linear-gradient(135deg, #fff0e0, #ffd5b3);
+	  border-radius: 20px;
+	  padding: 40px 30px;
+	  width: 320px;
+	  box-shadow: 0 30x 20px rgba(0, 0, 0, 0.25);
+	  text-align: center;
+	  animation: fadeIn27 0.8s ease;
+
+ }
