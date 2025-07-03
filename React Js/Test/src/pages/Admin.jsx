@@ -25,8 +25,9 @@ return(
   <div className="login-container27">
     <div className="login-card27">
       <div className="login-avatar27">
-        <img
-      </div>
+        <img src="avatar.png" alt = "Admin" />
+      </div> 
+      <h2>className = " login-title27"</h2>
     </div>
   </div>
 
