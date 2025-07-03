@@ -22,6 +22,16 @@ function Admin(){
 
 return(
 
+  <div className="login-container27">
+    <div className="login-card27">
+      <div className="login-avatar27">
+        <img
+      </div>
+    </div>
+  </div>
+
+
+
   
 )
 
