@@ -27,7 +27,25 @@ return(
       <div className="login-avatar27">
         <img src="avatar.png" alt = "Admin" />
       </div> 
-      <h2>className = " login-title27"</h2>
+      <h2 className="login-title27">Adming Login</h2>
+
+      <input 
+      type="email"
+      placeholder="Enter Admin Email"
+      className="login-input27"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+      />
+
+      <input
+      type="password"
+      placeholder="Enter Admin password"
+      className="login-input27"
+      value={password}
+      onChange={(e) => setPassword(e.target.value)}
+      />
+
+
     </div>
   </div>
 
