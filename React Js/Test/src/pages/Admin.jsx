@@ -31,7 +31,7 @@ function Admin() {
       <div className="login-container27">
         <div className="login-card27">
           <div className="login-avatar27">
-            <img src="avatar.png" alt="Admin" />
+            <img src="adm.png" alt="Admin" />
           </div> 
           <h2 className="login-title27">Admin Login</h2>
 
