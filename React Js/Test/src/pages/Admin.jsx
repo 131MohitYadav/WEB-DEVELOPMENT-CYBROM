@@ -1,66 +1,66 @@
+import React, { useState } from 'react';
+import { 
+  FaHome, 
+  FaPhoneAlt, 
+  FaEnvelope, 
+  FaFacebookF, 
+  FaTwitter, 
+  FaYoutube, 
+  FaInstagram 
+} from 'react-icons/fa';
 
-import React, { useRef, useState } from 'react';
+function Admin() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
 
-function Admin(){
-   const [email , setEmail] = useState('');
-   const[ password , setPassword] = useState('');
-   const [error , setError] = useState('');
-   
+  const adminEmail = 'Mohit@gmail.com';
+  const adminPassword = 'admin123';
 
-   const adminEmail = 'Mohit@gmail.com';
-   const adminPassword = 'admin123';
-
-   const handleLogin = () => {
-    if ( email === adminEmail && password === adminPassword){
-      alert('Login Successfull');
+  const handleLogin = () => {
+    if (email === adminEmail && password === adminPassword) {
+      alert('Login Successful');
       setError('');
+    } else {
+      setError('Invalid Admin Email or Password');
     }
-    else{
-      setError("Invalid Admin Email or Password");
-    }
-   };
+  };
 
-return(
+  return (
+    <>
+      <div className="login-container27">
+        <div className="login-card27">
+          <div className="login-avatar27">
+            <img src="avatar.png" alt="Admin" />
+          </div> 
+          <h2 className="login-title27">Admin Login</h2>
 
-  <>
+          <input 
+            type="email"
+            placeholder="Enter Admin Email"
+            className="login-input27"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
-  <div className="login-container27">
-    <div className="login-card27">
-      <div className="login-avatar27">
-        <img src="avatar.png" alt = "Admin" />
-      </div> 
-      <h2 className="login-title27">Admin Login</h2>
+          <input
+            type="password"
+            placeholder="Enter Admin Password"
+            className="login-input27"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
 
-      <input 
-      type="email"
-      placeholder="Enter Admin Email"
-      className="login-input27"
-      value={email}
-      onChange={(e) => setEmail(e.target.value)}
-      />
+          {error && <p style={{ color: 'red', fontSize: '0.9em' }}>{error}</p>}
+          
+          <button className="login-button27" onClick={handleLogin}>
+            Sign In
+          </button>
+        </div>
+      </div>
 
-      <input
-      type="password"
-      placeholder="Enter Admin password"
-      className="login-input27"
-      value={password}
-      onChange={(e) => setPassword(e.target.value)}
-      />
-
-      {error && <p style={{color: 'red' , fontSize: '0.9em'}} > {error}</p>}
-      <button className="login-button27" onClick={handleLogin}>
-        Sign In
-      </button>
-
-
-    </div>
-  </div>
-
-
-
-  {/* // footer  section // */}
-  
-  <footer className="footer">
+      {/* Footer section */}
+      <footer className="footer">
         <div className="footer-top">
           <div className="contact-item">
             <i className="icon"><FaHome /></i>
@@ -73,7 +73,7 @@ return(
             <i className="icon"><FaPhoneAlt /></i>
             <div>
               <h4>Phone</h4>
-              <p> +91 9876543210 | +91 9123456780</p>
+              <p>+91 9876543210 | +91 9123456780</p>
             </div>
           </div>
           <div className="contact-item">
@@ -84,14 +84,15 @@ return(
             </div>
           </div>
         </div>
-  
+
         <div className="footer-main">
           <div className="footer-col logo-section">
             <h2 className="logo">GY<span>M</span></h2>
-            <p>We at GymM are committed to building a stronger, healthier India. 
-  Join us for expert fitness training, personal coaching, and a vibrant community. 
-  Transform your lifestyle with us today!
-  </p>
+            <p>
+              We at GymM are committed to building a stronger, healthier India. 
+              Join us for expert fitness training, personal coaching, and a vibrant community. 
+              Transform your lifestyle with us today!
+            </p>
             <div className="social-icons">
               <FaFacebookF />
               <FaTwitter />
@@ -100,9 +101,9 @@ return(
               <FaEnvelope />
             </div>
           </div>
-  
+
           <div className="footer-col">
-            <h4>Useful links</h4>
+            <h4>Useful Links</h4>
             <ul>
               <li>About</li>
               <li>Blog</li>
@@ -110,7 +111,7 @@ return(
               <li>Contact</li>
             </ul>
           </div>
-  
+
           <div className="footer-col">
             <h4>Support</h4>
             <ul>
@@ -120,7 +121,7 @@ return(
               <li>Contact</li>
             </ul>
           </div>
-  
+
           <div className="footer-col">
             <h4>Tips & Guides</h4>
             <ul>
@@ -129,23 +130,13 @@ return(
             </ul>
           </div>
         </div>
-  
+
         <div className="footer-bottom">
           <p>Copyright ©2025 All rights reserved</p>
         </div>
       </footer>
-  
-  
-
-
-
-
-
-</>
-  
-);
-
-
+    </>
+  );
 }
 
 export default Admin;
