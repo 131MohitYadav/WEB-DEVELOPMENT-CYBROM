@@ -29,7 +29,7 @@ function Admin() {
   return (
     <>
     <div className="back131">
-      <img src="admback1.jpg" />
+      <img src="admback1.jpg" </i
     </div>
       <div className="login-container27">
         <div className="login-card27">
