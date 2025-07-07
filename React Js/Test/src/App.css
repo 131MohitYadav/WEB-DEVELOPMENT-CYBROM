@@ -2033,5 +2033,123 @@ font-size: 35px;
 
 
 
- /* // Admin page css // */
+ /* Admin page css with background image and overlay */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container with background image and overlay */
+.login-container27 {
+  position: relative;
+  height: 100vh;
+  background: url('/admback1.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Dark overlay over the image */
+.login-container27::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+/* Login Card */
+.login-card27 {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(135deg, #fff0e0, #f3750f);
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  animation: fadeIn27 0.8s ease;
+}
+
+/* Avatar Image */
+.login-avatar27 img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #ff6b00;
+  background-color: #fff;
+  padding: 12px;
+}
+
+/* Title */
+.login-title27 {
+  color: #ff6b00;
+  font-weight: bold;
+  font-size: 1.6em;
+  margin: 30px 0;
+}
+
+/* Inputs */
+.login-input27 {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  background: #ffaf5f;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+.login-input27:focus {
+  border: 2px solid #ff6b00;
+}
+
+.login-input27::placeholder {
+  color: white;
+  font-weight: bold;
+}
+
+/* Sign In Button */
+.login-button27 {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ff6b00, #ff914d);
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.login-button27:hover {
+  background: linear-gradient(90deg, #ff914d, #ff6b00);
+}
+
+/* Error message style */
+p {
+  margin: 8px 0 0;
+  font-size: 0.9em;
+  color: red;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn27 {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 
