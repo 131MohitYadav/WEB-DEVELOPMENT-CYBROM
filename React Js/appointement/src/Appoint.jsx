@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Appoint = () => {
   const [formData, setFormData] = useState({
@@ -20,6 +20,20 @@ const Appoint = () => {
   const [searchPhone, setSearchPhone] = useState('');
   const [filteredAppointment, setFilteredAppointment] = useState(null);
   const [autoHideTimer, setAutoHideTimer] = useState(null);
+
+  // ✅ Load from localStorage on mount
+  useEffect(() => {
+    const storedAppointments = localStorage.getItem('appointments');
+    const storedCounter = localStorage.getItem('tokenCounter');
+    if (storedAppointments) setAppointments(JSON.parse(storedAppointments));
+    if (storedCounter) setTokenCounter(Number(storedCounter));
+  }, []);
+
+  // ✅ Save to localStorage when appointments or tokenCounter change
+  useEffect(() => {
+    localStorage.setItem('appointments', JSON.stringify(appointments));
+    localStorage.setItem('tokenCounter', tokenCounter.toString());
+  }, [appointments, tokenCounter]);
 
   const trainers = [
     { id: 'trainer1', name: 'Rajesh Kumar (Fitness Expert)' },
@@ -60,6 +74,7 @@ const Appoint = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Duplicate check
     if (editIndex === null) {
       const duplicate = appointments.find(
         (appt) =>
@@ -122,10 +137,8 @@ const Appoint = () => {
 
     setFilteredAppointment(found);
 
-    // Clear previous timer if any
     if (autoHideTimer) clearTimeout(autoHideTimer);
 
-    // Auto-hide after 10 seconds
     const timer = setTimeout(() => {
       setFilteredAppointment(null);
       setSearchToken('');
