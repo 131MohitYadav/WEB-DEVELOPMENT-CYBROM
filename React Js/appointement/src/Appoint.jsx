@@ -14,6 +14,7 @@ const Appoint = () => {
 
   const [appointments, setAppointments] = useState([]);
   const [editIndex, setEditIndex] = useState(null);
+  const [tokenCounter, setTokenCounter] = useState(1);
 
   const trainers = [
     { id: 'trainer1', name: 'Rajesh Kumar (Fitness Expert)' },
@@ -39,19 +40,65 @@ const Appoint = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Duplicate check (phone or email)
+    if (editIndex === null) {
+      const duplicate = appointments.find(
+        (appt) =>
+          appt.phone === formData.phone ||
+          (formData.email && appt.email && appt.email === formData.email)
+      );
+      if (duplicate) {
+        alert(
+          `An appointment already exists with ${
+            duplicate.phone === formData.phone ? `phone number ${formData.phone}` : `email ${formData.email}`
+          }! Please edit that instead.`
+        );
+        return;
+      }
+    } else {
+      // Edit mode duplicate check
+      const duplicate = appointments.find(
+        (appt, idx) =>
+          idx !== editIndex &&
+          (appt.phone === formData.phone ||
+           (formData.email && appt.email && appt.email === formData.email))
+      );
+      if (duplicate) {
+        alert(
+          `Another appointment already exists with ${
+            duplicate.phone === formData.phone ? `phone number ${formData.phone}` : `email ${formData.email}`
+          }! Please choose a different one.`
+        );
+        return;
+      }
+    }
+
     if (editIndex !== null) {
-      // Update existing
+      // Editing existing appointment
       const updated = [...appointments];
       updated[editIndex] = formData;
       setAppointments(updated);
       setEditIndex(null);
       alert('Appointment updated successfully!');
     } else {
-      // Add new
-      setAppointments(prev => [...prev, formData]);
-      alert(`Appointment booked successfully with ${formData.trainer} on ${formData.date} at ${formData.time}`);
+      // Adding new appointment with unique ID and token number
+      const newAppointment = {
+        ...formData,
+        id: crypto.randomUUID(),
+        token: tokenCounter
+      };
+      setAppointments(prev => [...prev, newAppointment]);
+      setTokenCounter(prev => prev + 1);
+      alert(`Appointment booked successfully! Your token number is ${newAppointment.token}`);
     }
+
     clearForm();
+
+    // Scroll to list
+    setTimeout(() => {
+      document.getElementById('appointments-list')?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
   };
 
   const clearForm = () => {
@@ -81,6 +128,7 @@ const Appoint = () => {
   const handleClearAll = () => {
     if (window.confirm('Are you sure you want to clear all appointments?')) {
       setAppointments([]);
+      setTokenCounter(1);
     }
   };
 
@@ -214,7 +262,7 @@ const Appoint = () => {
 
       <hr />
 
-      <div className="appointments-list">
+      <div id="appointments-list" className="appointments-list">
         <h3>Booked Appointments</h3>
         {appointments.length === 0 ? (
           <p>No appointments booked yet.</p>
@@ -223,7 +271,8 @@ const Appoint = () => {
             <button className="clear-btn" onClick={handleClearAll}>Clear All Appointments</button>
             <ul>
               {appointments.map((appt, index) => (
-                <li key={index} className="appointment-card">
+                <li key={appt.id} className="appointment-card">
+                  <p><strong>Token Number:</strong> {appt.token}</p>
                   <p><strong>Name:</strong> {appt.name}</p>
                   <p><strong>Phone:</strong> {appt.phone}</p>
                   <p><strong>Email:</strong> {appt.email || '-'}</p>
