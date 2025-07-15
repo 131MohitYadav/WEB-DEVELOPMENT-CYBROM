@@ -16,6 +16,11 @@ const Appoint = () => {
   const [editIndex, setEditIndex] = useState(null);
   const [tokenCounter, setTokenCounter] = useState(1);
 
+  // Search states
+  const [searchToken, setSearchToken] = useState('');
+  const [searchPhone, setSearchPhone] = useState('');
+  const [filteredAppointment, setFilteredAppointment] = useState(null);
+
   const trainers = [
     { id: 'trainer1', name: 'Rajesh Kumar (Fitness Expert)' },
     { id: 'trainer2', name: 'Priya Sharma (Yoga Specialist)' },
@@ -41,7 +46,7 @@ const Appoint = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Duplicate check (phone or email)
+    // Duplicate Check
     if (editIndex === null) {
       const duplicate = appointments.find(
         (appt) =>
@@ -52,12 +57,11 @@ const Appoint = () => {
         alert(
           `An appointment already exists with ${
             duplicate.phone === formData.phone ? `phone number ${formData.phone}` : `email ${formData.email}`
-          }! Please edit that instead.`
+          }.`
         );
         return;
       }
     } else {
-      // Edit mode duplicate check
       const duplicate = appointments.find(
         (appt, idx) =>
           idx !== editIndex &&
@@ -68,21 +72,19 @@ const Appoint = () => {
         alert(
           `Another appointment already exists with ${
             duplicate.phone === formData.phone ? `phone number ${formData.phone}` : `email ${formData.email}`
-          }! Please choose a different one.`
+          }.`
         );
         return;
       }
     }
 
     if (editIndex !== null) {
-      // Editing existing appointment
       const updated = [...appointments];
       updated[editIndex] = formData;
       setAppointments(updated);
       setEditIndex(null);
       alert('Appointment updated successfully!');
     } else {
-      // Adding new appointment with unique ID and token number
       const newAppointment = {
         ...formData,
         id: crypto.randomUUID(),
@@ -95,9 +97,8 @@ const Appoint = () => {
 
     clearForm();
 
-    // Scroll to list
     setTimeout(() => {
-      document.getElementById('appointments-list')?.scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('appointments-search')?.scrollIntoView({ behavior: 'smooth' });
     }, 100);
   };
 
@@ -114,27 +115,46 @@ const Appoint = () => {
     });
   };
 
-  const handleEdit = (index) => {
-    setFormData(appointments[index]);
-    setEditIndex(index);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const handleDelete = (index) => {
-    const updated = appointments.filter((_, i) => i !== index);
-    setAppointments(updated);
-  };
-
   const handleClearAll = () => {
     if (window.confirm('Are you sure you want to clear all appointments?')) {
       setAppointments([]);
       setTokenCounter(1);
+      setFilteredAppointment(null);
     }
+  };
+
+  // ✅ NEW — Auto-hide after 10 seconds
+  const handleSearch = () => {
+    const tokenNum = parseInt(searchToken, 10);
+    let found = null;
+
+    if (!isNaN(tokenNum)) {
+      found = appointments.find(appt => appt.token === tokenNum);
+    }
+
+    if (!found && searchPhone.trim() !== '') {
+      found = appointments.find(appt => appt.phone === searchPhone.trim());
+    }
+
+    if (!found) {
+      alert('No appointment found with this token number or phone number.');
+      return;
+    }
+
+    setFilteredAppointment(found);
+
+    // Auto-hide after 10 seconds
+    setTimeout(() => {
+      setFilteredAppointment(null);
+      setSearchToken('');
+      setSearchPhone('');
+    }, 10000);
   };
 
   return (
     <div className="appointment-form-container">
       <h2>{editIndex !== null ? 'Edit Gym Appointment' : 'Book Gym Appointment'}</h2>
+      
       <form onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-group">
@@ -254,39 +274,55 @@ const Appoint = () => {
           <button type="submit" className="submit-btn">
             {editIndex !== null ? 'Update Appointment' : 'Book Appointment'}
           </button>
-          <p className="disclaimer">
-            *We'll confirm your appointment via call/SMS
-          </p>
+          <p className="disclaimer">*We’ll confirm your appointment via call/SMS</p>
         </div>
       </form>
 
       <hr />
 
-      <div id="appointments-list" className="appointments-list">
-        <h3>Booked Appointments</h3>
-        {appointments.length === 0 ? (
-          <p>No appointments booked yet.</p>
-        ) : (
+      <div id="appointments-search" className="appointments-search">
+        <h3>Check Your Appointment</h3>
+        <input
+          type="number"
+          placeholder="Enter your token number"
+          value={searchToken}
+          onChange={(e) => setSearchToken(e.target.value)}
+        />
+        <input
+          type="tel"
+          placeholder="Or enter mobile number"
+          value={searchPhone}
+          onChange={(e) => setSearchPhone(e.target.value)}
+          pattern="[0-9]{10}"
+        />
+        <button onClick={handleSearch}>Show Appointment</button>
+      </div>
+
+      <div className="appointments-list">
+        {filteredAppointment ? (
           <>
-            <button className="clear-btn" onClick={handleClearAll}>Clear All Appointments</button>
-            <ul>
-              {appointments.map((appt, index) => (
-                <li key={appt.id} className="appointment-card">
-                  <p><strong>Token Number:</strong> {appt.token}</p>
-                  <p><strong>Name:</strong> {appt.name}</p>
-                  <p><strong>Phone:</strong> {appt.phone}</p>
-                  <p><strong>Email:</strong> {appt.email || '-'}</p>
-                  <p><strong>Trainer:</strong> {appt.trainer}</p>
-                  <p><strong>Service:</strong> {services.find(s => s.value === appt.service)?.label}</p>
-                  <p><strong>Date:</strong> {appt.date}</p>
-                  <p><strong>Time:</strong> {appt.time}</p>
-                  <p><strong>Notes:</strong> {appt.notes || '-'}</p>
-                  <button onClick={() => handleEdit(index)} className="edit-btn">Edit</button>
-                  <button onClick={() => handleDelete(index)} className="delete-btn">Delete</button>
-                </li>
-              ))}
-            </ul>
+            <h3>Your Appointment Details</h3>
+            <div className="appointment-card">
+              <p><strong>Token:</strong> {filteredAppointment.token}</p>
+              <p><strong>Name:</strong> {filteredAppointment.name}</p>
+              <p><strong>Phone:</strong> {filteredAppointment.phone}</p>
+              <p><strong>Email:</strong> {filteredAppointment.email || '-'}</p>
+              <p><strong>Trainer:</strong> {filteredAppointment.trainer}</p>
+              <p><strong>Service:</strong> {services.find(s => s.value === filteredAppointment.service)?.label}</p>
+              <p><strong>Date:</strong> {filteredAppointment.date}</p>
+              <p><strong>Time:</strong> {filteredAppointment.time}</p>
+              <p><strong>Notes:</strong> {filteredAppointment.notes || '-'}</p>
+            </div>
+            <p style={{color: 'red'}}><em>Details will hide automatically after 10 seconds.</em></p>
           </>
+        ) : (
+          <p>No appointment to show. Enter valid token or phone number.</p>
+        )}
+
+        {appointments.length > 0 && (
+          <button className="clear-btn" onClick={handleClearAll}>
+            Clear All Appointments
+          </button>
         )}
       </div>
     </div>
