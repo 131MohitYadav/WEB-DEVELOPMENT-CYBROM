@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 const Appoint = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -12,6 +11,9 @@ const Appoint = () => {
     service: 'personal_training',
     notes: ''
   });
+
+  const [appointments, setAppointments] = useState([]);
+  const [editIndex, setEditIndex] = useState(null);
 
   const trainers = [
     { id: 'trainer1', name: 'Rajesh Kumar (Fitness Expert)' },
@@ -37,14 +39,54 @@ const Appoint = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Appointment Booked:', formData);
-    // Add your form submission logic here (API call, etc.)
-    alert(`Appointment booked successfully with ${formData.trainer} on ${formData.date} at ${formData.time}`);
+    if (editIndex !== null) {
+      // Update existing
+      const updated = [...appointments];
+      updated[editIndex] = formData;
+      setAppointments(updated);
+      setEditIndex(null);
+      alert('Appointment updated successfully!');
+    } else {
+      // Add new
+      setAppointments(prev => [...prev, formData]);
+      alert(`Appointment booked successfully with ${formData.trainer} on ${formData.date} at ${formData.time}`);
+    }
+    clearForm();
+  };
+
+  const clearForm = () => {
+    setFormData({
+      name: '',
+      phone: '',
+      email: '',
+      trainer: '',
+      date: '',
+      time: '',
+      service: 'personal_training',
+      notes: ''
+    });
+  };
+
+  const handleEdit = (index) => {
+    setFormData(appointments[index]);
+    setEditIndex(index);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleDelete = (index) => {
+    const updated = appointments.filter((_, i) => i !== index);
+    setAppointments(updated);
+  };
+
+  const handleClearAll = () => {
+    if (window.confirm('Are you sure you want to clear all appointments?')) {
+      setAppointments([]);
+    }
   };
 
   return (
     <div className="appointment-form-container">
-      <h2>Book Gym Appointment</h2>
+      <h2>{editIndex !== null ? 'Edit Gym Appointment' : 'Book Gym Appointment'}</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-group">
@@ -162,13 +204,42 @@ const Appoint = () => {
 
         <div className="form-footer">
           <button type="submit" className="submit-btn">
-            Book Appointment
+            {editIndex !== null ? 'Update Appointment' : 'Book Appointment'}
           </button>
           <p className="disclaimer">
             *We'll confirm your appointment via call/SMS
           </p>
         </div>
       </form>
+
+      <hr />
+
+      <div className="appointments-list">
+        <h3>Booked Appointments</h3>
+        {appointments.length === 0 ? (
+          <p>No appointments booked yet.</p>
+        ) : (
+          <>
+            <button className="clear-btn" onClick={handleClearAll}>Clear All Appointments</button>
+            <ul>
+              {appointments.map((appt, index) => (
+                <li key={index} className="appointment-card">
+                  <p><strong>Name:</strong> {appt.name}</p>
+                  <p><strong>Phone:</strong> {appt.phone}</p>
+                  <p><strong>Email:</strong> {appt.email || '-'}</p>
+                  <p><strong>Trainer:</strong> {appt.trainer}</p>
+                  <p><strong>Service:</strong> {services.find(s => s.value === appt.service)?.label}</p>
+                  <p><strong>Date:</strong> {appt.date}</p>
+                  <p><strong>Time:</strong> {appt.time}</p>
+                  <p><strong>Notes:</strong> {appt.notes || '-'}</p>
+                  <button onClick={() => handleEdit(index)} className="edit-btn">Edit</button>
+                  <button onClick={() => handleDelete(index)} className="delete-btn">Delete</button>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+      </div>
     </div>
   );
 };
