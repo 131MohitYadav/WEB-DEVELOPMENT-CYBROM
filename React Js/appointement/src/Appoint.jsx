@@ -16,10 +16,10 @@ const Appoint = () => {
   const [editIndex, setEditIndex] = useState(null);
   const [tokenCounter, setTokenCounter] = useState(1);
 
-  // Search states
   const [searchToken, setSearchToken] = useState('');
   const [searchPhone, setSearchPhone] = useState('');
   const [filteredAppointment, setFilteredAppointment] = useState(null);
+  const [autoHideTimer, setAutoHideTimer] = useState(null);
 
   const trainers = [
     { id: 'trainer1', name: 'Rajesh Kumar (Fitness Expert)' },
@@ -43,10 +43,23 @@ const Appoint = () => {
     }));
   };
 
+  const clearForm = () => {
+    setFormData({
+      name: '',
+      phone: '',
+      email: '',
+      trainer: '',
+      date: '',
+      time: '',
+      service: 'personal_training',
+      notes: ''
+    });
+    setEditIndex(null);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Duplicate Check
     if (editIndex === null) {
       const duplicate = appointments.find(
         (appt) =>
@@ -54,11 +67,7 @@ const Appoint = () => {
           (formData.email && appt.email && appt.email === formData.email)
       );
       if (duplicate) {
-        alert(
-          `An appointment already exists with ${
-            duplicate.phone === formData.phone ? `phone number ${formData.phone}` : `email ${formData.email}`
-          }.`
-        );
+        alert(`An appointment already exists with ${duplicate.phone === formData.phone ? `phone number ${formData.phone}` : `email ${formData.email}`}.`);
         return;
       }
     } else {
@@ -66,14 +75,10 @@ const Appoint = () => {
         (appt, idx) =>
           idx !== editIndex &&
           (appt.phone === formData.phone ||
-           (formData.email && appt.email && appt.email === formData.email))
+            (formData.email && appt.email && appt.email === formData.email))
       );
       if (duplicate) {
-        alert(
-          `Another appointment already exists with ${
-            duplicate.phone === formData.phone ? `phone number ${formData.phone}` : `email ${formData.email}`
-          }.`
-        );
+        alert(`Another appointment already exists with ${duplicate.phone === formData.phone ? `phone number ${formData.phone}` : `email ${formData.email}`}.`);
         return;
       }
     }
@@ -96,34 +101,8 @@ const Appoint = () => {
     }
 
     clearForm();
-
-    setTimeout(() => {
-      document.getElementById('appointments-search')?.scrollIntoView({ behavior: 'smooth' });
-    }, 100);
   };
 
-  const clearForm = () => {
-    setFormData({
-      name: '',
-      phone: '',
-      email: '',
-      trainer: '',
-      date: '',
-      time: '',
-      service: 'personal_training',
-      notes: ''
-    });
-  };
-
-  const handleClearAll = () => {
-    if (window.confirm('Are you sure you want to clear all appointments?')) {
-      setAppointments([]);
-      setTokenCounter(1);
-      setFilteredAppointment(null);
-    }
-  };
-
-  // ✅ NEW — Auto-hide after 10 seconds
   const handleSearch = () => {
     const tokenNum = parseInt(searchToken, 10);
     let found = null;
@@ -143,18 +122,40 @@ const Appoint = () => {
 
     setFilteredAppointment(found);
 
+    // Clear previous timer if any
+    if (autoHideTimer) clearTimeout(autoHideTimer);
+
     // Auto-hide after 10 seconds
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setFilteredAppointment(null);
       setSearchToken('');
       setSearchPhone('');
     }, 10000);
+
+    setAutoHideTimer(timer);
+  };
+
+  const handleEdit = () => {
+    const index = appointments.findIndex(appt => appt.id === filteredAppointment.id);
+    if (index !== -1) {
+      setFormData(appointments[index]);
+      setEditIndex(index);
+      setFilteredAppointment(null);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const handleDelete = () => {
+    if (window.confirm('Are you sure you want to delete this appointment?')) {
+      setAppointments(prev => prev.filter(appt => appt.id !== filteredAppointment.id));
+      setFilteredAppointment(null);
+    }
   };
 
   return (
     <div className="appointment-form-container">
       <h2>{editIndex !== null ? 'Edit Gym Appointment' : 'Book Gym Appointment'}</h2>
-      
+
       <form onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-group">
@@ -299,7 +300,7 @@ const Appoint = () => {
       </div>
 
       <div className="appointments-list">
-        {filteredAppointment ? (
+        {filteredAppointment && (
           <>
             <h3>Your Appointment Details</h3>
             <div className="appointment-card">
@@ -312,17 +313,11 @@ const Appoint = () => {
               <p><strong>Date:</strong> {filteredAppointment.date}</p>
               <p><strong>Time:</strong> {filteredAppointment.time}</p>
               <p><strong>Notes:</strong> {filteredAppointment.notes || '-'}</p>
+              <button onClick={handleEdit}>Edit</button>
+              <button onClick={handleDelete}>Delete</button>
             </div>
             <p style={{color: 'red'}}><em>Details will hide automatically after 10 seconds.</em></p>
           </>
-        ) : (
-          <p>No appointment to show. Enter valid token or phone number.</p>
-        )}
-
-        {appointments.length > 0 && (
-          <button className="clear-btn" onClick={handleClearAll}>
-            Clear All Appointments
-          </button>
         )}
       </div>
     </div>
