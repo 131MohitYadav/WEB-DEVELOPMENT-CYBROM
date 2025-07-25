@@ -330,6 +330,10 @@ const Appoint = () => {
               <button onClick={handleDelete}>Delete</button>
             </div>
             <p style={{color: 'red'}}><em>Details will hide automatically after 10 seconds.</em></p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus facere, sint inventore distinctio reiciendis aliquam nostrum asperiores molestiae vel tempore. Doloribus perspiciatis commodi harum et eaque natus reiciendis non deleniti?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolore voluptatibus fuga nemo ex doloribus aut. Harum recusandae delectus, nihil ut repellendus officiis saepe in ipsum qui, eos voluptates corporis?;
+              
+            </p>
           </>
         )}
       </div>
