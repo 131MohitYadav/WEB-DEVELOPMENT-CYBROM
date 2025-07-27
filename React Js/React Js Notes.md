@@ -313,3 +313,7 @@ uske badd ye command lekhenge
 # ye project ko live krtah hai 
 open app in cmd  enter command
 1. npm run build
+
+
+
+##################################################################################################
