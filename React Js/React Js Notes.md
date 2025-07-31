@@ -312,7 +312,7 @@ uske badd ye command lekhenge
 
 # ye project ko live krtah hai 
 open app in cmd  enter command
-1. npm run build
+1. npm run build or ye ek build file bana deta hai takki vercel upload kr sakke
 
 
 
