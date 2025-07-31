@@ -1,0 +1,15 @@
+{
+  "appointment": [
+    {
+      "id": "39f0",
+      "name": "ROHIT SINGH",
+      "phone": "9896564",
+      "email": "m@gmal.com",
+      "trainer": "singh",
+      "date": "2025-07-10",
+      "time": "12:30",
+      "service": "personal_training",
+      "notes": "sods"
+    }
+  ]
+}

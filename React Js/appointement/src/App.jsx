@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Appoint from './Appoint'
-import Fetchapi from './Fetchapi'
+import Fetchapi1 from './Fetchapi1'
 
 function App() {
   return (
