@@ -40,12 +40,13 @@ const Fetchapi1 = () => {
 
   return (
     <>
-      <h1>Appointments</h1>
-      <table border="1" align='center'>
+      <h1 style={{ textAlign: 'center' }}>Appointments</h1>
+      <table border="1" align='center' cellPadding="8">
         <thead>
           <tr>
             <th>ID</th><th>Name</th><th>Phone</th><th>Email</th>
-            <th>Trainer</th><th>Date</th><th>Time</th><th>Service</th><th>Actions</th>
+            <th>Trainer Type</th><th>Trainer</th><th>Date</th><th>Time</th><th>Month</th>
+            <th>Service</th><th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -56,9 +57,11 @@ const Fetchapi1 = () => {
                 <td>{e.name}</td>
                 <td>{e.phone}</td>
                 <td>{e.email}</td>
+                <td>{e.trainerType}</td>
                 <td>{e.trainer}</td>
                 <td>{e.date}</td>
-                <td>{e.time}</td>
+                <td>{e.formattedTime}</td>
+                <td>{e.monthName}</td>
                 <td>{e.service}</td>
                 <td>
                   <button onClick={() => mydelete(e.id)}>Delete</button>
@@ -72,17 +75,39 @@ const Fetchapi1 = () => {
 
       {frm && (
         <form onSubmit={finalsubmit} style={{ textAlign: 'center', marginTop: '30px' }}>
-          <input name="name" value={editdata.name} onChange={handleInput} /><br />
-          <input name="phone" value={editdata.phone} onChange={handleInput} /><br />
-          <input name="email" value={editdata.email} onChange={handleInput} /><br />
-          <input name="trainer" value={editdata.trainer} onChange={handleInput} /><br />
+          <input name="name" value={editdata.name} onChange={handleInput} placeholder="Enter your name" /><br />
+          <input name="phone" value={editdata.phone} onChange={handleInput} placeholder="Phone number" /><br />
+          <input name="email" value={editdata.email} onChange={handleInput} placeholder="Email address" /><br />
+
+          <select name="trainerType" value={editdata.trainerType} onChange={handleInput}>
+            <option value="personal">Personal Trainer</option>
+            <option value="group">Group Trainer</option>
+            <option value="virtual">Virtual Trainer</option>
+          </select><br />
+
+          <select name="trainer" value={editdata.trainer} onChange={handleInput}>
+            <option value="">-- Select Trainer --</option>
+            <option value="Alex Sharma">Alex Sharma</option>
+            <option value="Priya Verma">Priya Verma</option>
+            <option value="Rahul Singh">Rahul Singh</option>
+            <option value="Sneha Mehta">Sneha Mehta</option>
+            <option value="Karan Patel">Karan Patel</option>
+          </select><br />
+
           <input type="date" name="date" value={editdata.date} onChange={handleInput} /><br />
-          <input type="time" name="time" value={editdata.time} onChange={handleInput} /><br />
+          <input type="time" name="time" min="05:00" max="23:59" value={editdata.time} onChange={handleInput} /><br />
+
           <select name="service" value={editdata.service} onChange={handleInput}>
             <option value="personal_training">Personal Training</option>
             <option value="group_training">Group Training</option>
+            <option value="diet_plan">Diet Plan</option>
+            <option value="yoga_session">Yoga Session</option>
+            <option value="crossfit">CrossFit</option>
+            <option value="zumba">Zumba</option>
+            <option value="rehab">Rehab Training</option>
           </select><br />
-          <textarea name="notes" value={editdata.notes} onChange={handleInput}></textarea><br />
+
+          <textarea name="notes" value={editdata.notes} onChange={handleInput} placeholder="Notes"></textarea><br />
           <button type="submit">Update</button>
         </form>
       )}
