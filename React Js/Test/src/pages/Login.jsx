@@ -14,7 +14,7 @@ const Login = () => {
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.type]: e.target.value,
+      [e.target.name]: e.target.value,   // ✅ use name
     });
   };
 
@@ -56,6 +56,7 @@ const Login = () => {
 
           <input
             type="email"
+            name="email"   // ✅ added name
             placeholder="Email"
             className="login21-input"
             value={formData.email}
@@ -63,6 +64,7 @@ const Login = () => {
           />
           <input
             type="password"
+            name="password"   // ✅ added name
             placeholder="Password"
             className="login21-input"
             value={formData.password}
