@@ -15,14 +15,13 @@ const Register = () => {
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.type]: e.target.value,
+      [e.target.name]: e.target.value,   // ✅ use name instead of type
     });
   };
 
   const handleRegister = () => {
     const { username, email, password } = formData;
 
-    // Simple validation
     if (!username || !email || !password) {
       setError("All fields are required!");
       return;
@@ -38,11 +37,7 @@ const Register = () => {
       return;
     }
 
-    // Save to localStorage
-    localStorage.setItem(
-      "user",
-      JSON.stringify({ username, email, password })
-    );
+    localStorage.setItem("user", JSON.stringify({ username, email, password }));
 
     setError("");
     alert("Registration successful! Please login.");
@@ -63,6 +58,7 @@ const Register = () => {
 
           <input
             type="text"
+            name="username"   // ✅ added name
             placeholder="Username"
             className="login21-input"
             value={formData.username}
@@ -70,6 +66,7 @@ const Register = () => {
           />
           <input
             type="email"
+            name="email"   // ✅ added name
             placeholder="Email"
             className="login21-input"
             value={formData.email}
@@ -77,6 +74,7 @@ const Register = () => {
           />
           <input
             type="password"
+            name="password"   // ✅ added name
             placeholder="Password"
             className="login21-input"
             value={formData.password}
