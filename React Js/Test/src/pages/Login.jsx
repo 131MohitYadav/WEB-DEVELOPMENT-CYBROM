@@ -5,7 +5,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
-    email: "",
+    identifier: "", // username or email
     password: "",
   });
 
@@ -14,15 +14,15 @@ const Login = () => {
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,   // ✅ use name
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleLogin = () => {
-    const { email, password } = formData;
+    const { identifier, password } = formData;
 
-    if (!email || !password) {
-      setError("Both fields are required!");
+    if (!identifier || !password) {
+      setError("All fields are required!");
       return;
     }
 
@@ -33,12 +33,16 @@ const Login = () => {
       return;
     }
 
-    if (storedUser.email === email && storedUser.password === password) {
+    // ✅ Match by username OR email
+    if (
+      (storedUser.email === identifier || storedUser.username === identifier) &&
+      storedUser.password === password
+    ) {
       setError("");
       alert("Login successful!");
       navigate("/home");
     } else {
-      setError("Invalid email or password!");
+      setError("Invalid username/email or password!");
     }
   };
 
@@ -55,16 +59,16 @@ const Login = () => {
           {error && <p style={{ color: "red" }}>{error}</p>}
 
           <input
-            type="email"
-            name="email"   // ✅ added name
-            placeholder="Email"
+            type="text"
+            name="identifier"  // ✅ username or email
+            placeholder="Username or Email"
             className="login21-input"
-            value={formData.email}
+            value={formData.identifier}
             onChange={handleChange}
           />
           <input
             type="password"
-            name="password"   // ✅ added name
+            name="password"
             placeholder="Password"
             className="login21-input"
             value={formData.password}
