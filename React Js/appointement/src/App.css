@@ -1,18 +1,22 @@
-.appoint-container44 {
+/* .appoint-container44 {
   max-width: 600px;
-  margin: 40px auto;
-  padding: 25px;
-  background: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 60px auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6); 
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
   font-family: 'Segoe UI', sans-serif;
+   
+  color: #fff;
 }
 
 .appoint-title44 {
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: #2d3436;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 1px;
 }
 
 .appoint-form44 {
@@ -23,18 +27,25 @@
 
 .appoint-label44 {
   font-weight: 600;
-  color: #333;
+  color: #eaeaea;
   margin-bottom: 5px;
 }
 
 .appoint-input44,
 .appoint-select44,
 .appoint-textarea44 {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 14px;
-  transition: all 0.2s ease-in-out;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.appoint-input44::placeholder,
+.appoint-textarea44::placeholder {
+  color: #ccc;
 }
 
 .appoint-input44:focus,
@@ -42,25 +53,28 @@
 .appoint-textarea44:focus {
   border-color: #28a745;
   outline: none;
-  box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.5);
 }
 
 .appoint-textarea44 {
-  min-height: 80px;
+  min-height: 90px;
   resize: vertical;
 }
 
 .appoint-btn44 {
-  background: #28a745;
+  background: linear-gradient(135deg, #28a745, #218838);
   color: #fff;
-  padding: 12px;
+  padding: 14px;
   border: none;
-  border-radius: 8px;
-  font-size: 16px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: transform 0.2s, background 0.3s;
 }
 
 .appoint-btn44:hover {
-  background: #218838;
-}
+  background: linear-gradient(135deg, #34d058, #1e7e34);
+  transform: scale(1.05);
+} */

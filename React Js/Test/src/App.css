@@ -1950,7 +1950,7 @@ font-size: 35px;
   padding: 2.5rem;
   border-radius: 10px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(5px);
+
 }
 
 .login-form29 h2 {
@@ -2149,3 +2149,86 @@ body {
 }
 
 
+/* GYM APPOINTMENT FORM CSS */
+.appoint-container44 {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+.appoint-title44 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.appoint-form44 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 column layout */
+  gap: 20px 30px;
+}
+
+.appoint-label44 {
+  font-weight: 600;
+  color: #eaeaea;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.appoint-input44,
+.appoint-select44,
+.appoint-textarea44 {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.appoint-input44::placeholder,
+.appoint-textarea44::placeholder {
+  color: #ccc;
+}
+
+.appoint-input44:focus,
+.appoint-select44:focus,
+.appoint-textarea44:focus {
+  border-color: #28a745;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.5);
+}
+
+.appoint-textarea44 {
+  min-height: 100px;
+  resize: vertical;
+  grid-column: span 2; /* full width */
+}
+
+.appoint-btn44 {
+  grid-column: span 2; /* button full width */
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.appoint-btn44:hover {
+  background: linear-gradient(135deg, #34d058, #1e7e34);
+  transform: scale(1.05);
+}

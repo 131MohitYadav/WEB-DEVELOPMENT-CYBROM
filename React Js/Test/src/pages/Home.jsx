@@ -229,7 +229,7 @@ const Home = () => {
                         <div className="bs-text">
                             <h2>registration now to get more deals</h2>
                             <div className="bt-tips">Where health, beauty and fitness meet.</div>
-                            <a href="/appointment" className="primary-btn btn-normal" >Appointment</a>
+                            <a href="/Appoint1" className="primary-btn btn-normal" >Appointment</a>
 
                         </div>
                     </div>
