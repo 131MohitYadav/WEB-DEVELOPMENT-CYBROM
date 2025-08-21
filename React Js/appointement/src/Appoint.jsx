@@ -54,27 +54,28 @@ const Appoint = () => {
   }
 
   return (
-    <div style={{ maxWidth: '500px', margin: '0 auto', padding: '20px', fontFamily: 'Arial' }}>
-      <h2 style={{ textAlign: 'center' }}>Book a Gym Appointment</h2>
-      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-        <label>Enter Your Full Name</label>
-        <input name="name" placeholder="e.g. John Doe" onChange={handleChange} required />
+    <div className="appoint-container44">
+      <h2 className="appoint-title44">Book a Gym Appointment</h2>
+      <form onSubmit={handleSubmit} className="appoint-form44">
+        
+        <label className="appoint-label44">Enter Your Full Name</label>
+        <input className="appoint-input44" name="name" placeholder="e.g. John Doe" onChange={handleChange} required />
 
-        <label>Enter Your Phone Number</label>
-        <input name="phone" placeholder="e.g. 9876543210" onChange={handleChange} required />
+        <label className="appoint-label44">Enter Your Phone Number</label>
+        <input className="appoint-input44" name="phone" placeholder="e.g. 9876543210" onChange={handleChange} required />
 
-        <label>Enter Your Email Address</label>
-        <input name="email" placeholder="e.g. john@example.com" onChange={handleChange} required />
+        <label className="appoint-label44">Enter Your Email Address</label>
+        <input className="appoint-input44" name="email" placeholder="e.g. john@example.com" onChange={handleChange} required />
 
-        <label>Select Trainer Type</label>
-        <select name="trainerType" onChange={handleChange} required>
+        <label className="appoint-label44">Select Trainer Type</label>
+        <select className="appoint-select44" name="trainerType" onChange={handleChange} required>
           <option value="personal">Personal Trainer</option>
           <option value="group">Group Trainer</option>
           <option value="virtual">Virtual Trainer</option>
         </select>
 
-        <label>Select Trainer Name</label>
-        <select name="trainer" onChange={handleChange} required>
+        <label className="appoint-label44">Select Trainer Name</label>
+        <select className="appoint-select44" name="trainer" onChange={handleChange} required>
           <option value="">-- Select Trainer --</option>
           <option value="Alex Sharma">Alex Sharma</option>
           <option value="Priya Verma">Priya Verma</option>
@@ -83,14 +84,14 @@ const Appoint = () => {
           <option value="Karan Patel">Karan Patel</option>
         </select>
 
-        <label>Select Appointment Date</label>
-        <input type="date" name="date" onChange={handleChange} required />
+        <label className="appoint-label44">Select Appointment Date</label>
+        <input className="appoint-input44" type="date" name="date" onChange={handleChange} required />
 
-        <label>Select Appointment Time</label>
-        <input type="time" name="time" min="05:00" max="23:59" onChange={handleChange} required />
+        <label className="appoint-label44">Select Appointment Time</label>
+        <input className="appoint-input44" type="time" name="time" min="05:00" max="23:59" onChange={handleChange} required />
 
-        <label>Select Service</label>
-        <select name="service" onChange={handleChange} required>
+        <label className="appoint-label44">Select Service</label>
+        <select className="appoint-select44" name="service" onChange={handleChange} required>
           <option value="personal_training">Personal Training</option>
           <option value="group_training">Group Training</option>
           <option value="diet_plan">Diet Plan</option>
@@ -100,10 +101,10 @@ const Appoint = () => {
           <option value="rehab">Rehab Training</option>
         </select>
 
-        <label>Additional Notes</label>
-        <textarea name="notes" placeholder="Write any notes or preferences..." onChange={handleChange}></textarea>
+        <label className="appoint-label44">Additional Notes</label>
+        <textarea className="appoint-textarea44" name="notes" placeholder="Write any notes or preferences..." onChange={handleChange}></textarea>
 
-        <button type="submit" style={{ background: '#28a745', color: '#fff', padding: '10px', border: 'none', cursor: 'pointer' }}>Book Appointment</button>
+        <button type="submit" className="appoint-btn44">Book Appointment</button>
       </form>
     </div>
   )
