@@ -24,20 +24,6 @@
       "notes": "sods"
     },
     {
-      "id": "739b",
-      "name": "Hello",
-      "phone": "895854758",
-      "email": "mohit@gmai.lcom",
-      "trainer": "Sneha Mehta",
-      "date": "2025-07-11",
-      "time": "23:30",
-      "service": "diet_plan",
-      "trainerType": "group",
-      "notes": "dgfdg",
-      "monthName": "July",
-      "formattedTime": "11:30 PM"
-    },
-    {
       "id": "48df",
       "name": "KAJAL YADAV",
       "phone": "1234567895",
@@ -50,6 +36,20 @@
       "notes": "JSDFJS",
       "monthName": "August",
       "formattedTime": "11:00 AM"
+    },
+    {
+      "id": "5211",
+      "name": "ROHIT YADAV",
+      "phone": "9898976876",
+      "email": "R@GMAIL.COM",
+      "trainer": "Priya Verma",
+      "date": "2025-08-23",
+      "time": "14:30",
+      "service": "personal_training",
+      "trainerType": "virtual",
+      "notes": "HELLLO",
+      "monthName": "August",
+      "formattedTime": "2:30 PM"
     }
   ]
 }
