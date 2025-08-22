@@ -25,7 +25,14 @@ const Fetchapi1 = () => {
 
   const handleInput = (e) => {
     const { name, value } = e.target
-    setEditdata(prev => ({ ...prev, [name]: value }))
+
+    // auto-generate monthName when date is updated
+    if (name === "date") {
+      const monthName = new Date(value).toLocaleString("default", { month: "long" })
+      setEditdata(prev => ({ ...prev, [name]: value, monthName }))
+    } else {
+      setEditdata(prev => ({ ...prev, [name]: value }))
+    }
   }
 
   const finalsubmit = (e) => {
@@ -60,7 +67,8 @@ const Fetchapi1 = () => {
                 <td>{e.trainerType}</td>
                 <td>{e.trainer}</td>
                 <td>{e.date}</td>
-                <td>{e.formattedTime}</td>
+                {/* FIX: use e.time instead of e.formattedTime */}
+                <td>{e.time}</td>
                 <td>{e.monthName}</td>
                 <td>{e.service}</td>
                 <td>
@@ -75,17 +83,17 @@ const Fetchapi1 = () => {
 
       {frm && (
         <form onSubmit={finalsubmit} style={{ textAlign: 'center', marginTop: '30px' }}>
-          <input name="name" value={editdata.name} onChange={handleInput} placeholder="Enter your name" /><br />
-          <input name="phone" value={editdata.phone} onChange={handleInput} placeholder="Phone number" /><br />
-          <input name="email" value={editdata.email} onChange={handleInput} placeholder="Email address" /><br />
+          <input name="name" value={editdata.name || ""} onChange={handleInput} placeholder="Enter your name" /><br />
+          <input name="phone" value={editdata.phone || ""} onChange={handleInput} placeholder="Phone number" /><br />
+          <input name="email" value={editdata.email || ""} onChange={handleInput} placeholder="Email address" /><br />
 
-          <select name="trainerType" value={editdata.trainerType} onChange={handleInput}>
+          <select name="trainerType" value={editdata.trainerType || ""} onChange={handleInput}>
             <option value="personal">Personal Trainer</option>
             <option value="group">Group Trainer</option>
             <option value="virtual">Virtual Trainer</option>
           </select><br />
 
-          <select name="trainer" value={editdata.trainer} onChange={handleInput}>
+          <select name="trainer" value={editdata.trainer || ""} onChange={handleInput}>
             <option value="">-- Select Trainer --</option>
             <option value="Alex Sharma">Alex Sharma</option>
             <option value="Priya Verma">Priya Verma</option>
@@ -94,10 +102,10 @@ const Fetchapi1 = () => {
             <option value="Karan Patel">Karan Patel</option>
           </select><br />
 
-          <input type="date" name="date" value={editdata.date} onChange={handleInput} /><br />
-          <input type="time" name="time" min="05:00" max="23:59" value={editdata.time} onChange={handleInput} /><br />
+          <input type="date" name="date" value={editdata.date || ""} onChange={handleInput} /><br />
+          <input type="time" name="time" min="05:00" max="23:59" value={editdata.time || ""} onChange={handleInput} /><br />
 
-          <select name="service" value={editdata.service} onChange={handleInput}>
+          <select name="service" value={editdata.service || ""} onChange={handleInput}>
             <option value="personal_training">Personal Training</option>
             <option value="group_training">Group Training</option>
             <option value="diet_plan">Diet Plan</option>
@@ -107,7 +115,7 @@ const Fetchapi1 = () => {
             <option value="rehab">Rehab Training</option>
           </select><br />
 
-          <textarea name="notes" value={editdata.notes} onChange={handleInput} placeholder="Notes"></textarea><br />
+          <textarea name="notes" value={editdata.notes || ""} onChange={handleInput} placeholder="Notes"></textarea><br />
           <button type="submit">Update</button>
         </form>
       )}
