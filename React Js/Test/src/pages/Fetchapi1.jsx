@@ -6,6 +6,13 @@ const Fetchapi1 = () => {
   const [frm, setFrm] = useState(false)
   const [editdata, setEditdata] = useState({})
 
+  // Membership Plans Map
+  const membershipPlans = {
+    personal_training: "1 Month Plan (₹499)",
+    group_training: "3 Month Plan (₹1499)",
+    diet_plan: "Annual Plan (₹5999)"
+  }
+
   const fetchData = () => {
     axios.get('http://localhost:3000/Test')
       .then(res => setApidata(res.data))
@@ -52,8 +59,9 @@ const Fetchapi1 = () => {
         <thead>
           <tr>
             <th>ID</th><th>Name</th><th>Phone</th><th>Email</th>
-            <th>Trainer Type</th><th>Trainer</th><th>Date</th><th>Time</th><th>Month</th>
-            <th>Service</th><th>Actions</th>
+            <th>Trainer Type</th><th>Trainer</th><th>Date</th>
+            <th>Time</th><th>Month</th><th>Membership Plan</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -67,10 +75,10 @@ const Fetchapi1 = () => {
                 <td>{e.trainerType}</td>
                 <td>{e.trainer}</td>
                 <td>{e.date}</td>
-                {/* FIX: use e.time instead of e.formattedTime */}
                 <td>{e.time}</td>
                 <td>{e.monthName}</td>
-                <td>{e.service}</td>
+                {/* Membership readable text */}
+                <td>{membershipPlans[e.membership] || "N/A"}</td>
                 <td>
                   <button onClick={() => mydelete(e.id)}>Delete</button>
                   <button onClick={() => { setFrm(true); setEditdata(e) }}>Edit</button>
@@ -105,15 +113,13 @@ const Fetchapi1 = () => {
           <input type="date" name="date" value={editdata.date || ""} onChange={handleInput} /><br />
           <input type="time" name="time" min="05:00" max="23:59" value={editdata.time || ""} onChange={handleInput} /><br />
 
-          <select name="service" value={editdata.service || ""} onChange={handleInput}>
-            <option value="personal_training">Personal Training</option>
-            <option value="group_training">Group Training</option>
-            <option value="diet_plan">Diet Plan</option>
-            <option value="yoga_session">Yoga Session</option>
-            <option value="crossfit">CrossFit</option>
-            <option value="zumba">Zumba</option>
-            <option value="rehab">Rehab Training</option>
-          </select><br />
+          {/* ✅ Membership Plan Dropdown */}
+          <select name="membership" value={editdata.membership || ""} onChange={handleInput}>
+            <option value="">-- Select Membership Plan --</option>
+            <option value="personal_training">1 Month Plan (₹499)</option>
+            <option value="group_training">3 Month Plan (₹1499)</option>
+            <option value="diet_plan">Annual Plan (₹5999)</option>
+          </select><br /><br />
 
           <textarea name="notes" value={editdata.notes || ""} onChange={handleInput} placeholder="Notes"></textarea><br />
           <button type="submit">Update</button>
