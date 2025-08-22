@@ -12,6 +12,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Admin from './pages/Admin';
 import Appoint1 from './pages/Appoint1';
+import Fetchapi1 from './pages/Fetchapi1';
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/admin" element={<Admin />} />
         <Route path='/appoint1' element={<Appoint1 />} />
+        <Route path='/fetchapi' element={<Fetchapi1 />} />
 
       </Routes>
     </>
