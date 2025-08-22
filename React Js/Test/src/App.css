@@ -2151,14 +2151,28 @@ body {
 
 /* GYM APPOINTMENT FORM CSS */
 
+/* Background Styling */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+  /* Gradient + Overlay Image */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1') no-repeat center center/cover;
+
+  padding: 20px;
+}
+
+/* Appointment Container */
 .appoint-container44 {
   max-width: 1000px;
   margin: 40px auto;
   padding: 30px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.75);
   border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
   font-family: 'Segoe UI', sans-serif;
   color: #fff;
 }
@@ -2173,7 +2187,7 @@ body {
 
 .appoint-form44 {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 column layout */
+  grid-template-columns: 1fr 1fr;
   gap: 20px 30px;
 }
 
@@ -2214,11 +2228,11 @@ body {
 .appoint-textarea44 {
   min-height: 100px;
   resize: vertical;
-  grid-column: span 2; /* full width */
+  grid-column: span 2;
 }
 
 .appoint-btn44 {
-  grid-column: span 2; /* button full width */
+  grid-column: span 2;
   background: linear-gradient(135deg, #28a745, #218838);
   color: #fff;
   padding: 14px;
@@ -2234,10 +2248,3 @@ body {
   background: linear-gradient(135deg, #34d058, #1e7e34);
   transform: scale(1.05);
 }
-
-/* 
-Fetchapi css Table */
-
-
-
-/* Container for the table */
