@@ -2150,6 +2150,8 @@ body {
 
 
 /* GYM APPOINTMENT FORM CSS */
+
+
 .appoint-container44 {
   max-width: 1000px;
   margin: 40px auto;
@@ -2232,3 +2234,10 @@ body {
   background: linear-gradient(135deg, #34d058, #1e7e34);
   transform: scale(1.05);
 }
+
+/* 
+Fetchapi css Table */
+
+
+
+/* Container for the table */

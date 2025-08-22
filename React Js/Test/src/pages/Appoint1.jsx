@@ -9,7 +9,11 @@ const Appoint1 = () => {
     name: '',
     phone: '',
     email: '',
-    service: 'personal_training',
+    trainerType: 'personal',
+    trainer: '',
+    date: '',
+    time: '',
+    service: 'personal_training', // Membership Plan
     notes: ''
   })
 
@@ -17,7 +21,7 @@ const Appoint1 = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
+    setFormData(prev => ({ ...prev, [name]: value }))
   }
 
   const handleSubmit = async (e) => {
@@ -26,72 +30,76 @@ const Appoint1 = () => {
     const dataWithId = {
       ...formData,
       id: uuid().slice(0, 4),
-      monthName: new Date().toLocaleString('default', { month: 'long' }) // optional, current month
+      monthName: formData.date ? new Date(formData.date).toLocaleString('default', { month: 'long' }) : '',
+      formattedTime: formData.time ? formatTime(formData.time) : ''
     }
 
     try {
       await axios.post('http://localhost:3000/Test', dataWithId)
-      alert('Membership Plan Booked Successfully!')
+      alert('Appointment Booked Successfully!')
       navigate('/fetchapi')
     } catch (error) {
-      alert('Error booking membership plan')
+      alert('Error booking appointment')
     }
+  }
+
+  const formatTime = (time) => {
+    const [hourStr, minute] = time.split(":")
+    let hour = parseInt(hourStr)
+    const ampm = hour >= 12 ? 'PM' : 'AM'
+    hour = hour % 12 === 0 ? 12 : hour % 12
+    return `${hour}:${minute} ${ampm}`
   }
 
   return (
     <div className="page-container">
       <div className="appoint-container44">
-        <h2 className="appoint-title44">Choose a Membership Plan</h2>
+        <h2 className="appoint-title44">Book a Gym Appointment</h2>
         <form onSubmit={handleSubmit} className="appoint-form44">
-          
-          <label className="appoint-label44">Enter Your Full Name</label>
-          <input 
-            className="appoint-input44" 
-            name="name" 
-            placeholder="e.g. John Doe" 
-            onChange={handleChange} 
-            required 
-          />
 
-          <label className="appoint-label44">Enter Your Phone Number</label>
-          <input 
-            className="appoint-input44" 
-            name="phone" 
-            placeholder="e.g. 9876543210" 
-            onChange={handleChange} 
-            required 
-          />
+          <label className="appoint-label44">Full Name</label>
+          <input className="appoint-input44" name="name" placeholder="John Doe" onChange={handleChange} required />
 
-          <label className="appoint-label44">Enter Your Email Address</label>
-          <input 
-            className="appoint-input44" 
-            name="email" 
-            placeholder="e.g. john@example.com" 
-            onChange={handleChange} 
-            required 
-          />
+          <label className="appoint-label44">Phone Number</label>
+          <input className="appoint-input44" name="phone" placeholder="9876543210" onChange={handleChange} required />
 
-          <label className="appoint-label44">Select Membership Plan</label>
-          <select 
-            className="appoint-select44" 
-            name="service" 
-            onChange={handleChange} 
-            required
-          >
+          <label className="appoint-label44">Email Address</label>
+          <input className="appoint-input44" name="email" placeholder="john@example.com" onChange={handleChange} required />
+
+          <label className="appoint-label44">Trainer Type</label>
+          <select className="appoint-select44" name="trainerType" onChange={handleChange} required>
+            <option value="personal">Personal Trainer</option>
+            <option value="group">Group Trainer</option>
+            <option value="virtual">Virtual Trainer</option>
+          </select>
+
+          <label className="appoint-label44">Trainer Name</label>
+          <select className="appoint-select44" name="trainer" onChange={handleChange} required>
+            <option value="">-- Select Trainer --</option>
+            <option value="Alex Sharma">Alex Sharma</option>
+            <option value="Priya Verma">Priya Verma</option>
+            <option value="Rahul Singh">Rahul Singh</option>
+            <option value="Sneha Mehta">Sneha Mehta</option>
+            <option value="Karan Patel">Karan Patel</option>
+          </select>
+
+          <label className="appoint-label44">Appointment Date</label>
+          <input className="appoint-input44" type="date" name="date" onChange={handleChange} required />
+
+          <label className="appoint-label44">Appointment Time</label>
+          <input className="appoint-input44" type="time" name="time" min="05:00" max="23:59" onChange={handleChange} required />
+
+          <label className="appoint-label44">Membership Plan</label>
+          <select className="appoint-select44" name="service" onChange={handleChange} required>
             <option value="personal_training">1 Month Plan (₹499)</option>
             <option value="group_training">3 Month Plan (₹1499)</option>
             <option value="diet_plan">Annual Plan (₹5999)</option>
           </select>
 
           <label className="appoint-label44">Additional Notes</label>
-          <textarea 
-            className="appoint-textarea44" 
-            name="notes" 
-            placeholder="Write any notes or preferences..." 
-            onChange={handleChange}>
-          </textarea>
+          <textarea className="appoint-textarea44" name="notes" placeholder="Write any notes or preferences..." onChange={handleChange}></textarea>
 
-          <button type="submit" className="appoint-btn44">Book Membership</button>
+          <button type="submit" className="appoint-btn44">Book Appointment</button>
         </form>
       </div>
 
@@ -124,11 +132,7 @@ const Appoint1 = () => {
         <div className="footer-main">
           <div className="footer-col logo-section">
             <h2 className="logo">GY<span>M</span></h2>
-            <p>
-              We at GymM are committed to building a stronger, healthier India. 
-              Join us for expert fitness training, personal coaching, and a vibrant community. 
-              Transform your lifestyle with us today!
-            </p>
+            <p>We at GymM are committed to building a stronger, healthier India. Join us for expert fitness training, personal coaching, and a vibrant community. Transform your lifestyle with us today!</p>
             <div className="social-icons">
               <FaFacebookF />
               <FaTwitter />
