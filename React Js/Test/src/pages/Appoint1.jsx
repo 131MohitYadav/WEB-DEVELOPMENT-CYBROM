@@ -58,13 +58,13 @@ const Appoint1 = () => {
         <form onSubmit={handleSubmit} className="appoint-form44">
 
           <label className="appoint-label44">Full Name</label>
-          <input className="appoint-input44" name="name" placeholder="John Doe" onChange={handleChange} required />
+          <input className="appoint-input44" name="name" placeholder="Enter Your Name" onChange={handleChange} required />
 
           <label className="appoint-label44">Phone Number</label>
-          <input className="appoint-input44" name="phone" placeholder="9876543210" onChange={handleChange} required />
+          <input className="appoint-input44" name="phone" placeholder="Enter Your Number" onChange={handleChange} required />
 
           <label className="appoint-label44">Email Address</label>
-          <input className="appoint-input44" name="email" placeholder="john@example.com" onChange={handleChange} required />
+          <input className="appoint-input44" name="email" placeholder="Enter Your Emailid" onChange={handleChange} required />
 
           <label className="appoint-label44">Trainer Type</label>
           <select className="appoint-select44" name="trainerType" onChange={handleChange} required>
@@ -87,7 +87,7 @@ const Appoint1 = () => {
           <input className="appoint-input44" type="date" name="date" onChange={handleChange} required />
 
           <label className="appoint-label44">Appointment Time</label>
-          <input className="appoint-input44" type="time" name="time" min="05:00" max="23:59" onChange={handleChange} required />
+          <input className="appoint-input44" type="time" name="time" min="05:00" max="00:00" onChange={handleChange} required />
 
           <label className="appoint-label44">Membership Plan</label>
           <select className="appoint-select44" name="service" onChange={handleChange} required>
