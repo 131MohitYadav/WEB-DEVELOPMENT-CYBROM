@@ -27,6 +27,20 @@
       "notes": "hiiii",
       "monthName": "August",
       "formattedTime": "11:00 AM"
+    },
+    {
+      "id": "ec18",
+      "name": "MANISH KUMAR",
+      "phone": "9898767567",
+      "email": "M@GMAIL.COM",
+      "trainerType": "group",
+      "trainer": "Alex Sharma",
+      "date": "2025-08-27",
+      "time": "13:30",
+      "service": "diet_plan",
+      "notes": "",
+      "monthName": "August",
+      "formattedTime": "1:30 PM"
     }
   ]
 }

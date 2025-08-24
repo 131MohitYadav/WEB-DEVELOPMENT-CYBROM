@@ -2251,3 +2251,134 @@ body {
 
 /* 
  fetchapi css */
+/* ---------- Heading ---------- */
+.heading_48 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 28px;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* ---------- Table ---------- */
+.table_48 {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.table_48 thead th {
+  background: #4CAF50;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 12px;
+  text-align: center;
+}
+
+.table_48 td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+}
+
+.table_48 tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.table_48 tr:hover {
+  background: #f1f1f1;
+  transition: 0.3s;
+}
+
+/* Buttons in Table */
+.deleteBtn_48 {
+  background: #e74c3c;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 2px;
+  transition: 0.3s;
+}
+
+.deleteBtn_48:hover {
+  background: #c0392b;
+}
+
+.editBtn_48 {
+  background: #3498db;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 2px;
+  transition: 0.3s;
+}
+
+.editBtn_48:hover {
+  background: #2980b9;
+}
+
+/* ---------- Form ---------- */
+.form_48 {
+  width: 50%;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.input_48,
+.select_48,
+.textarea_48 {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.input_48:focus,
+.select_48:focus,
+.textarea_48:focus {
+  border: 1px solid #4CAF50;
+  box-shadow: 0px 0px 5px rgba(76, 175, 80, 0.5);
+  outline: none;
+}
+
+.textarea_48 {
+  resize: none;
+  height: 80px;
+}
+
+.updateBtn_48 {
+  width: 95%;
+  background: #27ae60;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.updateBtn_48:hover {
+  background: #1e8449;
+}
