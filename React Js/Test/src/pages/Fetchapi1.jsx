@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import './Fetchapi1.css'
+
 
 const Fetchapi1 = () => {
   const [apidata, setApidata] = useState([])
