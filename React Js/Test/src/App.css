@@ -2248,3 +2248,116 @@ body {
   background: linear-gradient(135deg, #34d058, #1e7e34);
   transform: scale(1.05);
 }
+
+/* 
+ fetchapi css */
+
+ /* Fetchapi1.css */
+
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 28px;
+  color: #333;
+}
+
+/* Table Styling */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table th, 
+table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background: #4CAF50;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+table tr:hover {
+  background: #f1f1f1;
+}
+
+/* Buttons */
+button {
+  margin: 2px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:first-of-type {
+  background: #e74c3c;
+  color: white;
+}
+
+button:last-of-type {
+  background: #3498db;
+  color: white;
+}
+
+/* Form Styling */
+form {
+  width: 50%;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form select,
+form textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+form textarea {
+  resize: none;
+  height: 80px;
+}
+
+form button {
+  width: 95%;
+  background: #27ae60;
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+}
