@@ -64,7 +64,7 @@ const Appoint1 = () => {
           <input className="appoint-input44" name="phone" placeholder="Enter Your Number" onChange={handleChange} required />
 
           <label className="appoint-label44">Email Address</label>
-          <input className="appoint-input44" name="email" placeholder="Enter Your Emailid" onChange={handleChange} required />
+          <input className="appoint-input44" name="email" placeholder="Enter Your Email Id" onChange={handleChange} required />
 
           <label className="appoint-label44">Trainer Type</label>
           <select className="appoint-select44" name="trainerType" onChange={handleChange} required>
