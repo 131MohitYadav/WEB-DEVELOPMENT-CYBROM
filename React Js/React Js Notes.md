@@ -23,6 +23,7 @@
 # Bundeler ( vite ) -> 
 it take less memory approx 50 se 60 mb
 
+
 # Dependencie -> 
 ki agr react ka project bana rahe to boo kohn kohn se library use kr raha hai
 
@@ -113,19 +114,11 @@ example ->
 
 
 const isLoggedIn = true;
-return <h1>{isLoggedIn ? "Welcome Back!" : "Please Sign In"}</h1>;
+return <h1>{isLoggedIn ? "Welcome Back!" : "Please Sign In"}</h1>
 
 # Using && Operator:
 const isAdmin = true;
 return <>{isAdmin && <p>Admin Panel</p>}</>;
-
-
-
-
-
-
-
-
 
 <div>
 <h1>Hello Mohit</h1>
@@ -313,6 +306,7 @@ uske badd ye command lekhenge
 # ye project ko live krtah hai 
 open app in cmd  enter command
 1. npm run build or ye ek build file bana deta hai takki vercel upload kr sakke
+2. npm run build or ye ek build file bana deta hai takki
 
 
 

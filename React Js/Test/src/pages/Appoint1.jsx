@@ -13,8 +13,9 @@ const Appoint1 = () => {
     trainer: '',
     date: '',
     time: '',
-    service: 'personal_training', // Membership Plan
+    service: 'personal_training', //
     notes: ''
+
   })
 
   const navigate = useNavigate()
@@ -139,6 +140,7 @@ const Appoint1 = () => {
               <FaYoutube />
               <FaInstagram />
               <FaEnvelope />
+
             </div>
           </div>
 
