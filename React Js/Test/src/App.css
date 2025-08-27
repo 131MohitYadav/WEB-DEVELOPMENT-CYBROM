@@ -2150,6 +2150,121 @@ body {
 
 
 /* GYM APPOINTMENT FORM CSS */
+/* 🌟 Appointment Form Styling */
+.appoint-container44 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: url("https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1600&q=80")
+    no-repeat center center/cover;
+  position: relative;
+  overflow: hidden;
+}
+/* Animated overlay for video effect */
+.video-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(120deg, rgba(33,27,22,0.25) 60%, rgba(255,221,87,0.06) 100%);
+  pointer-events: none;
+  mix-blend-mode: lighten;
+  animation: shimmer 6s linear infinite;
+}
+@keyframes shimmer {
+  0% {opacity: 0.8;}
+  50% {opacity: 1;}
+  100% {opacity: 0.8;}
+}
+.appoint-form44 {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.55);
+  
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  position: relative;
+  animation: formFadeIn 1.5s ease;
+}
+@keyframes formFadeIn {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.appoint-heading44 {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 2.2rem;
+  color: #ffdd57;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 0 0 12px rgba(255, 221, 87, 0.8);
+  letter-spacing: 1px;
+  animation: glow 3s infinite alternate;
+}
+@keyframes glow {
+  from {text-shadow: 0 0 10px #ffdd57;}
+  to {text-shadow: 0 0 22px #ffdd57;}
+}
+.appoint-label44 {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+.appoint-input44,
+.appoint-select44,
+.appoint-textarea44 {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+.appoint-input44:focus,
+.appoint-select44:focus,
+.appoint-textarea44:focus {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 10px rgba(255, 221, 87, 0.8);
+}
+.appoint-textarea44 {
+  grid-column: span 2;
+  min-height: 100px;
+  resize: none;
+}
+.appoint-submit44 {
+  grid-column: span 2;
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: black;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffdd57, #ffaa00);
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 2px 8px rgba(255,221,87,0.15);
+  animation: btnPulse 2s infinite alternate;
+}
+@keyframes btnPulse {
+  from {box-shadow: 0 0 12px #ffdd57;}
+  to {box-shadow: 0 0 24px #ffaa00;}
+}
+.appoint-submit44:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ffaa00, #ffdd57);
+}
 
 
 /* 
