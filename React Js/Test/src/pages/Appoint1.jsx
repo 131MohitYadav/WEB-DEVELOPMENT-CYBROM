@@ -14,7 +14,7 @@ const Appoint1 = () => {
     trainer: '',
     date: '',
     time: '',
-    membership: 'personal_training',   // ✅ sirf yeh change (pehle service tha)
+    membership: 'personal_training',
     notes: ''
   })
 
@@ -23,13 +23,14 @@ const Appoint1 = () => {
     setFormData({
       ...formData,
       [name]: value,
+      // Clear trainer if trainerType changes
+      ...(name === 'trainerType' ? { trainer: '' } : {}),
     })
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
     const newData = { ...formData, id: uuid() }
-
     axios.post("http://localhost:3000/Test", newData)
       .then(() => {
         alert("Appointment Booked Successfully ✅")
@@ -38,25 +39,70 @@ const Appoint1 = () => {
       .catch((err) => console.error("Error saving appointment:", err))
   }
 
+  // American style trainer names example
+  const maleTrainers = [
+    "Michael Johnson",
+    "James Anderson",
+    "David Thompson",
+    "John Carter",
+    "Robert Miller"
+  ]
+
+  const femaleTrainers = [
+    "Jessica Taylor",
+    "Emily Moore",
+    "Amanda Davis",
+    "Sarah Wilson",
+    "Laura Clark"
+  ]
+
   return (
     <div className="appoint-container44">
       <h2 className="appoint-heading44">Book Appointment</h2>
       <form className="appoint-form44" onSubmit={handleSubmit}>
-        
         <label className="appoint-label44">Name</label>
-        <input className="appoint-input44" type="text" name="name" value={formData.name} onChange={handleChange} placeholder='Enter Your Name' required />
+        <input className="appoint-input44" type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Enter Your Name" required />
 
         <label className="appoint-label44">Phone</label>
-        <input className="appoint-input44" type="text" name="phone" value={formData.phone} onChange={handleChange} required />
+        <input className="appoint-input44" type="text" name="phone" value={formData.phone} onChange={handleChange} placeholder="Enter Your Number" required />
 
         <label className="appoint-label44">Email</label>
-        <input className="appoint-input44" type="email" name="email" value={formData.email} onChange={handleChange} required />
+        <input className="appoint-input44" type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Enter Your Email" required />
 
         <label className="appoint-label44">Trainer Type</label>
-        <input className="appoint-input44" type="text" name="trainerType" value={formData.trainerType} onChange={handleChange} required />
+        <select
+          className="appoint-select44"
+          name="trainerType"
+          value={formData.trainerType}
+          onChange={handleChange}
+          required
+        >
+          <option value="">Select Trainer Type</option>
+          <option value="male">Male Trainer</option>
+          <option value="female">Female Trainer</option>
+        </select>
 
         <label className="appoint-label44">Trainer</label>
-        <input className="appoint-input44" type="text" name="trainer" value={formData.trainer} onChange={handleChange} required />
+        <select
+          className="appoint-select44"
+          name="trainer"
+          value={formData.trainer}
+          onChange={handleChange}
+          required
+          disabled={!formData.trainerType}
+        >
+          <option value="">Select Trainer</option>
+          {formData.trainerType === 'male' &&
+            maleTrainers.map((name) => (
+              <option key={name} value={name}>{name}</option>
+            ))
+          }
+          {formData.trainerType === 'female' &&
+            femaleTrainers.map((name) => (
+              <option key={name} value={name}>{name}</option>
+            ))
+          }
+        </select>
 
         <label className="appoint-label44">Date</label>
         <input className="appoint-input44" type="date" name="date" value={formData.date} onChange={handleChange} required />
@@ -76,6 +122,10 @@ const Appoint1 = () => {
 
         <button type="submit" className="appoint-submit44">Book Now</button>
       </form>
+
+
+
+      
     </div>
   )
 }
