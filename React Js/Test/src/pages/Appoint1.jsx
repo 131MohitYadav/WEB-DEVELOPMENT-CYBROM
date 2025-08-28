@@ -17,9 +17,14 @@ const Appoint1 = () => {
     notes: ''
   })
 
-  // ✅ Helper function for 4-digit auto ID
-  const generateId = () => {
-    return Math.floor(1000 + Math.random() * 9000) // 1000–9999
+  
+  const generateAlphaNumId = () => {
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    let id = ""
+    for (let i = 0; i < 5; i++) {  // 5 char long
+      id += chars.charAt(Math.floor(Math.random() * chars.length))
+    }
+    return id
   }
 
   const handleChange = (e) => {
@@ -27,14 +32,13 @@ const Appoint1 = () => {
     setFormData({
       ...formData,
       [name]: value,
-      // Clear trainer if trainerType changes
       ...(name === 'trainerType' ? { trainer: '' } : {}),
     })
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const newData = { ...formData, id: generateId() } // use 4-digit id
+    const newData = { ...formData, id: generateAlphaNumId() } // 👈 alphanumeric id
     axios.post("http://localhost:3000/Test", newData)
       .then(() => {
         alert("Appointment Booked Successfully ✅")
@@ -43,7 +47,6 @@ const Appoint1 = () => {
       .catch((err) => console.error("Error saving appointment:", err))
   }
 
-  // American style trainer names example
   const maleTrainers = [
     "Michael Johnson",
     "James Anderson",
