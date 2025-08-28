@@ -1,7 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { v4 as uuid } from 'uuid'
 
 const Appoint1 = () => {
   const navigate = useNavigate()
@@ -18,6 +17,11 @@ const Appoint1 = () => {
     notes: ''
   })
 
+  // ✅ Helper function for 4-digit auto ID
+  const generateId = () => {
+    return Math.floor(1000 + Math.random() * 9000) // 1000–9999
+  }
+
   const handleChange = (e) => {
     const { name, value } = e.target
     setFormData({
@@ -30,7 +34,7 @@ const Appoint1 = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const newData = { ...formData, id: uuid() }
+    const newData = { ...formData, id: generateId() } // use 4-digit id
     axios.post("http://localhost:3000/Test", newData)
       .then(() => {
         alert("Appointment Booked Successfully ✅")
@@ -122,10 +126,6 @@ const Appoint1 = () => {
 
         <button type="submit" className="appoint-submit44">Book Now</button>
       </form>
-
-
-
-      
     </div>
   )
 }
