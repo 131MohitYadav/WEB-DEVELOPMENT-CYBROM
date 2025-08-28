@@ -76,9 +76,16 @@ const Fetchapi1 = () => {
       <table className="table_48">
         <thead>
           <tr>
-            <th>ID</th><th>Name</th><th>Phone</th><th>Email</th>
-            <th>Trainer Type</th><th>Trainer</th><th>Date</th>
-            <th>Time</th><th>Month</th><th>Membership Plan</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th><
+              th>Email</th>
+            <th>Trainer Type</th>
+            <th>Trainer</th>
+            <th>Date</th>
+            <th>Time</th>
+            {/* <th>Month</th> */}
+            <th>Membership Plan</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -93,7 +100,7 @@ const Fetchapi1 = () => {
               <td>{e.trainer}</td>
               <td>{e.date}</td>
               <td>{e.time}</td>
-              <td>{e.monthName}</td>
+              {/* <td>{e.monthName}</td> */}
               <td>{membershipPlans[e.membership] || "N/A"}</td>
               <td>
                 <button className="deleteBtn_48" onClick={() => mydelete(e.id)}>Delete</button>
