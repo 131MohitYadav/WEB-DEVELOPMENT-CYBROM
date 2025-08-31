@@ -65,7 +65,7 @@ const Appoint1 = () => {
 
   return (
     <div className="appoint-container44">
-      <h2 className="appoint-heading44">Book Appointment</h2>
+      <h2 className="appoint-heading44">Book <br></br> Appointment</h2>
       <form className="appoint-form44" onSubmit={handleSubmit}>
         <label className="appoint-label44">Name</label>
         <input className="appoint-input44" type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Enter Your Name" required />

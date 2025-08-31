@@ -72,7 +72,7 @@ const Fetchapi1 = () => {
 
   return (
     <>
-      <h1 className="heading_48">Appointments</h1>
+      <h1 className="heading_48"> ALL APPOINTEMENT LIST</h1>
       <table className="table_48">
         <thead>
           <tr>
