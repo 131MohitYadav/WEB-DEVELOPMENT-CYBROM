@@ -8,18 +8,21 @@ import {
   FaYoutube, 
   FaInstagram 
 } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 function Admin() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
   const adminEmail = 'Mohit@gmail.com';
-  const adminPassword = 'admin123';
+  const adminPassword = 'mohit123';
 
   const handleLogin = () => {
     if (email === adminEmail && password === adminPassword) {
       alert('Login Successful');
+      navigate('/fetchapi1')
       setError('');
     } else {
       setError('Invalid Admin Email or Password');

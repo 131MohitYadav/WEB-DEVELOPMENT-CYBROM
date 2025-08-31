@@ -42,7 +42,7 @@ const Appoint1 = () => {
     axios.post("http://localhost:3000/Test", newData)
       .then(() => {
         alert("Appointment Booked Successfully ✅")
-        navigate("/fetchapi1")
+        navigate("/home")
       })
       .catch((err) => console.error("Error saving appointment:", err))
   }

@@ -40,13 +40,21 @@ const Fetchapi1 = () => {
 
   return (
     <>
-      <h1 style={{ textAlign: 'center' }}>Appointments</h1>
+      <h1 style={{ textAlign: 'center' }}> All Appointments List</h1>
       <table border="1" align='center' cellPadding="8">
         <thead>
           <tr>
-            <th>ID</th><th>Name</th><th>Phone</th><th>Email</th>
-            <th>Trainer Type</th><th>Trainer</th><th>Date</th><th>Time</th><th>Month</th>
-            <th>Service</th><th>Actions</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Trainer Type</th>
+            <th>Trainer</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Month</th>
+            <th>Service</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
