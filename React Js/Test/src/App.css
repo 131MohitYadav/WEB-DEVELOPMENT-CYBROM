@@ -2197,14 +2197,15 @@ body {
   to { opacity: 1; transform: translateY(0);}
 }
 .appoint-heading44 {
-  grid-column: span 2;
-  text-align: center;
-  font-size: 2.2rem;
+  
+  
+  font-size: 4.2rem;
   color: #ffdd57;
   margin-bottom: 20px;
+  margin-right: 80px;
   font-weight: bold;
   text-shadow: 0 0 12px rgba(255, 221, 87, 0.8);
-  letter-spacing: 1px;
+  letter-spacing: 10px;
   animation: glow 3s infinite alternate;
 }
 @keyframes glow {
@@ -2275,6 +2276,7 @@ body {
   margin: 20px 0;
   font-size: 28px;
   color: #333;
+  font-weight: bold;
   font-family: Arial, sans-serif;
 }
 
