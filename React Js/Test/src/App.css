@@ -2402,3 +2402,81 @@ body {
 .updateBtn_48:hover {
   background: #1e8449;
 }
+
+
+ /* Profile css */
+
+ .profileContainer_51 {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Left Section */
+.profileLeft_51 {
+  flex: 1;
+  text-align: center;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profileImage_51 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.profileName_51 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.editBtn_51 {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ff6a00;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Right Section */
+.profileRight_51 {
+  flex: 2;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.profileCard_51 {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profileCard_51 h3 {
+  margin-bottom: 1rem;
+  color: #ff6a00;
+}
+
+.renewBtn_51,
+.changePassBtn_51,
+.logoutBtn_51 {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.logoutBtn_51 {
+  background: red;
+}
