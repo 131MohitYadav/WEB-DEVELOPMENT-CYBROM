@@ -19,8 +19,8 @@ const Team = () => {
       {/* Right Section */}
       <div className="profileRight_51">
         <div className="profileCard_51">
-          <h3>Membership Details</h3>
-          <p>Plan: <strong>Gold - Monthly</strong></p>
+          <h3>Membership Plan Details</h3>
+          <p>Plan: <strong>1 Month Plan(499)</strong></p>
           <p>Start Date: 01 Aug 2025</p>
           <p>Expiry Date: 31 Aug 2025</p>
           <button className="renewBtn_51">Renew Plan</button>
