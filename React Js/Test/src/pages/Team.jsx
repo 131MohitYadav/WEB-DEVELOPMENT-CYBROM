@@ -12,7 +12,7 @@ const Team = () => {
           className="profileImage_51"
         />
         <h2 className="profileName_51">Mohit Yadav</h2>
-        <p className="profileEmail_51">Mohit@gmail.com</p>
+        <p className="profileEmail_51">yadav@gmail.com</p>
         <button className="editBtn_51">Edit Profile</button>
       </div>
 
