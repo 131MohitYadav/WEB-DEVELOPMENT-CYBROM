@@ -114,7 +114,7 @@ const Team = () => {
           />
 
           <button type="submit" className="saveBtn_51">
-            Save 
+            Save Profile
           </button>
         </form>
       )}
