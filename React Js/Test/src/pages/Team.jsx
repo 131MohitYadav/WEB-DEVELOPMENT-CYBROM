@@ -63,7 +63,7 @@ const Team = () => {
       ) : (
         // Agar profile empty hai to form dikhao
         <form className="profileForm_51" onSubmit={handleSubmit}>
-          <h2>Enter Profile Details</h2>
+          <h2>Enter Your Profile Details</h2>
           <input
             type="text"
             name="name"
