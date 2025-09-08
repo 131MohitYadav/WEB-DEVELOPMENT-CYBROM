@@ -53,7 +53,7 @@ const Team = () => {
             </div>
 
             <div className="profileCard_51">
-              <h3>Fitness Progress</h3>
+              <h3> All Fitness Progress</h3>
               <p>Weight: {profile.weight}</p>
               <p>BMI: {profile.bmi}</p>
               <p>Body Fat: {profile.fat}</p>
