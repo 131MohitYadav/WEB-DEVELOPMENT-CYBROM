@@ -66,6 +66,9 @@ const Team = () => {
               alt="Profile"
               className="profileImage_51"
             />
+
+            {/* through props ( properties) */}
+            
             <h2>{profile.name}</h2>
             <p>{profile.email}</p>
             <p><b>ID:</b> {profile.id}</p>
