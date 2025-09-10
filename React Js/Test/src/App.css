@@ -2406,11 +2406,42 @@ body {
 
  /* Profile css */
 
- .profileContainer_51 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ .profileContainer_51{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	min-height: 100vh;
+	padding: 2rem;
+	background: linear-gradient(135deg , #f8faff , #eef3f9);
+	font-family: "Poppins" , sans-serif;
  }
+
+ /* SEARCH BOX */
+ .searchBox_51{
+	display: flex;
+	gap: 0.6rem;
+	margin-bottom: 2rem;
+
+
+ }
+
+ .searchBox_51 input {
+	padding: 0.75rem 1rem;
+	border-radius: 12px;
+	border: 1px solid #ddd;
+	outline: none;
+	width: 240px;
+	font-size: 0.95rem;
+	transition: all 0.3s ease;
+ }
+
+ .searchBox_51 ::placeholder{
+	text-align: center;
+ }
+
+
+
 
 
  
