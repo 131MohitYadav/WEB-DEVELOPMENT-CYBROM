@@ -2532,8 +2532,14 @@ body {
 	border: 4px solid #ff6600;
  }
 
- 
+ .profileLeft_51 h2{
+	margin: 0.5rem 0;
+	color: #333;
+ }
 
+ .profileCard_51 {
+	margin-bottom: 1rem;
+ }
 
 
 
