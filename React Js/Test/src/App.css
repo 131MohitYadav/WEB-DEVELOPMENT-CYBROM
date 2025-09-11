@@ -2460,6 +2460,17 @@ body {
 	background: #404ed1;
  }
 
+ /* PROFILE FORM */
+ .profileForm_51 {
+	background: #fff;
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: 0 8px 25px ;
+	width: 100%;
+	max-width: 920px;
+	text-align: center;
+ }
+
 
 
 
