@@ -2422,3 +2422,50 @@ body {
     position: relative;
 	
  }
+
+ .profileContainer_51::before{
+	content: "";
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom:0;
+	background-color: rgba(0, 0, 0, 0.05);
+ }
+ /* keep content dark overlay */
+ .profileContainer_51 > * {
+	position: relative;
+	z-index: 1;
+ }
+
+ /* search box */
+ .searchBox_51 {
+	display: flex;
+	gap: 0.6rem;
+	margin-bottom: 2rem;
+
+ }
+ .searchBox_51 input{
+	padding: 0.75rem 1rem;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	width: 240px;
+	font-size: 0.95rem;
+	background: rgba(255,255,255,0.00);
+	color: #fff;
+	transition: all 0.3s ease;
+ }
+
+ .searchBox_51 input:focus {
+	border: 1px solid #FF0700;
+	box-shadow: 0 0 8px rgba(255 , 215 , 0 , 0.6);
+ }
+
+ .searchBox_51 button {
+	background: #FF0700;
+	color: #000;
+	border: none;
+	padding: 0.75rem 1.5rem;
+	border-right: 10px;
+	cursor: pointer;
+	font-weight: 500;
+	transition: 0.3s;
+ }
