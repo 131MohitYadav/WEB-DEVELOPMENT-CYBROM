@@ -28,6 +28,7 @@ const Team = () => {
     const newProfile = { id, ...formData };
 
     // Save in localStorage
+
     localStorage.setItem(id, JSON.stringify(newProfile));
 
     alert(`Profile Saved ✅ Your ID is: ${id}`);
@@ -35,6 +36,7 @@ const Team = () => {
   };
 
   // Search profile using ID
+
   const handleSearch = () => {
     const saved = localStorage.getItem(searchId);
     if (saved) {
@@ -46,7 +48,9 @@ const Team = () => {
 
   return (
     <div className="profileContainer_51">
+    
       {/* Profile Search */}
+
       <div className="searchBox_51">
         <input
           type="text"
@@ -58,6 +62,7 @@ const Team = () => {
       </div>
 
       {/* Show profile or form */}
+
       {profile ? (
         <>
           <div className="profileLeft_51">
