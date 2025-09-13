@@ -2458,14 +2458,32 @@ body {
 	border: 1px solid #FF0700;
 	box-shadow: 0 0 8px rgba(255 , 215 , 0 , 0.6);
  }
+ .searchBox_51 ::placeholder{
+	text-align: center;
+ }
 
  .searchBox_51 button {
 	background: #FF0700;
 	color: #000;
 	border: none;
 	padding: 0.75rem 1.5rem;
-	border-right: 10px;
+	border-radius: 10px;
 	cursor: pointer;
 	font-weight: 500;
 	transition: 0.3s;
+ }
+ .searchBox_51 button:hover {
+	background: #e6c200;
+ }
+
+ /* PROFILE FORM */
+ .profileForm_51{
+	background: rgba(255,255,255,0.06);
+	padding: 2rem;
+	border-radius: 15px;
+	width: 100%;
+	max-width: 720px;
+	text-align: center;
+	border: 1px solid rgba(255,255,255,0.1);
+
  }
