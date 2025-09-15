@@ -268,7 +268,7 @@ const Home = () => {
             <li>Trainer guidance</li>
             <li>Time limit: 2 hours</li>
           </ul>
-          <a href="#" className="primary-btn pricing-btn" style={{ textDecoration: 'none' }}>
+          <a href="/Appoint1" className="primary-btn pricing-btn" style={{ textDecoration: 'none' }}>
   JOIN NOW
 </a>
         </div>
