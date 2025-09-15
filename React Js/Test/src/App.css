@@ -2493,3 +2493,10 @@ body {
 	margin-bottom: 10px;
 	color: #2d3748;
  }
+ .profileForm_51 input{
+	padding: 12px;
+	border: 1px solid #d1d5db;
+	font-size: 14px;
+	outline: none;
+	transition: border 0.3s;
+ }
