@@ -291,7 +291,7 @@ const Home = () => {
             <li>Free protein shakes</li>
             <li>24x7 security</li>
           </ul>
-          <a href="#" className="primary-btn pricing-btn" style={{ textDecoration: 'none' }}>
+          <a href="/Appoint1" className="primary-btn pricing-btn" style={{ textDecoration: 'none' }}>
   JOIN NOW
 </a>
         </div>
@@ -313,7 +313,7 @@ const Home = () => {
             <li>Free gym T-shirt</li>
             <li>Guest passes (4/year)</li>
           </ul>
-          <a href="#" className="primary-btn pricing-btn" style={{ textDecoration: 'none' }}>
+          <a href="/Appoint1" className="primary-btn pricing-btn" style={{ textDecoration: 'none' }}>
   JOIN NOW
 </a>
         </div>
