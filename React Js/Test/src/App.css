@@ -2500,3 +2500,8 @@ body {
 	outline: none;
 	transition: border 0.3s;
  }
+
+ .profileForm_51 input:focus{
+	border-color: #5a67d8;
+	box-shadow: 0 0 6px rgba(90, 103, 216, 0.3);
+ }
