@@ -2412,14 +2412,20 @@ body {
  /* Profile css */
 
  .profileContainer_51{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-	min-height: 100vh;
-	padding: 2rem;
-	background: url("https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b") no-repeat center center/cover;
-    position: relative;
+	  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+
+  /* Background Image */
+  background: url("https://images.unsplash.com/photo-1594737625785-cf5c5c9c3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80") 
+              no-repeat center center/cover;
+
+  position: relative;
+  color: white; 
+	
 	
  }
 
@@ -2489,19 +2495,11 @@ body {
  }
 
  .profileForm_51 h2{
-	text-align: center;
-	margin-bottom: 10px;
-	color: #2d3748;
+	margin-bottom: 1.5rem;
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: #ffd700;
+	text-shadow: 0 0 12px rgba(255, 215 , 0 , 0.7);
  }
- .profileForm_51 input{
-	padding: 12px;
-	border: 1px solid #d1d5db;
-	font-size: 14px;
-	outline: none;
-	transition: border 0.3s;
- }
+ 
 
- .profileForm_51 input:focus{
-	border-color: #5a67d8;
-	box-shadow: 0 0 6px rgba(90, 103, 216, 0.3);
- }
