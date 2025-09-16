@@ -2572,3 +2572,25 @@ body {
 	margin-bottom: 1rem;
  }
  
+ .profileCard_51 h3 {
+	color: #e69e0e;
+	margin-bottom: 0.5rem;
+	text-shadow: 0 0 8px rgba(255,215,0,0.6);
+ }
+
+ /* RESPONSIVE TWO COLUMNS LAYOUT */
+ @media (min-width: 768px) {
+  .profileContainer_51 {
+    flex-direction: column;
+  }
+
+  .profileLeft_51, 
+  .profileRight_51 {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .profileLeft_51 {
+    margin-right: 2rem;
+  }
+}
