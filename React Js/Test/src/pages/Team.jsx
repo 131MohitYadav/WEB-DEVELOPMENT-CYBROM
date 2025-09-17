@@ -100,7 +100,7 @@ const Team = () => {
           <h2>Enter Profile Details</h2>
           <input type="text" name="name" placeholder="Name" onChange={handleChange} required />
           <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
-          <input type="text" name="plan" placeholder="Plan (e.g. Gold - Monthly)" onChange={handleChange} />
+          <input type="text" name="plan" placeholder="Plan (e.g. Monthly - Annually)" onChange={handleChange} />
           <input type="date" name="start" onChange={handleChange} />
           <input type="date" name="expiry" onChange={handleChange} />
           <input type="text" name="weight" placeholder="Weight (e.g. 72kg)" onChange={handleChange} />
