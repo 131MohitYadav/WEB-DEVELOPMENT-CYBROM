@@ -2477,6 +2477,7 @@ body {
 	cursor: pointer;
 	font-weight: 500;
 	transition: 0.3s;
+	font-weight: bold;
  }
  .searchBox_51 button:hover {
 	background: #e6c200;
