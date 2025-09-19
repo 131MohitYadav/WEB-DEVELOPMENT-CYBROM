@@ -77,6 +77,7 @@ const Team = () => {
             <h2>{profile.name}</h2>
             <p>{profile.email}</p>
             <p><b>ID:</b> {profile.id}</p>
+            <p className="note">Note : Remember Your Profile Id</p>
           </div>
 
           <div className="profileRight_51">
