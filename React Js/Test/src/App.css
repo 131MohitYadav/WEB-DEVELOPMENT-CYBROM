@@ -2610,3 +2610,18 @@ body {
 	border: none;
 	font-weight: bold;
 }
+
+.saveBtn_52:hover{ 
+	background-color: #bfb15f;
+	
+
+}
+
+.editBtn_51{
+	padding: 10px 20px;
+	background-color: orangered;
+	border-radius: 12px;
+	border: none;
+	font-weight: bold;
+	color: white;
+}

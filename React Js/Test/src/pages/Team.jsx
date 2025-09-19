@@ -100,7 +100,7 @@ const Team = () => {
             </p>
             <p className="note">Note : Remember Your Profile Id</p>
             <button className="editBtn_51" onClick={handleEdit}>
-              ✏️ Edit Profile
+              Edit Profile
             </button>
           </div>
 
@@ -181,7 +181,7 @@ const Team = () => {
           />
 
           <button type="submit" className="saveBtn_52">
-            {isEditing ? "Update Profile" : "Save Profile"}
+            {isEditing ? "Update " : "Save Profile"}
           </button>
         </form>
       )}
