@@ -86,7 +86,7 @@ const Team = () => {
         <>
           <div className="profileLeft_51">
             <img
-              src="https://via.placeholder.com/150"
+              src="adm.png"
               alt="Profile"
               className="profileImage_51"
             />

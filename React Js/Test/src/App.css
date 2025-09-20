@@ -2625,3 +2625,8 @@ body {
 	font-weight: bold;
 	color: white;
 }
+
+.editBtn_51:hover{
+	background-color: orange;
+	color: black;
+}
