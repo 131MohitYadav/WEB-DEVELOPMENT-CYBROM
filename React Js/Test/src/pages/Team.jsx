@@ -86,7 +86,7 @@ const Team = () => {
         <>
           <div className="profileLeft_51">
             <img
-              src="adm.png"
+              src="/img/Unknown.png"
               alt="Profile"
               className="profileImage_51"
             />
