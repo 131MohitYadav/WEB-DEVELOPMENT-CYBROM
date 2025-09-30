@@ -6,12 +6,12 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaEnvelope, FaHome , FaPhoneAlt } from 'react-icons/fa';
 
 const teamMembers = [
-    { name: "Jeanette Jenkins", role: "Strength and Conditioning Coach", pic: "/img/team-1.jpg" },
-    { name: "Gunnar Petterson", role: "Fiteness Trainer", pic: "/img/team-2.jpg" },
-    { name: "Michael Smoak", role: "BodyBuilding Coach", pic: "/img/team-3.jpg" },
-    { name: "Tony Harton", role: "Gym Trainer", pic: "/img/team-4.jpg" },
-    { name: "Kiry Myers", role: "Weight Loss Specialist", pic: "/img/team-5.jpg" },
-    { name: "Kathey Kaehler", role: "Fitnees Group Instructor", pic: "/img/team-6.jpg" },
+    { name: "Jessica Taylor", role: "Strength and Conditioning Coach", pic: "/img/team-1.jpg" },
+    { name: "David Thompson", role: "Fiteness Trainer", pic: "/img/team-2.jpg" },
+    { name: "Michael johnson", role: "BodyBuilding Coach", pic: "/img/team-3.jpg" },
+    { name: "Robert Millar", role: "Gym Trainer", pic: "/img/team-4.jpg" },
+    { name: "Sarah Wilsm", role: "Weight Loss Specialist", pic: "/img/team-5.jpg" },
+    { name: "Emily Moore", role: "Fitnees Group Instructor", pic: "/img/team-6.jpg" },
   ];
 
 
@@ -411,7 +411,7 @@ const Home = () => {
           <i className="icon"><FaHome /></i>
           <div>
             <h4>Address</h4>
-            <p>7th Floor, GymM Fitness Hub, Andheri West, Mumbai, Maharashtra 400053</p>
+            <p>New Subash Colony, Govindpura Industrial Area, Bhopal, Madhya Pradesh 462023</p>
           </div>
         </div>
         <div className="contact-item">
@@ -425,7 +425,7 @@ const Home = () => {
           <i className="icon"><FaEnvelope /></i>
           <div>
             <h4>Email</h4>
-            <p>Support.gymcenter@gmail.com</p>
+            <p>MyFitness@gmail.com</p>
           </div>
         </div>
       </div>
