@@ -193,7 +193,7 @@ const Classes =() => {
           <i className="icon"><FaHome /></i>
           <div>
             <h4>Address</h4>
-            <p>7th Floor, GymM Fitness Hub, Andheri West, Mumbai, Maharashtra 400053</p>
+            <p>New Subash Colony, Govindpura Industrial Area, Bhopal, Madhya Pradesh 462023</p>
           </div>
         </div>
         <div className="contact-item">
@@ -207,7 +207,7 @@ const Classes =() => {
           <i className="icon"><FaEnvelope /></i>
           <div>
             <h4>Email</h4>
-            <p>Support.gymcenter@gmail.com</p>
+            <p>MyFitness@gmail.com</p>
           </div>
         </div>
       </div>

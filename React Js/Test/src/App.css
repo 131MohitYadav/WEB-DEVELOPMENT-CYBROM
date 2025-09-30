@@ -2631,3 +2631,9 @@ body {
 	background-color: orange;
 	color: black;
 }
+
+.pid {
+	color: red;
+	font-weight: bold;
+	text-transform: uppercase;
+}

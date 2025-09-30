@@ -140,7 +140,7 @@ const About = () => {
           <i className="icon"><FaEnvelope /></i>
           <div>
             <h4>Email</h4>
-            <p>Support.gymcenter@gmail.com</p>
+            <p>MyFitness@gmail.com</p>
           </div>
         </div>
       </div>

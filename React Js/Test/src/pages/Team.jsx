@@ -122,6 +122,7 @@ const Team = () => {
         </>
       ) : (
         <form className="profileForm_51" onSubmit={handleSubmit}>
+          <p className="pid">If Profile Id already exists , do not enter profile details</p>
           <h2>{isEditing ? "Update Profile" : "Enter Profile Details"}</h2>
           <input
             type="text"

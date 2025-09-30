@@ -63,22 +63,22 @@ const Contact = () => {
               <div className="contact-card">
                 <FaPhone className="contact-icon" />
                 <h3>Phone</h3>
-                <p>+1 (555) 123-4567</p>
-                <p>+1 (555) 987-6543</p>
+                <p>+91 - 9876543210</p>
+                <p>+91 - 9238495924</p>
               </div>
               
               <div className="contact-card">
                 <FaEnvelope className="contact-icon" />
                 <h3>Email</h3>
-                <p>info@gymp.com</p>
-                <p>support@gymp.com</p>
+                <p>Myfitness@gmail.com</p>
+                <p>Kygym@gmail.com</p>
               </div>
               
               <div className="contact-card">
                 <FaMapMarkerAlt className="contact-icon" />
                 <h3>Location</h3>
-                <p>123 Fitness Street</p>
-                <p>Gym City, GC 12345</p>
+                <p>29 Gym ashokagarden</p>
+                
               </div>
               
               <div className="contact-card">
@@ -193,7 +193,7 @@ const Contact = () => {
               <i className="icon"><FaHome /></i>
               <div>
                 <h4>Address</h4>
-                <p>7th Floor, GymM Fitness Hub, Andheri West, Mumbai, Maharashtra 400053</p>
+                <p>New Subash Colony, Govindpura Industrial Area, Bhopal, Madhya Pradesh 462023</p>
               </div>
             </div>
             <div className="contact-item">
@@ -207,7 +207,7 @@ const Contact = () => {
               <i className="icon"><FaEnvelope /></i>
               <div>
                 <h4>Email</h4>
-                <p>Support.gymcenter@gmail.com</p>
+                <p>MyFitness@gmail.com</p>
               </div>
             </div>
           </div>
