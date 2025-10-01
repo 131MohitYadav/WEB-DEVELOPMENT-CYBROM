@@ -77,7 +77,7 @@ const Contact = () => {
               <div className="contact-card">
                 <FaMapMarkerAlt className="contact-icon" />
                 <h3>Location</h3>
-                <p>29 Gym ashokagarden</p>
+                <p>29 Gym Ashokagarden</p>
                 
               </div>
               
