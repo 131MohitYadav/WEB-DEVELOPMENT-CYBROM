@@ -12,31 +12,35 @@ const Team = () => {
     weight: "",
     bmi: "",
     fat: "",
+    image: "", // ✅ store image as Base64
   });
   const [searchId, setSearchId] = useState("");
-  const [isEditing, setIsEditing] = useState(false); // ✅ check edit mode
+  const [isEditing, setIsEditing] = useState(false);
 
-  // Handle form input
+  // Handle text input
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // ✅ Handle Image Upload
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setFormData({ ...formData, image: reader.result }); // store as Base64
+      };
+      reader.readAsDataURL(file);
+    }
   };
 
   // Save / Update profile
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    let id;
-    if (isEditing && profile) {
-      // ✅ if editing, keep same ID
-      id = profile.id;
-    } else {
-      // ✅ new profile
-      id = uuid().slice(0, 6);
-    }
-
+    let id = isEditing && profile ? profile.id : uuid().slice(0, 6);
     const newProfile = { id, ...formData };
 
-    // Save in localStorage
     localStorage.setItem(id, JSON.stringify(newProfile));
 
     alert(
@@ -49,13 +53,13 @@ const Team = () => {
     setIsEditing(false);
   };
 
-  // Search profile using ID
+  // Search profile
   const handleSearch = () => {
     const saved = localStorage.getItem(searchId);
     if (saved) {
       const parsed = JSON.parse(saved);
       setProfile(parsed);
-      setFormData(parsed); // ✅ also keep in formData
+      setFormData(parsed);
     } else {
       alert("❌ No profile found with this ID");
     }
@@ -63,9 +67,9 @@ const Team = () => {
 
   // Edit profile
   const handleEdit = () => {
-    setFormData(profile); // pre-fill form
+    setFormData(profile);
     setIsEditing(true);
-    setProfile(null); // hide profile, show form
+    setProfile(null);
   };
 
   return (
@@ -86,7 +90,7 @@ const Team = () => {
         <>
           <div className="profileLeft_51">
             <img
-              src="/img/Unknown.png"
+              src={profile.image || "/img/Unknown.png"} // ✅ show uploaded image or default
               alt="Profile"
               className="profileImage_51"
             />
@@ -98,7 +102,7 @@ const Team = () => {
             <p>
               <b>ID:</b> {profile.id}
             </p>
-            <p className="note">Note : Remember Your Profile Id</p>
+            <p className="note">Note: Remember Your Profile ID</p>
             <button className="editBtn_51" onClick={handleEdit}>
               Edit Profile
             </button>
@@ -122,8 +126,30 @@ const Team = () => {
         </>
       ) : (
         <form className="profileForm_51" onSubmit={handleSubmit}>
-          <p className="pid">If Profile Id already exists , do not enter profile details</p>
+          <p className="pid">
+            If Profile ID already exists, do not enter profile details
+          </p>
           <h2>{isEditing ? "Update Profile" : "Enter Profile Details"}</h2>
+
+          {/* ✅ Image Upload Field */}
+          <label className="imageUploadLabel_51">
+            <span>Choose Profile Image:</span>
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleImageChange}
+            />
+          </label>
+
+          {/* ✅ Image Preview */}
+          {formData.image && (
+            <img
+              src={formData.image}
+              alt="Preview"
+              className="profilePreview_51"
+            />
+          )}
+
           <input
             type="text"
             name="name"
@@ -182,7 +208,7 @@ const Team = () => {
           />
 
           <button type="submit" className="saveBtn_52">
-            {isEditing ? "Update " : "Save Profile"}
+            {isEditing ? "Update" : "Save Profile"}
           </button>
         </form>
       )}
