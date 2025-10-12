@@ -22,7 +22,8 @@ document.writeln(num2);
 
 // write a prorgram to find area of rectangle
 
-let  length = parseInt(prompt("Enter any number "))
+let  length = parseInt(prompt("Enter the length:  "));
+let breadth  = parseInt(prompt("Enter the breadth: "));
 
 
 
