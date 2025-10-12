@@ -20,6 +20,11 @@ num2 = num1;
 document.writeln(num3);
 document.writeln(num2);
 
+// write a prorgram to find area of rectangle
+
+let  length = parseInt(prompt("Enter any number "))
+
+
 
 
 2
