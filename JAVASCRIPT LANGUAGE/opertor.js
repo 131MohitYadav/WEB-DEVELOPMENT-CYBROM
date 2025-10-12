@@ -25,6 +25,7 @@ document.writeln(num2);
 let  length = parseInt(prompt("Enter the length:  "));
 let breadth  = parseInt(prompt("Enter the breadth: "));
 
+document.writeln( " ARea of REctangle: " +  length * breadth)
 
 
 
