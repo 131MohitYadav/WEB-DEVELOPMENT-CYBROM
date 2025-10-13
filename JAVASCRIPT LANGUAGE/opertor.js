@@ -31,4 +31,13 @@
 
 // FOR IN LOOP REVISTION
 
+document.writeln("FOR IN LOOP IN JAVASCRIPT")
+document.writeln()
+
 let arr = [ 2, 3 ,4 , 52, 23, 35, 233 , 28];
+for( let val of arr){
+    if ( val % 2 != 0){
+        document.writeln(" ")
+        document.writeln(val);
+    }
+}
