@@ -44,5 +44,8 @@
 
 
 let ar = ["hello" , 23, "Yadav"]
-ar.push("Mohit" , "Kajal") // Push option insert data in last postion
-console.log(ar)
+ar.push("Mohit" , "Kajal") // Push function insert data in last postion
+document.writeln(ar)
+
+ar.pop() // pop function remove data from last position
+document.writeln(ar)
