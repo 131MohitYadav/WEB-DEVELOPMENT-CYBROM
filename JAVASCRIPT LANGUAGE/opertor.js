@@ -43,10 +43,30 @@
 // }
 
 
-let ar = ["hello" , 23, "Yadav"]
-ar.push("Mohit" , "Kajal") // Push function insert data in last postion
-console.log(ar);
+ let ar = ["hello" , 23, "Yadav"]
+// ar.push("Mohit" , "Kajal") // Push function insert data in last postion
+// console.log(ar);
 
 
-ar.pop() // pop function remove data from last position
-console.log(ar);
+// 
+
+// ar.unshift("Hii" , "logo") // Unshift function is used to  insert data in first position
+// console.log(ar);
+ 
+
+// ar.shift() // remove data from first postion
+// console.log(ar);
+
+ // slice function // 
+
+ // cut subarray from the given array
+
+ // if starting index will be star a till b but b i sexluded 
+
+ let ar1 = ["Mohit yadav" , 24 , 131 , "Bhopal" , "MP" , "India", 22];
+//  console.log( ar1);
+
+ let piece = ar1.slice(1,3) // starting index from 1 to 3 end
+ console.log(ar1);
+ 
+ 
