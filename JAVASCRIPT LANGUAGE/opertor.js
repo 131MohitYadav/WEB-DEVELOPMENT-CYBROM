@@ -61,12 +61,13 @@
 
  // cut subarray from the given array
 
- // if starting index will be star a till b but b i sexluded 
+ // if starting index will be star a till b but b  ko nhi ginte hai index mai 
 
- let ar1 = ["Mohit yadav" , 24 , 131 , "Bhopal" , "MP" , "India", 22];
+ let ar1 = ["Mohit" , 24 , 131 , "Bhopal" , "MP" , "India", 22];
+            // 0   // 1. // 2. // 3.     // 4.   // 5.  // 6        
 //  console.log( ar1);
 
- let piece = ar1.slice(1,3) // starting index from 1 to 3 end
- console.log(ar1);
+ let piece = ar1.slice(2,5) // starting index from 1 to 3 end
+ console.log(piece);
  
  
