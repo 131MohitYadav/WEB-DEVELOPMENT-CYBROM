@@ -71,3 +71,4 @@
  console.log(piece);
  
  
+// splice use to delte or insert element in the array at any position
