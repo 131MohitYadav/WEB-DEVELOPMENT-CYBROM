@@ -67,8 +67,15 @@
             // 0   // 1. // 2. // 3.     // 4.   // 5.  // 6        
 //  console.log( ar1);
 
- let piece = ar1.slice(2,5) // starting index from 1 to 3 end
- console.log(piece);
+//  let piece = ar1.slice(2,5) // starting index from 1 to 3 end
+//  console.log(piece);
  
  
 // splice use to delte or insert element in the array at any position
+ar1.splice(233, 23, "Nothing")
+//console.log(ar1);
+
+
+let head = document.getElementById("head")
+console.log(head)
+document.writeln("<h2> Hello From Js in Dom(Document object model")
