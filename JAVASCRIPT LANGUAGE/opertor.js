@@ -86,3 +86,4 @@ document.writeln("Hello From JavaScript")
 // return node list in array format
 
 let Ctarget = document.getElementsByClassName("contant2")
+console.log(Ctarget);
