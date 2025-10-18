@@ -81,4 +81,8 @@ console.log(head)
 document.writeln("<h2> Hello From Js in Dom(Document object model")
 document.writeln("/n")
 document.writeln("Hello From JavaScript")
-document.writeln("Hello Mohit")
+
+
+// return node list in array format
+
+let Ctarget = document.getElementsByClassName("contant2")
