@@ -87,3 +87,7 @@ document.writeln("Hello From JavaScript")
 
 let Ctarget = document.getElementsByClassName("contant2")
 console.log(Ctarget);
+
+Ctarget[1].innerHTML = "<i>yes changed </i>"
+Ctarget[0].textContent = "Happy Diwali"
+
