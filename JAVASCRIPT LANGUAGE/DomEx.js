@@ -14,3 +14,11 @@ const box = document.getElementById('box')
 
 let b = box.textContent("hello <Strong>mohit</Strong>");
 document.writeln(b);
+
+
+// METHOD 1 USING IMAGE CONSTURCOTR
+
+const img = new Image();
+img.src = 'https://Picsum.photos/300/200';
+img.alt = 'Random image';
+img.className = 'my-image';
