@@ -22,3 +22,5 @@ const img = new Image();
 img.src = 'https://Picsum.photos/300/200';
 img.alt = 'Random image';
 img.className = 'my-image';
+img.onload = () => console.log('Image loaded successfully');
+img.onerror = () => console.error('Failed to load image');
