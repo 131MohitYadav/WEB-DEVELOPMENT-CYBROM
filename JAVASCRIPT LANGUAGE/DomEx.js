@@ -37,4 +37,5 @@ console.log(numbers.indexOf(30)); // 2
 // check if elmetns exists
 console.log(numbers.includes(20)); // true
 
-// 
+// find first elemnt that matches considtion
+let result = numbers.find(num => num > 25);
