@@ -31,3 +31,10 @@ document.body.appendChild(img);
 // Finding elemtns in array topic
 
 let numbers = [ 10, 20 , 30, 40 , 50];
+
+console.log(numbers.indexOf(30)); // 2
+
+// check if elmetns exists
+console.log(numbers.includes(20)); // true
+
+// 
