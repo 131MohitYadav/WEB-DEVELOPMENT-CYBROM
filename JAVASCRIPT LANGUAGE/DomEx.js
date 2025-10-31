@@ -1,41 +1,44 @@
-// GET ELEMENT BY ID
-const container = document.getElementById('container');
-const myButton = document.getElementById('myButton');
+// // GET ELEMENT BY ID
+// const container = document.getElementById('container');
+// const myButton = document.getElementById('myButton');
 
-// Get elements by class name (return HTMLCollection)
-const textElements = document.getElementsByClassName('text');
+// // Get elements by class name (return HTMLCollection)
+// const textElements = document.getElementsByClassName('text');
 
-// Get elements by tag name ( return HTMLCollections)
-const paragraphs = document.getElementsByTagName('p');
-
-
-// textContent
-const box = document.getElementById('box')
-
-let b = box.textContent("hello <Strong>mohit</Strong>");
-document.writeln(b);
+// // Get elements by tag name ( return HTMLCollections)
+// const paragraphs = document.getElementsByTagName('p');
 
 
-// METHOD 1 USING IMAGE CONSTURCOTR
+// // textContent
+// const box = document.getElementById('box')
 
-const img = new Image();
-img.src = 'https://Picsum.photos/300/200';
-img.alt = 'Random image';
-img.className = 'my-image';
-img.onload = () => console.log('Image loaded successfully');
-img.onerror = () => console.error('Failed to load image');
-
-document.body.appendChild(img);
+// let b = box.textContent("hello <Strong>mohit</Strong>");
+// document.writeln(b);
 
 
-// Finding elemtns in array topic
+// // METHOD 1 USING IMAGE CONSTURCOTR
 
-let numbers = [ 10, 20 , 30, 40 , 50];
+// const img = new Image();
+// img.src = 'https://Picsum.photos/300/200';
+// img.alt = 'Random image';
+// img.className = 'my-image';
+// img.onload = () => console.log('Image loaded successfully');
+// img.onerror = () => console.error('Failed to load image');
 
-console.log(numbers.indexOf(30)); // 2
+// document.body.appendChild(img);
 
-// check if elmetns exists
-console.log(numbers.includes(20)); // true
 
-// find first elemnt that matches considtion
-let result = numbers.find(num => num > 25);
+// // Finding elemtns in array topic
+
+// let numbers = [ 10, 20 , 30, 40 , 50];
+
+// console.log(numbers.indexOf(30)); // 2
+
+// // check if elmetns exists
+// console.log(numbers.includes(20)); // true
+
+// // find first elemnt that matches considtion
+// let result = numbers.find(num => num > 25);
+// console.log(result)
+
+
