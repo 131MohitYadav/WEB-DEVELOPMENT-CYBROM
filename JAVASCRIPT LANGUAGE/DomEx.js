@@ -26,3 +26,8 @@ img.onload = () => console.log('Image loaded successfully');
 img.onerror = () => console.error('Failed to load image');
 
 document.body.appendChild(img);
+
+
+// Finding elemtns in array topic
+
+let numbers = [ 10, 20 , 30, 40 , 50];
