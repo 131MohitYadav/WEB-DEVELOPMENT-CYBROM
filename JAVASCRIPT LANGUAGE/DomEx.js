@@ -42,3 +42,13 @@
 // console.log(result)
 
 let title = document.getElementById('container');
+let content = document.querySelector('.content');
+const allItems = document.querySelectorAll('li');
+
+// modifying content
+title.textContent = "updated Title";
+content.innerHTML = "<strong>Bold content</strong>";
+
+// changing styles
+title.style.color = "blue";
+title.style.fontSize = "24px";
