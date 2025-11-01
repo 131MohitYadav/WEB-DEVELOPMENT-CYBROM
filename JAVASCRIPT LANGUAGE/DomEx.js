@@ -52,3 +52,7 @@ content.innerHTML = "<strong>Bold content</strong>";
 // changing styles
 title.style.color = "blue";
 title.style.fontSize = "24px";
+
+// adding/ removing classes
+content.classList.add("highlight");
+content.classList.remove("content")
