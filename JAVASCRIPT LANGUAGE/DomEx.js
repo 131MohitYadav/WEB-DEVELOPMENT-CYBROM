@@ -60,3 +60,8 @@ content.classList.remove("content")
 // creating new element
 const newParagraph = document.createElement('p');
 newParagraph.textContent = "This is a new paragraph";
+document.getElementById('container').appendChild(newParagraph);
+
+// removing elemtns
+const button = document.getElementById('myButton');
+button.remove();
