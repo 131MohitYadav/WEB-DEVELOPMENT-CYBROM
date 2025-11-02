@@ -41,18 +41,22 @@
 // let result = numbers.find(num => num > 25);
 // console.log(result)
 
-let title = document.getElementById('container');
-let content = document.querySelector('.content');
-const allItems = document.querySelectorAll('li');
+// let title = document.getElementById('container');
+// let content = document.querySelector('.content');
+// const allItems = document.querySelectorAll('li');
 
-// modifying content
-title.textContent = "updated Title";
-content.innerHTML = "<strong>Bold content</strong>";
+// // modifying content
+// title.textContent = "updated Title";
+// content.innerHTML = "<strong>Bold content</strong>";
 
-// changing styles
-title.style.color = "blue";
-title.style.fontSize = "24px";
+// // changing styles
+// title.style.color = "blue";
+// title.style.fontSize = "24px";
 
 // adding/ removing classes
 content.classList.add("highlight");
 content.classList.remove("content")
+
+// creating new element
+const newParagraph = document.createElement('p');
+newParagraph.textContent = "This is a new paragraph";
