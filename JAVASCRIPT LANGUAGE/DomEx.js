@@ -54,14 +54,24 @@
 // title.style.fontSize = "24px";
 
 // adding/ removing classes
-content.classList.add("highlight");
-content.classList.remove("content")
+// content.classList.add("highlight");
+// content.classList.remove("content")
 
-// creating new element
-const newParagraph = document.createElement('p');
-newParagraph.textContent = "This is a new paragraph";
-document.getElementById('container').appendChild(newParagraph);
+// // creating new element
+// const newParagraph = document.createElement('p');
+// newParagraph.textContent = "This is a new paragraph";
+// document.getElementById('container').appendChild(newParagraph);
 
-// removing elemtns
-const button = document.getElementById('myButton');
-button.remove();
+// // removing elemtns
+// const button = document.getElementById('myButton');
+// button.remove();
+
+
+                               // EVEN HANDLING // 
+
+                               // basic event listener
+                               const button = document.getElementById('myButton');
+                               button.addEventListener('click', function(event){
+                                console.log('Button Clicked');
+                                
+                               }
