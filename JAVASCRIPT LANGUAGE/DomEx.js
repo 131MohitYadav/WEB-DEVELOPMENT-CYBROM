@@ -73,5 +73,8 @@
                                const button = document.getElementById('myButton');
                                button.addEventListener('click', function(event){
                                 console.log('Button Clicked');
+                                console.log('Event type', event.type);
+                                console.log('target:', event.target);
                                 
-                               }
+                                
+                               });
