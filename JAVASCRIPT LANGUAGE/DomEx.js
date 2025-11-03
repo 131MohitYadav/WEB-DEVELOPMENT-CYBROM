@@ -70,11 +70,18 @@
                                // EVEN HANDLING // 
 
                                // basic event listener
-                               const button = document.getElementById('myButton');
-                               button.addEventListener('click', function(event){
-                                console.log('Button Clicked');
-                                console.log('Event type', event.type);
-                                console.log('target:', event.target);
+                            //    const button = document.getElementById('myButton');
+                            //    button.addEventListener('click', function(event){
+                            //     console.log('Button Clicked');
+                            //     console.log('Event type', event.type);
+                            //     console.log('target:', event.target);
                                 
                                 
-                               });
+                            //    });
+
+                            // multiple events
+                            const input = document.createElement('input');
+                            input.type = 'text';
+                            document.body.appendChild(input);
+
+                            
