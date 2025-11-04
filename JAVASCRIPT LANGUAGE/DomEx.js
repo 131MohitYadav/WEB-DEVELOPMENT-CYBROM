@@ -90,4 +90,13 @@
                               
                             });
 
+                            input.addEventListener('blur', () => {
+                              console.log('Input focused');
+                              input.style.backgroundColor = 'white';
+                            });
+
+                            input.addEventListener('input' , (event) => {
+                              console.log('Input value: ' , event.target.value);
+                            });
+
                             
