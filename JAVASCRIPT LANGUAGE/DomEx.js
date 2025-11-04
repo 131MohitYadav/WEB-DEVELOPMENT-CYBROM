@@ -84,4 +84,10 @@
                             input.type = 'text';
                             document.body.appendChild(input);
 
+                            input.addEventListener('focus' , () => {
+                              console.log('Input focused');
+                              input.style.backgroundColor = 'yellow';
+                              
+                            });
+
                             
