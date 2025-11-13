@@ -97,7 +97,10 @@
 
                             input.addEventListener('blur', () => {
                               console.log('Input  focused')
-                            } )
+                              input.style.backgroundColor = 'green';
+                            } );
+
+
 
                             input.addEventListener('input' , (event) => {
                               console.log('Input value: ' , event.target.value);
