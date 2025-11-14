@@ -13,7 +13,7 @@ form.addEventListener('submit' , (event) => {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
 
-    alert('Form submitted', {name , email});
+  
 
     //validation
     if ( name && email){
