@@ -10,6 +10,12 @@
 // form.addEventListener('submit' , (event) => {
 //     event.preventDefault(); // prevenet form submission
 
+const form = document.getElementById('myForm');
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault(); // ye automatic form submission ko rokega
+})
+
     const name = document.getElementById('name').value; 
     const email = document.getElementById('email').value;
 
@@ -26,6 +32,9 @@ form.addEventListener('submit' , (event) => {
         if ( name && email){
             alert(`Thank you, ${name}`);
             form.reset();
+        }
+        else{
+            alert('please fill in all fields');
         }
     }
 });
