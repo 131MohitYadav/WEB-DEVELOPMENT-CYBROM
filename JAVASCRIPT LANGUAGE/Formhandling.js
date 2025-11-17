@@ -18,16 +18,15 @@ form.addEventListener('submit', (event) => {
 
     const name = document.getElementById('name').value; 
     const email = document.getElementById('email').value;
-    const mobile = document.getElementById('email').value;
-
-  
+    const mobile = document.getElementById('mobile').value;
+    
 
 
     //validation    
     if ( name && email){
         alert('Form submitted', {name, email});
 
-        // validation
+        // validation gfg coding that for that coding that 
         if ( name && email){
             alert(`Thank you, ${name}`);
             form.reset();
@@ -35,5 +34,6 @@ form.addEventListener('submit', (event) => {
         else{
             alert('please fill in all fields');
         }
+    }
     
 });
