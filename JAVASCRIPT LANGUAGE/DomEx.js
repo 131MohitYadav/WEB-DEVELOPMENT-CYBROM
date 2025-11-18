@@ -80,30 +80,33 @@
                             //    });
 
                             // multiple events
-                            const input = document.createElement('input');
-                            input.type = 'text';
-                            document.body.appendChild(input);
+                            // const input = document.createElement('input');
+                            // input.type = 'text';
+                            // document.body.appendChild(input);
 
-                            input.addEventListener('focus' , () => {
-                              console.log('Input focused');
-                              input.style.backgroundColor = 'yellow';
+                            // input.addEventListener('focus' , () => {
+                            //   console.log('Input focused');
+                            //   input.style.backgroundColor = 'yellow';
                               
-                            });
+                            // });
 
-                            input.addEventListener('blur', () => {
-                              console.log('Input focused');
-                              input.style.backgroundColor = 'white';
-                            });
+                            // input.addEventListener('blur', () => {
+                            //   console.log('Input focused');
+                            //   input.style.backgroundColor = 'white';
+                            // });
 
-                            input.addEventListener('blur', () => {
-                              console.log('Input  focused')
-                              input.style.backgroundColor = 'green';
-                            } );
+                            // input.addEventListener('blur', () => {
+                            //   console.log('Input  focused')
+                            //   input.style.backgroundColor = 'green';
+                            // } );
 
 
 
-                            input.addEventListener('input' , (event) => {
-                              console.log('Input value: ' , event.target.value);
-                            });
+                            // input.addEventListener('input' , (event) => {
+                            //   console.log('Input value: ' , event.target.value);
+                            // });
+
+                            
+
 
                             
