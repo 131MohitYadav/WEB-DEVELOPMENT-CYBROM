@@ -43,25 +43,11 @@
       "city": "GWALIOR"
     },
     {
-      "id": "6a3b",
-      "uname": "mohit don",
-      "age": "sdfsf",
-      "contact": "asides",
-      "city": "asfdsa"
-    },
-    {
       "id": "c4a1",
       "uname": "KAJAL YADAV",
       "age": "25",
       "contact": "233252352",
       "city": "DELHI"
-    },
-    {
-      "id": "0ace",
-      "uname": "Hello Ji",
-      "age": "32",
-      "contact": "2352353532",
-      "city": "Del"
     }
   ]
 }
