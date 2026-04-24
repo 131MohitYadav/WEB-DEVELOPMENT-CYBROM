@@ -4,6 +4,9 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const navigate = useNavigate();
 
+  // added
+  const [showPassword, setShowPassword] = useState(false);
+
   const [formData, setFormData] = useState({
     identifier: "", // username or email
     password: "",
