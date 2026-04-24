@@ -90,7 +90,15 @@ const Login = () => {
   onChange={handleChange}
   />
 
-  
+  <button
+  type="button"
+  className="eye-btn"
+  onClick={() => setShowPassword(!showPassword)}
+  >
+    <i className={showPassword ? "fa fa-eye-slash" : "fa fa-eye"}></i>
+  </button>
+
+
 </div>
 
 
