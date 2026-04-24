@@ -69,14 +69,32 @@ const Login = () => {
             value={formData.identifier}
             onChange={handleChange}
           />
-          <input
+          {/* <input
             type="password"
             name="password"
             placeholder="Password"
             className="login21-input"
             value={formData.password}
             onChange={handleChange}
-          />
+          /> */}
+
+{/* // some changes for eye-icon // */}
+
+<div className="password-wrapper">
+  <input
+  type={showPassword ? "text" : "password"}
+  name="password"
+  placeholder="Password"
+  className="login21-input password-input"
+  value={formData.password}
+  onChange={handleChange}
+  />
+
+  
+</div>
+
+
+
 
           <div className="login21-options">
             <label>
