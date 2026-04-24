@@ -2133,6 +2133,27 @@ body {
   background: linear-gradient(90deg, #ff914d, #ff6b00);
 }
 
+
+
+.password-wrapper{
+	position: relative;
+	width: 100%;
+}
+
+.password-input {
+	padding-right: 45px;
+}
+.eye-btn{
+	position: absolute;
+	right: 12px;
+	top:50%;
+	transform: translateY(-50%);
+}
+
+
+
+
+
 /* Error message style */
  
 
