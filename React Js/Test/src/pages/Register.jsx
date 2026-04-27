@@ -60,7 +60,7 @@ const Register = () => {
 
           <input
             type="text"
-            name="username"   // ✅ added name
+            name="username"   
             placeholder="Username"
             className="login21-input"
             value={formData.username}
@@ -68,7 +68,7 @@ const Register = () => {
           />
           <input
             type="email"
-            name="email"   // ✅ added name
+            name="email"   
             placeholder="Email"
             className="login21-input"
             value={formData.email}
@@ -76,7 +76,7 @@ const Register = () => {
           />
           <input
             type="password"
-            name="password"   // ✅ added name
+            name="password"   
             placeholder="Password"
             className="login21-input"
             value={formData.password}
