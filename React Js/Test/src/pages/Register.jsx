@@ -97,6 +97,17 @@ const Register = () => {
   
   
   />
+
+
+<button 
+type="button"
+className="eye-btn"
+onClick={() => setShowPassword(!showPassword)}
+>
+  <i className = {showPassword ? "fa-solid fa-eye-slash" : "fa-solid fa-eye"}></i>
+</button>
+
+
 </div>
 
 
