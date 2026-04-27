@@ -86,8 +86,11 @@ const Register = () => {
           /> */}
 
 
+<div className="password-wrapper">
+  <input
+  type=
+</div>
 
-          
 
           <button className="login-button" onClick={handleRegister}>
             Sign Up
