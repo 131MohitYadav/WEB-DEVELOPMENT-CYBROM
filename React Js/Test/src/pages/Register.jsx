@@ -88,7 +88,15 @@ const Register = () => {
 
 <div className="password-wrapper">
   <input
-  type=
+  type={showPassword ? "text" : "password"} 
+  name="password"
+  placeholder="Password"
+  className="login21-input password-input"
+  value={formData.password}
+  onChange={handleChange}
+  
+  
+  />
 </div>
 
 
