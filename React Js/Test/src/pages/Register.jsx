@@ -74,14 +74,20 @@ const Register = () => {
             value={formData.email}
             onChange={handleChange}
           />
-          <input
+
+
+          {/* <input
             type="password"
             name="password"   
             placeholder="Password"
             className="login21-input"
             value={formData.password}
             onChange={handleChange}
-          />
+          /> */}
+
+
+
+          
 
           <button className="login-button" onClick={handleRegister}>
             Sign Up
