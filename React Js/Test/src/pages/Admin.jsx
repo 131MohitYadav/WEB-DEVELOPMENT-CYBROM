@@ -51,14 +51,42 @@ function Admin() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-
+{/* 
           <input
             type="password"
             placeholder="Enter Admin Password"
             className="login-input27"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-          />
+          /> */}
+
+
+
+<div className="password-wrapper">
+  <input
+  type = {showPassword ? "text" : "password"}
+  name="password"
+  placeholder='Password'
+  className='login21-input password-input'
+  value={FormData.password}
+  onChange={handleChange}
+  />
+
+
+<button
+type='buttton'
+className='eye-btn'
+onClick={() => setShowPassword(!showPassword)}
+>
+  <i className={showPassword ? "fa-solid-eye-slash" : "fa-solid fa-eye"}></i>
+</button>
+
+
+</div>
+
+
+
+
 
           {error && <p style={{ color: 'red', fontSize: '0.9em' }}>{error}</p>}
           
