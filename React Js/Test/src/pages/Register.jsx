@@ -5,6 +5,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Register = () => {
   const navigate = useNavigate();
+   // added
+    const [showPassword, setShowPassword] = useState(false);
 
   const [formData, setFormData] = useState({
     username: "",
