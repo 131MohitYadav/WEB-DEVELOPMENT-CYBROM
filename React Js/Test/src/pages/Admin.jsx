@@ -12,6 +12,8 @@ import { useNavigate } from 'react-router-dom';
 
 function Admin() {
   const navigate = useNavigate();
+  //for eye button
+   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
