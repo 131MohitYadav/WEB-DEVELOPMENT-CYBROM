@@ -44,7 +44,7 @@ const Register = () => {
     localStorage.setItem("user", JSON.stringify({ username, email, password }));
 
     setError("");
-    alert("Registration successful! Please login.");
+    alert("Account create  successful! Please login.");
     navigate("/login");
   };
 
