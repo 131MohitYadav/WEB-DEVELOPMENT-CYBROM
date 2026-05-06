@@ -66,7 +66,7 @@ function Admin() {
 
             <button
               type="button"
-              className="eye-btn"
+              className="eye-btn1"
               onClick={() => setShowPassword(!showPassword)}
             >
               <i className={showPassword ? "fa-solid fa-eye-slash" : "fa-solid fa-eye"}></i>
