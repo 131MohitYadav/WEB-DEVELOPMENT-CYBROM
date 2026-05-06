@@ -2161,14 +2161,14 @@ body {
 .eye-btn1{
 	position: absolute;
 	right: 12px;
-	top:40%;
+	top:50%;
 	transform: translateY(-50%);
 
 	background: transparent;
 	border: none;
 	cursor: pointer;
 	font-size: 18px;
-	color: #888;
+	color: #110f0f;
 
 }
 
