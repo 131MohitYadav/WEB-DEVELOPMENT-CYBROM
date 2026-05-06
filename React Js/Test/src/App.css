@@ -2157,6 +2157,25 @@ body {
 
 }
 
+
+.eye-btn1{
+	position: absolute;
+	right: 12px;
+	top:40%;
+	transform: translateY(-50%);
+
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	color: #888;
+
+}
+
+
+
+
+
 .eye-btn:hover{
 	color: #000;
 }
