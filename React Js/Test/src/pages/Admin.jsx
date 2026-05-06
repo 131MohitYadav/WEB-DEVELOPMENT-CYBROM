@@ -55,7 +55,7 @@ function Admin() {
           />
 
           {/* Password Input with Eye Button */}
-          <div className="password-wrapper1">
+          <div className="password-wrapper">
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Enter Admin Password"
