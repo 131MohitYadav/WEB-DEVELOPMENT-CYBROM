@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-
 import { 
   FaHome, 
   FaPhoneAlt, 
@@ -15,19 +14,21 @@ import { useNavigate } from 'react-router-dom';
 
 function Admin() {
   const navigate = useNavigate();
-  //for eye button
-   const [showPassword, setShowPassword] = useState(false);
+
+  // State
+  const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
+  // Hardcoded admin credentials
   const adminEmail = 'Mohit@gmail.com';
   const adminPassword = 'mohit123';
 
   const handleLogin = () => {
     if (email === adminEmail && password === adminPassword) {
       alert('Login Successful');
-      navigate('/fetchapi1')
+      navigate('/fetchapi1');
       setError('');
     } else {
       setError('Invalid Admin Email or Password');
@@ -36,14 +37,15 @@ function Admin() {
 
   return (
     <>
-   
       <div className="login-container27">
         <div className="login-card27">
           <div className="login-avatar27">
             <img src="adm.png" alt="Admin" />
-          </div> 
+          </div>
+
           <h2 className="login-title27">Admin Login</h2>
 
+          {/* Email Input */}
           <input 
             type="email"
             placeholder="Enter Admin Email"
@@ -51,52 +53,41 @@ function Admin() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-{/* 
-          <input
-            type="password"
-            placeholder="Enter Admin Password"
-            className="login-input27"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          /> */}
 
+          {/* Password Input with Eye Button */}
+          <div className="password-wrapper">
+            <input
+              type={showPassword ? "text" : "password"}
+              placeholder="Enter Admin Password"
+              className="login-input27"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
 
+            <button
+              type="button"
+              className="eye-btn"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              <i className={showPassword ? "fa-solid fa-eye-slash" : "fa-solid fa-eye"}></i>
+            </button>
+          </div>
 
-<div className="password-wrapper">
-  <input
-  type = {showPassword ? "text" : "password"}
-  name="password"
-  placeholder='Password'
-  className='login21-input password-input'
-  value={FormData.password}
-  onChange={handleChange}
-  />
+          {/* Error Message */}
+          {error && (
+            <p style={{ color: 'red', fontSize: '0.9em' }}>
+              {error}
+            </p>
+          )}
 
-
-<button
-type='buttton'
-className='eye-btn'
-onClick={() => setShowPassword(!showPassword)}
->
-  <i className={showPassword ? "fa-solid-eye-slash" : "fa-solid fa-eye"}></i>
-</button>
-
-
-</div>
-
-
-
-
-
-          {error && <p style={{ color: 'red', fontSize: '0.9em' }}>{error}</p>}
-          
+          {/* Login Button */}
           <button className="login-button27" onClick={handleLogin}>
             Sign In
           </button>
         </div>
       </div>
 
-      {/* Footer section */}
+      {/* Footer */}
       <footer className="footer">
         <div className="footer-top">
           <div className="contact-item">
@@ -106,6 +97,7 @@ onClick={() => setShowPassword(!showPassword)}
               <p>7th Floor, GymM Fitness Hub, Andheri West, Mumbai, Maharashtra 400053</p>
             </div>
           </div>
+
           <div className="contact-item">
             <i className="icon"><FaPhoneAlt /></i>
             <div>
@@ -113,6 +105,7 @@ onClick={() => setShowPassword(!showPassword)}
               <p>+91 9876543210 | +91 9123456780</p>
             </div>
           </div>
+
           <div className="contact-item">
             <i className="icon"><FaEnvelope /></i>
             <div>
@@ -130,6 +123,7 @@ onClick={() => setShowPassword(!showPassword)}
               Join us for expert fitness training, personal coaching, and a vibrant community. 
               Transform your lifestyle with us today!
             </p>
+
             <div className="social-icons">
               <FaFacebookF />
               <FaTwitter />
