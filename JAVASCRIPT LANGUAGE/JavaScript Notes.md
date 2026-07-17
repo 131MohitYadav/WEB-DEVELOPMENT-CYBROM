@@ -189,7 +189,7 @@ it is a method which return all the element which match the selector
 
 addEventListener ->
 it is a method which add an event listener to the element or it used without used html agar kohi event fire krna hai to
-it take two two argument eventname , function like
+it take  two argument eventname , function like
 example
 element.addEventListener('click' , function(){
   console.log('button clicked')
