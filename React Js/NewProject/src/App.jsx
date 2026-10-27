@@ -132,6 +132,11 @@ function App() {
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex possimus quasi illum optio a voluptas placeat eaque sint voluptates labore est ratione iure hic non, ad quos eius soluta provident!
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa dolores labore iste in, dolor ea maiores pariatur consequatur vitae quam, sequi iusto ratione omnis natus, dicta corporis? Eaque, provident praesentium.
     </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum eveniet sapiente blanditiis, magnam esse officia minus optio illo, corrupti quae consequuntur hic magni tenetur harum quibusdam. Architecto explicabo in aut?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, alias. Officia consequuntur officiis magnam doloribus amet expedita aliquid porro harum dolore illo veniam earum, accusamus reprehenderit corrupti commodi dolorum iure?
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt sed dignissimos ab architecto placeat, eum quo qui, vero eaque repellendus distinctio, omnis maiores repudiandae. Ex, nulla unde. Veritatis, sed recusandae.
+      
+    </p>
 
     <footer>
       <ul>
@@ -162,13 +167,6 @@ function App() {
 
 
     </footer>
-
-
-   
-
-
-
-
 
     </>
   )
