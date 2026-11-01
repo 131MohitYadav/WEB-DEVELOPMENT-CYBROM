@@ -15,4 +15,6 @@ let emp1 = [
 ]
 console.log(emp1);
 console.log(emp1[1]);
+console.log(emp1[2].id);
+
 
