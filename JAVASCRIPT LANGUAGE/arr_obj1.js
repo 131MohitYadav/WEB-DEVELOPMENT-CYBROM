@@ -31,5 +31,9 @@ console.log(newobj1);
 console.log(emp1);
 
 
+emp.pop(newobj1)
+console.log(emp)
+
+
 
 
