@@ -34,8 +34,18 @@ console.log(emp1);
 emp1.pop(newobj1)
 console.log(emp1)
 
-emp.unshift("Aman")
-console.log(emp)
+
+// Add the first arr of the index
+emp1.unshift("Aman")
+console.log(emp1)
+
+// shift add the last arr of  index
+emp1.shift()
+console.log(newobj1)
+
+emp1.shift
+
+
 
 
 
