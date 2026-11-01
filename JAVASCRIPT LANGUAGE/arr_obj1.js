@@ -26,4 +26,10 @@ let newobj1 = [
     }
 ]
 
+emp1.push(newobj1);
+console.log(newobj1);
+console.log(emp1);
+
+
+
 
