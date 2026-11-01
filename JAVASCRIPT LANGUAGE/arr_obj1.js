@@ -34,6 +34,9 @@ console.log(emp1);
 emp1.pop(newobj1)
 console.log(emp1)
 
+emp.unshift("Aman")
+console.log(emp)
+
 
 
 
