@@ -41,6 +41,9 @@
 
 
 // slice -> remove the emetn middle of the array value
-let arr = ["Moht Yad",23,323,"Gurugram", "Delhi"];
-let m = arr.slice(2,4)
-console.log(m);
+// let arr = ["Moht Yad",23,323,"Gurugram", "Delhi"];
+// // let m = arr.slice(2,4)
+// let y = arr.splice(1,0,"Yadav");
+// // console.log(m);
+// console.log(y);
+
