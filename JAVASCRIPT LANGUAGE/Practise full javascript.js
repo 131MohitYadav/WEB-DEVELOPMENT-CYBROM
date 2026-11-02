@@ -70,7 +70,7 @@ const sign = () => {
 
     let userdata = {
         name: document.querySelector('#name').ariaValueMax,
-        email: document.querySelector('#email').ariaValueMax,
+        // email: document.querySelector('#email').ariaValueMax,
         pass: document.querySelector('#pass').ariaValueMax
 
     
@@ -87,10 +87,14 @@ console.log(data)
 
 function log(){
     let logindata = {
+
         logname:document.getElementById('#logname').ariaValueMax,
-        logemail:document.querySelector('#logemail'),ariaValueMax,
+        // logemail:document.querySelector('#logemail'),ariaValueMax,
         logpass:document.querySelector('#logpass').ariaValueMax
     }
 
-
+if ( data.name != logindata.logname  || data.pass != logindata.logpass){
+    alert("Incorrect username/email or password")
+    return false;
+}
 }
