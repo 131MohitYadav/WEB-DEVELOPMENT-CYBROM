@@ -56,9 +56,11 @@
 // fun();
 
 
-let fun1 = (a,b) => {
-    return(a + b)
-}
+// let fun1 = (a,b) => {
+//     return(a + b)
+// }
 
-let sum = fun1(2,2);
-console.log(sum)
+// let sum = fun1(2,2);
+// console.log(sum)
+
+
