@@ -49,6 +49,16 @@
 
 // how to used Arrow function
 
-let fun = () => {
-    return alert("Hello insed arrow function")
+// let fun = () => {
+//     return alert("Hello insed arrow function")
+// }
+
+// fun();
+
+
+let fun1 = (a,b) => {
+    return(a + b)
 }
+
+let sum = fun1(2,2);
+console.log(sum)
