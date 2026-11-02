@@ -23,3 +23,7 @@ for ( let i = 25; i< 1; i--){
     }
 }
 console.log(odd);
+
+
+// write a program to take input 10 number from the user and print the output
+// in array
