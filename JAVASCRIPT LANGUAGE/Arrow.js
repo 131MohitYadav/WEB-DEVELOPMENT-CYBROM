@@ -2,7 +2,8 @@
 //     return alert("Hello inside arrow function")
 // }
 
-// A variable have two power one pura function ki value print kr dega or agr sirf fun() 
+// A variable have two power one pura function ki value print kr dega or agr sirf 
+// fun() 
 // use krenge to sirf fun print kregha
 //console.log(fun);
 // fun()

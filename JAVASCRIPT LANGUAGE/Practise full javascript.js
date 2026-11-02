@@ -47,3 +47,8 @@
 // // console.log(m);
 // console.log(y);
 
+// how to used Arrow function
+
+let fun = () => {
+    return alert("Hello insed arrow function")
+}
