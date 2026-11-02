@@ -29,12 +29,18 @@
 // write a program to take input 10 number from the user and print the output
 // in array
 
-let num = [ ];
-let sum  = 0;
-for ( let n = 0; n < 10; n++) {
+// let num = [ ];
+// let sum  = 0;
+// for ( let n = 0; n < 10; n++) {
 
-    num[n] = parseInt(prompt("ENTER ANY NUMBER"));
-    let add = num[n];
-    sum = sum + add ;
-}
-console.log("SUM OF ALL NUMBER: " , sum)
+//     num[n] = parseInt(prompt("ENTER ANY NUMBER"));
+//     let add = num[n];
+//     sum = sum + add ;
+// }
+// console.log("SUM OF ALL NUMBER: " , sum)
+
+
+// slice -> remove the emetn middle of the array value
+let arr = ["Moht Yad", 23, 323, "Gurugram", "Delhi"];
+let m = arr.slice(1,3)
+console.log(m);
