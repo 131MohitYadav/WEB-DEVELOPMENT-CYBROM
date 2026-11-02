@@ -15,15 +15,26 @@
 
 // write a program to print odd number between 25 to 1
 
-let odd = []
+// let odd = [ ];
 
-for ( let i = 25; i< 1; i--){
-    if ( i % 2 != 0){
-        odd.push(i);
-    }
-}
-console.log(odd);
+// for ( let i = 25; i > 0; i--){
+//     if ( i % 2 != 0){
+
+//         odd.push(i);
+//     }
+// }
+// console.log(odd);
 
 
 // write a program to take input 10 number from the user and print the output
 // in array
+
+let num = [ ];
+let sum  = 0;
+for ( let n = 0; n < 10; n++) {
+
+    num[n] = parseInt(prompt("ENTER ANY NUMBER"));
+    let add = num[n];
+    sum = sum + add ;
+}
+console.log("SUM OF ALL NUMBER: " , sum)
