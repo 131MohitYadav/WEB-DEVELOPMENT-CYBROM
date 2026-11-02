@@ -64,3 +64,33 @@
 // console.log(sum)
 
 
+/// Authentication login and signup ////
+
+const sign = () => {
+
+    let userdata = {
+        name: document.querySelector('#name').ariaValueMax,
+        email: document.querySelector('#email').ariaValueMax,
+        pass: document.querySelector('#pass').ariaValueMax
+
+    
+
+    }
+    localStorage.setItem("userdata",JSON.stringify(userdata))
+
+}
+
+
+let data = JSON.parse(localStorage.getItem('userdata'))
+console.log(data)
+
+
+function log(){
+    let logindata = {
+        logname:document.getElementById('#logname').ariaValueMax,
+        logemail:document.querySelector('#logemail'),ariaValueMax,
+        logpass:document.querySelector('#logpass').ariaValueMax
+    }
+
+
+}
