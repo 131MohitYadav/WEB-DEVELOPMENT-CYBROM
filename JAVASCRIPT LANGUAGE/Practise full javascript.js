@@ -69,9 +69,9 @@
 const sign = () => {
 
     let userdata = {
-        name: document.querySelector('#name').ariaValueMax,
+        name: document.querySelector('#name').value,
         // email: document.querySelector('#email').ariaValueMax,
-        pass: document.querySelector('#pass').ariaValueMax
+        pass: document.querySelector('#pass').value
 
     
 
@@ -88,9 +88,9 @@ console.log(data)
 function log(){
     let logindata = {
 
-        logname:document.getElementById('#logname').ariaValueMax,
+        logname:document.querySelector('#logname').value,
         // logemail:document.querySelector('#logemail'),ariaValueMax,
-        logpass:document.querySelector('#logpass').ariaValueMax
+        logpass:document.querySelector('#logpass').value
     }
 
 if ( data.name != logindata.logname  || data.pass != logindata.logpass){
