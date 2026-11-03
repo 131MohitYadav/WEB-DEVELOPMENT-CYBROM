@@ -66,35 +66,38 @@
 
 /// Authentication login and signup ////
 
-const sign = () => {
+// const sign = () => {
 
-    let userdata = {
-        name: document.querySelector('#name').value,
-        // email: document.querySelector('#email').ariaValueMax,
-        pass: document.querySelector('#pass').value
+//     let userdata = {
+//         name: document.querySelector('#name').value,
+//         // email: document.querySelector('#email').ariaValueMax,
+//         pass: document.querySelector('#pass').value
 
     
 
-    }
-    localStorage.setItem("userdata",JSON.stringify(userdata))
+//     }
+//     localStorage.setItem("userdata",JSON.stringify(userdata))
 
-}
-
-
-let data = JSON.parse(localStorage.getItem('userdata'))
-console.log(data)
+// }
 
 
-function log(){
-    let logindata = {
+// let data = JSON.parse(localStorage.getItem('userdata'))
+// console.log(data)
 
-        logname:document.querySelector('#logname').value,
-        // logemail:document.querySelector('#logemail'),ariaValueMax,
-        logpass:document.querySelector('#logpass').value
-    }
 
-if ( data.name != logindata.logname  || data.pass != logindata.logpass){
-    alert("Incorrect username/email or password")
-    return false;
-}
-}
+// function log(){
+//     let logindata = {
+
+//         logname:document.querySelector('#logname').value,
+//         // logemail:document.querySelector('#logemail'),ariaValueMax,
+//         logpass:document.querySelector('#logpass').value
+//     }
+
+// if ( data.name != logindata.logname  || data.pass != logindata.logpass){
+//     alert("Incorrect username/email or password")
+//     return false;
+// }
+// }
+
+
+// map function and callback function
