@@ -120,4 +120,5 @@ let data = emp1.map((e)=>{
     return e.age
 })
 console.log(data);
+console.log(data[1])
 
