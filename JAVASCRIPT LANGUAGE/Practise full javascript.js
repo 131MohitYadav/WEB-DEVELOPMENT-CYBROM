@@ -101,3 +101,23 @@
 
 
 // map function and callback function
+
+let emp1 = [
+    {
+        name:"Mohit",
+        age:23,
+        city:"Gurugram",
+        id:877
+    },{
+        name:"Kajal",
+        age:25,
+        city:"Gurugram",
+        id:878
+    }
+]
+
+let data = emp1.map((e)=>{
+    return e.age
+})
+console.log(data);
+
