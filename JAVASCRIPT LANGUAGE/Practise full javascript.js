@@ -116,9 +116,18 @@ let emp1 = [
     }
 ]
 
+let emp2 = [10,20,30,40,50]
+
 let data = emp1.map((e)=>{
     return e.age
 })
 console.log(data);
 console.log(data[1])
+
+
+let data1 = emp2.filter((num)=>{
+    return num > 23;
+})
+
+console.log(data1)
 
