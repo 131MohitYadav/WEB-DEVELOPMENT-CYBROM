@@ -143,6 +143,8 @@
 function add() {
     let head = document.getElementById('head')
     head.classList.add('dark')
+    head.style.backgroundColor='blue',
+    
 }
 
 function rem(){
