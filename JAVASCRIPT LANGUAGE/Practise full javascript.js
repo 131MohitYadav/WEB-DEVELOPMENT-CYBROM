@@ -131,3 +131,7 @@ let data1 = emp2.filter((num)=>{
 
 console.log(data1)
 
+let emp3 = [33,23,24,53]
+
+
+
