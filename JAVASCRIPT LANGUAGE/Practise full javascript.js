@@ -133,5 +133,10 @@ console.log(data1)
 
 let emp3 = [33,23,24,53]
 
+let data3 = emp3.find((n)=>{
+    return n < 33;
+})
+
+console.log(data3)
 
 
