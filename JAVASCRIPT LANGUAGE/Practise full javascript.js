@@ -179,12 +179,13 @@
 
 // check person eligible for vote or not
 
-let vote = prompt("Enter a number");
+let vote = prompt("Enter a number")
 
-if (vote >18){
-    console.log('eligible for vote')
+if (vote >18)
+ {
+    console.log('eligible for vote');
 }
 else(vote < 18){
-    console.log('Not eligible for vote')
+    console.log('Not eligible for vote');
 }
 
