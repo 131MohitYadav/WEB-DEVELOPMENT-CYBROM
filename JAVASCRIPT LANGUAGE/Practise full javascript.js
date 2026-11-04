@@ -102,41 +102,50 @@
 
 // map function and callback function
 
-let emp1 = [
-    {
-        name:"Mohit",
-        age:23,
-        city:"Gurugram",
-        id:877
-    },{
-        name:"Kajal",
-        age:25,
-        city:"Gurugram",
-        id:878
-    }
-]
+// let emp1 = [
+//     {
+//         name:"Mohit",
+//         age:23,
+//         city:"Gurugram",
+//         id:877
+//     },{
+//         name:"Kajal",
+//         age:25,
+//         city:"Gurugram",
+//         id:878
+//     }
+// ]
 
-let emp2 = [10,20,30,40,50]
+// let emp2 = [10,20,30,40,50]
 
-let data = emp1.map((e)=>{
-    return e.age
-})
-console.log(data);
-console.log(data[1])
-
-
-let data1 = emp2.filter((num)=>{
-    return num > 23;
-})
-
-console.log(data1)
-
-let emp3 = [33,23,24,53]
-
-let data3 = emp3.find((n)=>{
-    return n < 33;
-})
-
-console.log(data3)
+// let data = emp1.map((e)=>{
+//     return e.age
+// })
+// console.log(data);
+// console.log(data[1])
 
 
+// let data1 = emp2.filter((num)=>{
+//     return num > 23;
+// })
+
+// console.log(data1)
+
+// let emp3 = [33,23,24,53]
+
+// let data3 = emp3.find((n)=>{
+//     return n < 33;
+// })
+
+// console.log(data3)
+
+
+function add() {
+    let head = document.getElementById('head')
+    head.classList.add('dark')
+}
+
+function rem(){
+    let head = document.getElementById('head')
+    head.classList.remove('dark')
+}
