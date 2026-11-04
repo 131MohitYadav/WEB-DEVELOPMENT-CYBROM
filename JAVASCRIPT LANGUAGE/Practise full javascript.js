@@ -162,16 +162,20 @@
 
 // check number positive or negative 
 
-let num = Number(prompt('Enter a number'))
+// let num = Number(prompt('Enter a number'))
 
-if ( num > 0){
-    console.log('Positive');
-}
-else if(num < 0){
+// if ( num > 0){
+//     console.log('Positive');
+// }
+// else if(num < 0){
 
-    console.log('Negative')
+//     console.log('Negative');
 
-}
-else{
-    console.log("Zero")
-}
+// }
+// else{
+//     console.log("Zero");
+// }
+
+
+// check person eligible for vote or not
+
