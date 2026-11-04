@@ -140,21 +140,38 @@
 // console.log(data3)
 
 
-function add() {
-    let head = document.getElementById('head')
-    head.classList.add('dark')
-    head.style.backgroundColor='blue'
+// function add() {
+//     let head = document.getElementById('head')
+//     head.classList.add('dark')
+//     head.style.backgroundColor='blue'
     
+// }
+
+// function rem(){
+//     let head = document.getElementById('head')
+//     head.classList.remove('dark')
+// }
+
+
+// function both(){
+//     let head = document.getElementById('head')
+//     head.style.backgroundColor='red'
+
+// }
+
+
+// check number positive or negative 
+
+let num = Number(prompt('Enter a number'))
+
+if ( num > 0){
+    console.log('Positive');
 }
+else if(num < 0){
 
-function rem(){
-    let head = document.getElementById('head')
-    head.classList.remove('dark')
+    console.log('Negative')
+
 }
-
-
-function both(){
-    let head = document.getElementById('head')
-    head.style.backgroundColor='red'
-
+else{
+    console.log("Zero")
 }
