@@ -179,13 +179,20 @@
 
 // check person eligible for vote or not
 
-let vote = prompt("Enter a number")
+// let vote = prompt("Enter a number")
 
-if (vote >18)
- {
-    console.log('eligible for vote');
-}
-else(vote < 18){
-    console.log('Not eligible for vote');
-}
+// if (vote >18)
+//  {
+//     console.log('eligible for vote');
+// }
+// else(vote < 18){
+//     console.log('Not eligible for vote');
+// }
 
+
+// programme of area of circle
+
+let r1 = parseFloat(prompt("enter a first number: "))
+let r2 = parseFloat(prompt("enter a second number; "))
+
+console.log(3.14 * r * r);
